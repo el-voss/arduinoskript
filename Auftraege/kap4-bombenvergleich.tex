@@ -1,0 +1,74 @@
+\documentclass[ngerman, 11pt]{scrreprt}
+
+\usepackage{etoolbox}
+\newtoggle{FOLIE}
+\toggletrue{FOLIE}
+
+\input{../src/package-config.tex}
+\input{../src/symbols.tex}
+\input{../src/commands.tex}	
+
+\setlength{\parindent}{0cm}
+\setcapindent{0.2cm}
+\setlength{\footnotemargin}{0pt}
+
+
+\begin{document}
+	\setcounter{chapter}{4}
+	\setcounter{section}{3}
+	
+	\begin{ziel}
+		\textbf{Zum Nachdenken:} Unten sind zwei Implementationen eines \enquote{Bombenprogramms} abgebildet. Erkläre den Unterschied.
+	\end{ziel}
+	
+	\bigskip
+	\begin{figure}[H]
+		\begin{minipage}{0.49\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{../lsg/4-3-Bombe-Lsg1.png}
+			\caption{Programm \textbf{A}.}
+		\end{minipage}
+		\hfill
+		\begin{minipage}{0.49\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{../lsg/4-3-Bombe-Lsg2.png}
+			\caption{Programm \textbf{B}.}
+		\end{minipage}
+	\end{figure}
+	
+	\bigskip
+	
+	\begin{tikzpicture}
+	\draw [help lines,step=0.5, gray] (0,0) grid (\textwidth,13);
+	\end{tikzpicture}
+	
+	\newpage
+	\setcounter{chapter}{4}
+	\setcounter{section}{3}
+
+	
+	\begin{ziel}
+		\textbf{Zum Nachdenken:} Unten sind zwei Implementationen eines \enquote{Bombenprogramms} abgebildet. Erkläre den Unterschied.
+	\end{ziel}
+	
+	\bigskip
+	\begin{figure}[H]
+		\begin{minipage}{0.49\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{../lsg/4-3-Bombe-Lsg1.png}
+			\caption{Programm \textbf{A}.}
+		\end{minipage}
+		\hfill
+		\begin{minipage}{0.49\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{../lsg/4-3-Bombe-Lsg2.png}
+			\caption{Programm \textbf{B}.}
+		\end{minipage}
+	\end{figure}
+	
+	\bigskip
+	
+	\begin{tikzpicture}
+	\draw [help lines,step=0.5, gray] (0,0) grid (\textwidth,13);
+	\end{tikzpicture}
+\end{document}

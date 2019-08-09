@@ -1,0 +1,80 @@
+\documentclass[ngerman, 11pt]{scrreprt}
+
+\usepackage{etoolbox}
+\newtoggle{FOLIE}
+\toggletrue{FOLIE}
+
+\input{../src/package-config.tex}
+\input{../src/symbols.tex}
+\input{../src/commands.tex}	
+
+\setlength{\parindent}{0cm}
+\setcapindent{0.2cm}
+\setlength{\footnotemargin}{0pt}
+\onehalfspacing
+
+
+\begin{document}
+	\setcounter{page}{16}
+	\setcounter{chapter}{3}
+	\setcounter{section}{6}
+	\setcounter{subsection}{1}
+	\subsection{Verwendung eines Tasters}
+	
+	\begin{ziel}
+		\textbf{Ziel:} 	Mithilfe des Arduino soll der Zustand eines Tasters eingelesen werden, um damit eine Fußgängerampel zu bauen.
+	\end{ziel}
+	
+	In der folgenden Abbildung ist dargestellt, wie man einen Taster am Arduino so anschließt, dass man seinen Zustand im digitalen Pin 3 auslesen kann. Ein Taster ist wie ein Schalter, kann also geschlossen sein (Strom fließt) oder offen sein (Strom fließt nicht). Im Gegensatz zum Schalter springt ein Taster aber automatisch wieder in den offenen Zustand zurück, wenn er losgelassen wird.
+	
+	\begin{aufgabe*}
+		Markiere die Kabel farbig, sodass die Kabel, die auf dem gleichen elektrischen Potential liegen, die gleiche Farbe haben. Notiere zudem den Wert des elektrischen Potentials.
+	\end{aufgabe*}
+	
+	\begin{figure}[H]
+		\hfill
+		\begin{minipage}{0.4\textwidth}
+			\includegraphics[width=\textwidth]{../Zeichnungen/taster-an-arduino.png}
+			\caption{Taster offen (kein Stromfluss).}
+		\end{minipage}
+		\hfill
+		\begin{minipage}{0.4\textwidth}
+			\includegraphics[width=\textwidth]{../Zeichnungen/taster-an-arduino-geschlossen.png}
+			\caption{Taster geschlossen (Stromfluss).}
+		\end{minipage}
+		\hfill
+	\end{figure}
+
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\newpage
+	\setcounter{page}{16}
+	\setcounter{chapter}{3}
+	\setcounter{section}{6}
+	\setcounter{subsection}{1}
+	\subsection{Verwendung eines Tasters}
+	
+	\begin{ziel}
+		\textbf{Ziel:} 	Mithilfe des Arduino soll der Zustand eines Tasters eingelesen werden, um damit eine Fußgängerampel zu bauen.
+	\end{ziel}
+	
+	In der folgenden Abbildung ist dargestellt, wie man einen Taster am Arduino so anschließt, dass man seinen Zustand im digitalen Pin 3 auslesen kann. Ein Taster ist wie ein Schalter, kann also geschlossen sein (Strom fließt) oder offen sein (Strom fließt nicht). Im Gegensatz zum Schalter springt ein Taster aber automatisch wieder in den offenen Zustand zurück, wenn er losgelassen wird.
+	
+	\begin{aufgabe*}
+		Markiere die Kabel farbig, sodass die Kabel, die auf dem gleichen elektrischen Potential liegen, die gleiche Farbe haben. Notiere zudem den Wert des elektrischen Potentials.
+	\end{aufgabe*}
+	
+	\begin{figure}[H]
+		\hfill
+		\begin{minipage}{0.4\textwidth}
+			\includegraphics[width=\textwidth]{../Zeichnungen/taster-an-arduino.png}
+			\caption{Taster offen (kein Stromfluss).}
+		\end{minipage}
+		\hfill
+		\begin{minipage}{0.4\textwidth}
+			\includegraphics[width=\textwidth]{../Zeichnungen/taster-an-arduino-geschlossen.png}
+			\caption{Taster geschlossen (Stromfluss).}
+		\end{minipage}
+		\hfill
+	\end{figure}
+	
+\end{document}

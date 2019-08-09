@@ -1,0 +1,43 @@
+\documentclass[ngerman, 11pt]{scrreprt}
+
+\usepackage{etoolbox}
+\newtoggle{FOLIE}
+\toggletrue{FOLIE}
+
+\input{../src/package-config.tex}
+\input{../src/symbols.tex}
+\input{../src/commands.tex}	
+
+\setlength{\parindent}{0cm}
+\setcapindent{0.2cm}
+\setlength{\footnotemargin}{0pt}
+\onehalfspacing
+
+\begin{document}
+	\setcounter{chapter}{5}
+	\setcounter{section}{1}
+
+	\textcolor{white}{a}
+	
+	\vspace{2cm}\par
+	
+	Sina (links) und Thorsten (rechts) haben jeweils eine Batterieampel gebaut und dabei programmiert, welches Licht angestellt werden muss, um anzuzeigen, dass die 1,5\,V-Batterie noch voll bzw. noch in Ordnung bzw. leer ist.
+	
+	Vergleiche und diskutiere die beiden Programmbausteine.
+	
+	\begin{figure}[H]
+		\begin{minipage}{0.48\textwidth}
+			\centering
+			\includegraphics[width=0.75\textwidth]{../pics/batterieampel-1.png}
+			\caption{Sinas Fallunterscheidung für die Batterieampel.}
+		\end{minipage}
+		\hfill
+		\begin{minipage}{0.48\textwidth}
+			\centering
+			\includegraphics[width=0.85\textwidth]{../pics/batterieampel-2.png}
+			\caption{Thorstens Fallunterscheidung für die Batterieampel.}
+		\end{minipage}
+	\end{figure}
+	
+	% Beide Varianten sind prinzipiell möglich, allerdings fehlt bei Thorsten der Fall spannung = 1,4V und spannung =1,2V. Diese müssen durch eine weitere logische Operation ergänzt werden. Bei Sina ergibt sich das schon durch die verschachtelte falls-Abfrage.
+\end{document}

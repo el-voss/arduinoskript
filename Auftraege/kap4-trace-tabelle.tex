@@ -1,0 +1,94 @@
+\documentclass[ngerman, 11pt]{scrreprt}
+
+\usepackage{etoolbox}
+\newtoggle{FOLIE}
+\toggletrue{FOLIE}
+
+\input{../src/package-config.tex}
+\input{../src/symbols.tex}
+\input{../src/commands.tex}	
+
+\setlength{\parindent}{0cm}
+\setcapindent{0.2cm}
+\setlength{\footnotemargin}{0pt}
+
+
+\begin{document}
+	\setcounter{chapter}{4}
+	\setcounter{page}{21}
+	
+	\begin{wrapfigure}{r}{0.2\textwidth}
+		\centering
+		\begin{tabular}{l | c}
+			\textbf{Zeile} & \textbf{i} \\ \hline
+			4 & 10 \\ \hline
+			5 & 10 \\ \hline
+			6 & 11 \\ \hline
+			7 & 11 \\ \hline
+			\dots & \dots \\ \hline
+		\end{tabular}
+	\end{wrapfigure}
+	\textbf{Trace-Tabellen}
+	
+	Trace-Tabellen stellen den Wert von Variablen beim Durchlaufen des Programms dar. Auf diese Art und Weise kann man sich zum Beispiel genau veranschaulichen, wann Schleifen abgebrochen werden.
+	
+	
+	\begin{aufgabe*} \emph{Theorieteil}
+		
+		An einem Arduino ist an jedem Digitalpin eine LED mit Vorwiderstand angeschlossen.
+		
+		Stelle die beiden unten abgebildeten Programme in einer Trace-Tabelle dar und gib an, welche LEDs dabei leuchten werden.
+	\end{aufgabe*}
+	
+	\begin{figure}[H]
+		\begin{minipage}{0.48\textwidth}
+			\centering
+			\includegraphics[width=0.9\textwidth]{../lsg/4-2-A1-Lauflicht-Lsg1-z.png}
+		\end{minipage}
+		\hfill
+		\begin{minipage}{0.48\textwidth}
+			\centering
+			\includegraphics[width=0.9\textwidth]{../lsg/4-2-A1-Lauflicht-Lsg2-z.png}
+		\end{minipage}
+	\end{figure}
+
+	\newpage
+	\setcounter{chapter}{4}
+	\setcounter{page}{21}
+
+	
+	\begin{wrapfigure}{r}{0.2\textwidth}
+		\centering
+		\begin{tabular}{l | c}
+			\textbf{Zeile} & \textbf{i} \\ \hline
+			4 & 10 \\ \hline
+			5 & 10 \\ \hline
+			6 & 11 \\ \hline
+			7 & 11 \\ \hline
+			\dots & \dots \\ \hline
+		\end{tabular}
+	\end{wrapfigure}
+	\textbf{Trace-Tabellen}
+	
+	Trace-Tabellen stellen den Wert von Variablen beim Durchlaufen des Programms dar. Auf diese Art und Weise kann man sich zum Beispiel genau veranschaulichen, wann Schleifen abgebrochen werden.
+	
+	
+	\begin{aufgabe*} \emph{Theorieteil}
+		
+		An einem Arduino ist an jedem Digitalpin eine LED mit Vorwiderstand angeschlossen.
+		
+		Stelle die beiden unten abgebildeten Programme in einer Trace-Tabelle dar und gib an, welche LEDs dabei leuchten werden.
+	\end{aufgabe*}
+	
+	\begin{figure}[H]
+		\begin{minipage}{0.48\textwidth}
+			\centering
+			\includegraphics[width=0.9\textwidth]{../lsg/4-2-A1-Lauflicht-Lsg1-z.png}
+		\end{minipage}
+		\hfill
+		\begin{minipage}{0.48\textwidth}
+			\centering
+			\includegraphics[width=0.9\textwidth]{../lsg/4-2-A1-Lauflicht-Lsg2-z.png}
+		\end{minipage}
+	\end{figure}
+\end{document}
