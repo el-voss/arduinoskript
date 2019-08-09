@@ -1,0 +1,21 @@
+<definition height="70" version="0.60" hotspot_x="43" orientation="dyyy" width="100" type="element" hotspot_y="35" link_type="simple">
+    <uuid uuid="{8d1ff4f7-0969-4779-b361-98d267b7906c}"/>
+    <names>
+        <name lang="de">Infrarot-Empfänger (IR)</name>
+    </names>
+    <informations></informations>
+    <description>
+        <rect height="60" width="60" y="-30" style="line-style:normal;line-weight:normal;filling:none;color:black" x="-30" antialias="false"/>
+        <ellipse height="50" width="30" y="-25" style="line-style:normal;line-weight:normal;filling:black;color:black" x="-3" antialias="false"/>
+        <line length1="1.5" x1="35" y2="-20" y1="-10" end2="none" style="line-style:normal;line-weight:normal;filling:none;color:black" length2="1.5" end1="simple" x2="50" antialias="false"/>
+        <line length1="1.5" x1="35" y2="-10" y1="0" end2="none" style="line-style:normal;line-weight:normal;filling:none;color:black" length2="1.5" end1="simple" x2="50" antialias="false"/>
+        <line length1="1.5" x1="35" y2="0" y1="10" end2="none" style="line-style:normal;line-weight:normal;filling:none;color:black" length2="1.5" end1="simple" x2="50" antialias="false"/>
+        <text size="9" y="-10" x="-29" text="GND"/>
+        <text size="9" y="5" x="-29" text="5V"/>
+        <text size="9" y="20" x="-29" text="S"/>
+        <input size="9" y="30" rotate="true" x="40" text="_" tagg="label"/>
+        <terminal orientation="w" y="-15" x="-35"/>
+        <terminal orientation="w" y="15" x="-35"/>
+        <terminal orientation="w" y="0" x="-35"/>
+    </description>
+</definition>

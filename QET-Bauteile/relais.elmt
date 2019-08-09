@@ -1,0 +1,30 @@
+<definition version="0.60" type="element" hotspot_x="63" link_type="simple" hotspot_y="40" width="120" height="80" orientation="dyyy">
+    <uuid uuid="{05310521-47a5-41b5-9f0d-bf719badea94}"/>
+    <names>
+        <name lang="de">Relais mit Wechselschalter</name>
+    </names>
+    <informations></informations>
+    <description>
+        <rect y="-10" width="30" height="20" style="line-style:normal;line-weight:normal;filling:none;color:black" antialias="false" x="-50"/>
+        <line y2="-30" end2="none" length2="1.5" x1="-40" y1="-10" end1="none" length1="1.5" style="line-style:normal;line-weight:normal;filling:none;color:black" antialias="false" x2="-40"/>
+        <line y2="30" end2="none" length2="1.5" x1="-40" y1="10" end1="none" length1="1.5" style="line-style:normal;line-weight:normal;filling:none;color:black" antialias="false" x2="-40"/>
+        <line y2="-10" end2="none" length2="1.5" x1="20" y1="10" end1="none" length1="1.5" style="line-style:normal;line-weight:normal;filling:none;color:black" antialias="false" x2="15"/>
+        <line y2="-10" end2="none" length2="1.5" x1="10" y1="-30" end1="none" length1="1.5" style="line-style:normal;line-weight:normal;filling:none;color:black" antialias="false" x2="10"/>
+        <line y2="-10" end2="none" length2="1.5" x1="10" y1="-10" end1="none" length1="1.5" style="line-style:normal;line-weight:normal;filling:none;color:black" antialias="false" x2="15"/>
+        <line y2="-10" end2="none" length2="1.5" x1="25" y1="-10" end1="none" length1="1.5" style="line-style:normal;line-weight:normal;filling:none;color:black" antialias="false" x2="30"/>
+        <line y2="-30" end2="none" length2="1.5" x1="30" y1="-10" end1="none" length1="1.5" style="line-style:normal;line-weight:normal;filling:none;color:black" antialias="false" x2="30"/>
+        <line y2="30" end2="none" length2="1.5" x1="20" y1="10" end1="none" length1="1.5" style="line-style:normal;line-weight:normal;filling:none;color:black" antialias="false" x2="20"/>
+        <line y2="0" end2="none" length2="1.5" x1="-20" y1="0" end1="none" length1="1.5" style="line-style:dotted;line-weight:normal;filling:none;color:black" antialias="false" x2="15"/>
+        <text y="-21" size="9" x="-58" text="A1"/>
+        <text y="30" size="9" x="-59" text="A2"/>
+        <text y="-21" size="9" x="-10" text="NC"/>
+        <text y="-21" size="9" x="35" text="NO"/>
+        <text y="30" size="9" x="9" text="C"/>
+        <input tagg="label" y="25" rotate="true" size="9" x="35" text="_"/>
+        <terminal y="30" orientation="s" x="20"/>
+        <terminal y="-30" orientation="n" x="-40"/>
+        <terminal y="-30" orientation="n" x="10"/>
+        <terminal y="30" orientation="s" x="-40"/>
+        <terminal y="-30" orientation="n" x="30"/>
+    </description>
+</definition>

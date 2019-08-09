@@ -1,0 +1,22 @@
+<definition hotspot_x="41" hotspot_y="40" orientation="dyyy" width="90" link_type="simple" version="0.60" type="element" height="80">
+    <uuid uuid="{d272e960-2a28-4fc1-a1c0-8cdc569246e1}"/>
+    <names>
+        <name lang="de">Rotary Encoder</name>
+    </names>
+    <informations></informations>
+    <description>
+        <rect width="70" y="-35" height="70" style="line-style:normal;line-weight:normal;filling:none;color:black" antialias="false" x="-35"/>
+        <circle diameter="40" y="-20" style="line-style:normal;line-weight:normal;filling:none;color:black" antialias="false" x="-30"/>
+        <input size="9" y="45" text="_" rotate="true" tagg="label" x="-35"/>
+        <text size="5" y="32" text="GND" x="18"/>
+        <text size="5" y="19" text="+" x="27"/>
+        <text size="5" y="6" text="SW" x="22"/>
+        <text size="5" y="-8" text="DT" x="23"/>
+        <text size="5" y="-19" text="CLK" x="20"/>
+        <terminal orientation="e" y="-15" x="40"/>
+        <terminal orientation="e" y="12" x="40"/>
+        <terminal orientation="e" y="-25" x="40"/>
+        <terminal orientation="e" y="25" x="40"/>
+        <terminal orientation="e" y="-1" x="40"/>
+    </description>
+</definition>
