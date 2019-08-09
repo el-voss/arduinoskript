@@ -4,3 +4,7 @@ Dieses Repository stellt ein Skript für ein Wahlpflichtfach zum Arduino bereit.
 Für den Standardanwender reicht es, die pdf-Datei herunterzuladen. Falls Anpassungen vorgenommen werden sollen, können die zugehörigen tex-Dateien und Bilddateien ebenfalls heruntergeladen werden.
 
 Dieses Skript steht unter einer CC-BY-SA-NC 4.0 Lizenz.
+Es kann unter https://github.com/Sebafox/arduinoskript heruntergeladen werden.
+
+Author: Sebastian Voß
+Zuerst veröffentlicht am 09.08.2019.
