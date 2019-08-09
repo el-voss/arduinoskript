@@ -7,4 +7,5 @@ Dieses Skript steht unter einer CC-BY-SA-NC 4.0 Lizenz.
 Es kann unter https://github.com/Sebafox/arduinoskript heruntergeladen werden.
 
 Author: Sebastian Voß
+
 Zuerst veröffentlicht am 09.08.2019.
