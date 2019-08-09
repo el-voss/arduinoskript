@@ -1,0 +1,479 @@
+<project folioSheetQuantity="0" version="0.60" title="">
+    <properties/>
+    <newdiagrams>
+        <border cols="17" rowsize="80" displaycols="true" rows="8" colsize="60" displayrows="true"/>
+        <inset locmach="" date="null" filename="" title="" version="" auto_page_num="" indexrev="" displayAt="bottom" folio="%id/%total" machine="" author=""/>
+        <conductors condsize="1" type="multi" onetextperfolio="0" function="" formula="" tension-protocol="" displaytext="1" horizrotatetext="0" num="_" vertirotatetext="270" numsize="7"/>
+        <report label="%f-%l%c"/>
+        <xrefs>
+            <xref powerprefix="" switchprefix="" type="protection" snapto="label" offset="0" slave_label="(%f-%l%c)" showpowerctc="false" delayprefix="" master_label="%f-%l%c" displayhas="cross"/>
+            <xref powerprefix="" switchprefix="" type="coil" snapto="label" offset="40" slave_label="(%f-%l%c)" showpowerctc="false" delayprefix="" master_label="%f-%l%c" displayhas="cross"/>
+            <xref powerprefix="" switchprefix="" type="commutator" snapto="label" offset="0" slave_label="(%f-%l%c)" showpowerctc="false" delayprefix="" master_label="%f-%l%c" displayhas="cross"/>
+        </xrefs>
+        <conductors_autonums freeze_new_conductors="false" current_autonum=""/>
+        <folio_autonums/>
+        <element_autonums freeze_new_elements="false" current_autonum=""/>
+    </newdiagrams>
+    <diagram colsize="60" filename="" displaycols="true" displayAt="bottom" freezeNewConductor="false" cols="17" order="1" height="660" title="" rows="8" locmach="" date="null" rowsize="80" auto_page_num="" indexrev="" folio="%id/%total" version="0.60" machine="" freezeNewElement="false" author="" displayrows="true">
+        <defaultconductor condsize="1" type="multi" onetextperfolio="0" function="" formula="" tension-protocol="" displaytext="1" horizrotatetext="0" num="_" vertirotatetext="270" numsize="7"/>
+        <elements>
+            <element freezeLabel="false" uuid="{90744657-6737-40c3-ae75-ac005544da8d}" orientation="0" type="embed://import/10_electric/20_manufacturers_articles/arduino/arduino_uno.elmt" prefix="" y="100" x="130">
+                <terminals>
+                    <terminal orientation="1" id="0" name="_" y="210" x="146" number="_" nameHidden="0"/>
+                    <terminal orientation="1" id="1" name="_" y="50" x="146" number="_" nameHidden="0"/>
+                    <terminal orientation="1" id="2" name="_" y="60" x="146" number="_" nameHidden="0"/>
+                    <terminal orientation="1" id="3" name="_" y="70" x="146" number="_" nameHidden="0"/>
+                    <terminal orientation="1" id="4" name="_" y="40" x="146" number="_" nameHidden="0"/>
+                    <terminal orientation="3" id="5" name="_" y="80" x="-6" number="_" nameHidden="0"/>
+                    <terminal orientation="3" id="6" name="_" y="90" x="-6" number="_" nameHidden="0"/>
+                    <terminal orientation="3" id="7" name="_" y="100" x="-6" number="_" nameHidden="0"/>
+                    <terminal orientation="3" id="8" name="_" y="110" x="-6" number="_" nameHidden="0"/>
+                    <terminal orientation="3" id="9" name="_" y="120" x="-6" number="_" nameHidden="0"/>
+                    <terminal orientation="3" id="10" name="_" y="170" x="-6" number="_" nameHidden="0"/>
+                    <terminal orientation="3" id="11" name="_" y="180" x="-6" number="_" nameHidden="0"/>
+                    <terminal orientation="3" id="12" name="_" y="190" x="-6" number="_" nameHidden="0"/>
+                    <terminal orientation="3" id="13" name="_" y="200" x="-6" number="_" nameHidden="0"/>
+                    <terminal orientation="3" id="14" name="_" y="210" x="-6" number="_" nameHidden="0"/>
+                    <terminal orientation="1" id="15" name="_" y="200" x="146" number="_" nameHidden="0"/>
+                    <terminal orientation="1" id="16" name="_" y="190" x="146" number="_" nameHidden="0"/>
+                    <terminal orientation="1" id="17" name="_" y="180" x="146" number="_" nameHidden="0"/>
+                    <terminal orientation="3" id="18" name="_" y="70" x="-6" number="_" nameHidden="0"/>
+                    <terminal orientation="3" id="19" name="_" y="160" x="-6" number="_" nameHidden="0"/>
+                    <terminal orientation="1" id="20" name="_" y="130" x="146" number="_" nameHidden="0"/>
+                    <terminal orientation="1" id="21" name="_" y="140" x="146" number="_" nameHidden="0"/>
+                    <terminal orientation="1" id="22" name="_" y="150" x="146" number="_" nameHidden="0"/>
+                    <terminal orientation="1" id="23" name="_" y="160" x="146" number="_" nameHidden="0"/>
+                    <terminal orientation="1" id="24" name="_" y="170" x="146" number="_" nameHidden="0"/>
+                    <terminal orientation="1" id="25" name="_" y="80" x="146" number="_" nameHidden="0"/>
+                    <terminal orientation="1" id="26" name="_" y="90" x="146" number="_" nameHidden="0"/>
+                    <terminal orientation="1" id="27" name="_" y="120" x="146" number="_" nameHidden="0"/>
+                    <terminal orientation="1" id="28" name="_" y="110" x="146" number="_" nameHidden="0"/>
+                    <terminal orientation="1" id="29" name="_" y="100" x="146" number="_" nameHidden="0"/>
+                    <terminal orientation="3" id="30" name="_" y="130" x="-6" number="_" nameHidden="0"/>
+                    <terminal orientation="3" id="31" name="_" y="140" x="-6" number="_" nameHidden="0"/>
+                    <terminal orientation="0" id="32" name="_" y="-16" x="10" number="_" nameHidden="0"/>
+                    <terminal orientation="0" id="33" name="_" y="-16" x="110" number="_" nameHidden="0"/>
+                </terminals>
+                <inputs>
+                    <input text="3.3V" y="104" x="-3"/>
+                    <input text="3.3V" y="104" x="-3"/>
+                    <input text="GND" y="124" x="-3"/>
+                    <input text="GND" y="124" x="-3"/>
+                    <input text="GND" y="133" x="-3"/>
+                    <input text="GND" y="133" x="-3"/>
+                    <input text="Vin" y="144" x="-2"/>
+                    <input text="Vin" y="144" x="-2"/>
+                    <input text="ANALOG IN" y="169" x="17"/>
+                    <input text="ANALOG IN" y="169" x="17"/>
+                    <input text="POWER" y="112" x="18"/>
+                    <input text="POWER" y="112" x="18"/>
+                    <input text="RESET" y="93" x="-3"/>
+                    <input text="RESET" y="93" x="-3"/>
+                    <input text="5V" y="114" x="-3"/>
+                    <input text="5V" y="114" x="-3"/>
+                    <input text="IO ref" y="84" x="-3"/>
+                    <input text="IO ref" y="84" x="-3"/>
+                    <input text="RX" y="66" x="90"/>
+                    <input text="RX" y="66" x="90"/>
+                    <input text="L" y="69" x="108"/>
+                    <input text="L" y="69" x="108"/>
+                    <input text="A5" y="214" x="-2"/>
+                    <input text="A5" y="214" x="-2"/>
+                    <input text="A4" y="204" x="-2"/>
+                    <input text="A4" y="204" x="-2"/>
+                    <input text="A3" y="194" x="-2"/>
+                    <input text="A3" y="194" x="-2"/>
+                    <input text="A0" y="164" x="-2"/>
+                    <input text="A0" y="164" x="-2"/>
+                    <input text="A2" y="184" x="-2"/>
+                    <input text="A2" y="184" x="-2"/>
+                    <input text="A1" y="174" x="-2"/>
+                    <input text="A1" y="174" x="-2"/>
+                    <input text="~9" y="123" x="128"/>
+                    <input text="~9" y="123" x="128"/>
+                    <input text="12" y="94" x="130"/>
+                    <input text="12" y="94" x="130"/>
+                    <input text="~10" y="114" x="122"/>
+                    <input text="~10" y="114" x="122"/>
+                    <input text="TX->1" y="204" x="114"/>
+                    <input text="TX->1" y="204" x="114"/>
+                    <input text="RX&lt;-0" y="214" x="114"/>
+                    <input text="RX&lt;-0" y="214" x="114"/>
+                    <input text="~11" y="104" x="123"/>
+                    <input text="~11" y="104" x="123"/>
+                    <input text="8" y="133" x="136"/>
+                    <input text="8" y="133" x="136"/>
+                    <input text="4" y="173" x="136"/>
+                    <input text="4" y="173" x="136"/>
+                    <input text="7" y="144" x="136"/>
+                    <input text="7" y="144" x="136"/>
+                    <input text="~3" y="183" x="128"/>
+                    <input text="~3" y="183" x="128"/>
+                    <input text="2" y="193" x="136"/>
+                    <input text="2" y="193" x="136"/>
+                    <input text="13" y="83" x="130"/>
+                    <input text="13" y="83" x="130"/>
+                    <input text="DIGITAL (PWM~)" y="131" x="117"/>
+                    <input text="DIGITAL (PWM~)" y="131" x="117"/>
+                    <input text="~5" y="163" x="128"/>
+                    <input text="~5" y="163" x="128"/>
+                    <input text="~6" y="154" x="128"/>
+                    <input text="~6" y="154" x="128"/>
+                    <input text="AREF" y="63" x="118"/>
+                    <input text="AREF" y="63" x="118"/>
+                    <input text="GND" y="73" x="121"/>
+                    <input text="GND" y="73" x="121"/>
+                    <input text="ARDUINO" y="87" x="88"/>
+                    <input text="ARDUINO" y="87" x="88"/>
+                    <input text="UNO" y="145" x="95"/>
+                    <input text="UNO" y="145" x="95"/>
+                    <input text="TX" y="66" x="98"/>
+                    <input text="TX" y="66" x="98"/>
+                    <input text="AIMEL" y="135" x="51"/>
+                    <input text="AIMEL" y="135" x="51"/>
+                    <input text="MADE IN ITALY" y="169" x="78"/>
+                    <input text="MADE IN ITALY" y="169" x="78"/>
+                    <input text="" y="10" x="-40"/>
+                </inputs>
+                <elementInformations>
+                    <elementInformation name="label" show="1"></elementInformation>
+                    <elementInformation name="formula" show="0"></elementInformation>
+                </elementInformations>
+            </element>
+            <element freezeLabel="false" uuid="{42ba9c67-e485-41b3-877d-f0cc85abf704}" orientation="0" type="embed://import/ir-empfaenger.elmt" prefix="" y="190" x="370">
+                <terminals>
+                    <terminal orientation="3" id="34" name="_" y="-15" x="-31" number="_" nameHidden="0"/>
+                    <terminal orientation="3" id="35" name="_" y="15" x="-31" number="_" nameHidden="0"/>
+                    <terminal orientation="3" id="36" name="_" y="0" x="-31" number="_" nameHidden="0"/>
+                </terminals>
+                <inputs>
+                    <input text="GND" y="-10" x="-29"/>
+                    <input text="GND" y="-10" x="-29"/>
+                    <input text="5V" y="5" x="-29"/>
+                    <input text="5V" y="5" x="-29"/>
+                    <input text="S" y="20" x="-29"/>
+                    <input text="S" y="20" x="-29"/>
+                    <input text="" y="30" x="40"/>
+                </inputs>
+                <elementInformations>
+                    <elementInformation name="label" show="1"></elementInformation>
+                    <elementInformation name="formula" show="0"></elementInformation>
+                </elementInformations>
+            </element>
+        </elements>
+        <conductors>
+            <conductor terminal1="35" condsize="1.6" freezeLabel="false" terminal2="29" type="multi" onetextperfolio="0" function="" color="#00aa00" formula="" tension-protocol="" y="0" displaytext="1" horizrotatetext="0" x="0" num="" vertirotatetext="270" numsize="7">
+                <sequentialNumbers/>
+            </conductor>
+            <conductor terminal1="36" condsize="1.6" freezeLabel="false" terminal2="8" type="multi" onetextperfolio="0" function="" color="#ff0000" formula="" tension-protocol="" y="0" displaytext="1" horizrotatetext="0" x="0" num="" vertirotatetext="270" numsize="7">
+                <segment orientation="horizontal" length="-1"/>
+                <segment orientation="horizontal" length="-8"/>
+                <segment orientation="vertical" length="160"/>
+                <segment orientation="horizontal" length="-236"/>
+                <segment orientation="vertical" length="-140"/>
+                <segment orientation="horizontal" length="13"/>
+                <segment orientation="horizontal" length="17"/>
+                <sequentialNumbers/>
+            </conductor>
+            <conductor terminal1="34" condsize="1.6" freezeLabel="false" terminal2="3" type="multi" onetextperfolio="0" function="" formula="" tension-protocol="" y="0" displaytext="1" horizrotatetext="0" x="0" num="" vertirotatetext="270" numsize="7">
+                <sequentialNumbers/>
+            </conductor>
+        </conductors>
+    </diagram>
+    <collection>
+        <category name="import">
+            <names>
+                <name lang="ru">Импортированные элементы</name>
+                <name lang="fr">Éléments importés</name>
+                <name lang="hr">Uvezeni elementi</name>
+                <name lang="el">Εισηγμένα στοιχεία</name>
+                <name lang="nl">Elementen geïmporteerd</name>
+                <name lang="ro">Elemente importate</name>
+                <name lang="cs">Zavedené prvky</name>
+                <name lang="pt">elementos importados</name>
+                <name lang="ca">Elements importats</name>
+                <name lang="en">Imported elements</name>
+                <name lang="es">Elementos importados</name>
+                <name lang="de">Importierte elemente</name>
+                <name lang="pl">Elementy importowane</name>
+                <name lang="it">Elementi importati</name>
+            </names>
+            <category name="10_electric">
+                <names>
+                    <name lang="ru">Электротехника</name>
+                    <name lang="fr">Electrique</name>
+                    <name lang="da">Elektrisk</name>
+                    <name lang="el">Ηλεκτρικά</name>
+                    <name lang="nl">Elektrotechniek</name>
+                    <name lang="cs">Elektrotechnika</name>
+                    <name lang="en">Electric</name>
+                    <name lang="es">Eléctrica</name>
+                    <name lang="de">Elektrik</name>
+                    <name lang="pl">Elektrotechnika</name>
+                    <name lang="it">Elettrica</name>
+                </names>
+                <category name="20_manufacturers_articles">
+                    <names>
+                        <name lang="ru">База изделий производителей</name>
+                        <name lang="fr">Articles constructeurs</name>
+                        <name lang="da">Producent produkter</name>
+                        <name lang="el">Κατασκευαστές υλικού</name>
+                        <name lang="en">Manufacturers articles</name>
+                        <name lang="es">Articulos de fabricantes</name>
+                        <name lang="de">Herstellerartikel</name>
+                        <name lang="pl">Urządzenia producentów</name>
+                        <name lang="it">Marchi produttori</name>
+                    </names>
+                    <category name="arduino">
+                        <names>
+                            <name lang="cs">Arduino</name>
+                            <name lang="en">Arduino</name>
+                        </names>
+                        <element name="arduino_uno.elmt">
+                            <definition width="190" hotspot_x="25" orientation="dyyy" type="element" link_type="simple" height="270" version="0.5" hotspot_y="35">
+                                <uuid uuid="{adc899b2-6c00-4fcf-a605-6427cc667d01}"/>
+                                <names>
+                                    <name lang="pl">Arduino Uno</name>
+                                    <name lang="nl">Arduino Uno</name>
+                                    <name lang="fr">Arduino Uno</name>
+                                    <name lang="en">Arduino Uno</name>
+                                    <name lang="cs">Arduino Uno</name>
+                                    <name lang="it">Arduino Uno</name>
+                                </names>
+                                <informations>ezza</informations>
+                                <description>
+                                    <rect width="35" antialias="false" height="45" y="-30" style="line-style:normal;line-weight:normal;filling:none;color:black" x="95"/>
+                                    <circle diameter="12" antialias="true" y="19" style="line-style:normal;line-weight:normal;filling:none;color:black" x="-17"/>
+                                    <text text="3.3V" y="104" size="7" x="-3"/>
+                                    <text text="GND" y="124" size="6" x="-3"/>
+                                    <rect width="2" antialias="false" height="5" y="94" style="line-style:normal;line-weight:thin;filling:none;color:black" x="69"/>
+                                    <rect width="2" antialias="false" height="5" y="136" style="line-style:normal;line-weight:thin;filling:none;color:black" x="35"/>
+                                    <text text="GND" y="133" size="6" x="-3"/>
+                                    <rect width="2" antialias="false" height="5" y="158" style="line-style:normal;line-weight:thin;filling:none;color:black" x="35"/>
+                                    <text text="Vin" y="144" size="7" x="-2"/>
+                                    <rect width="2" antialias="false" height="5" y="186" style="line-style:normal;line-weight:thin;filling:none;color:black" x="35"/>
+                                    <text text="ANALOG IN" rotation="90" y="169" size="5" x="17"/>
+                                    <text text="POWER" rotation="90" y="112" size="5" x="18"/>
+                                    <text text="RESET" y="93" size="6" x="-3"/>
+                                    <text text="5V" y="114" size="7" x="-3"/>
+                                    <rect width="2" antialias="false" height="5" y="158" style="line-style:normal;line-weight:thin;filling:none;color:black" x="69"/>
+                                    <text text="IO ref" y="84" size="7" x="-3"/>
+                                    <circle diameter="20.5913" antialias="true" y="13.7044" style="line-style:dotted;line-weight:thin;filling:none;color:black" x="1.7044"/>
+                                    <polygon x5="105" y4="230" x9="160" closed="false" x8="160" y2="221" y7="220" y5="230" y3="223" y1="-14" y9="-14" x7="160" x3="-10" x1="-20" x2="-20" antialias="false" x4="0" style="line-style:normal;line-weight:normal;filling:none;color:black" y8="-14" x6="120" y6="220"/>
+                                    <rect width="2" antialias="false" height="5" y="179" style="line-style:normal;line-weight:thin;filling:none;color:black" x="35"/>
+                                    <rect width="2" antialias="false" height="5" y="165" style="line-style:normal;line-weight:thin;filling:none;color:black" x="35"/>
+                                    <rect width="2" antialias="false" height="5" y="73" style="line-style:normal;line-weight:thin;filling:none;color:black" x="35"/>
+                                    <rect width="2" antialias="false" height="5" y="179" style="line-style:normal;line-weight:thin;filling:none;color:black" x="69"/>
+                                    <circle diameter="2.5" antialias="true" y="76.75" style="line-style:normal;line-weight:normal;filling:none;color:black" x="97.75"/>
+                                    <rect width="2" antialias="false" height="5" y="136" style="line-style:normal;line-weight:thin;filling:none;color:black" x="69"/>
+                                    <rect width="2" antialias="false" height="5" y="73" style="line-style:normal;line-weight:thin;filling:none;color:black" x="69"/>
+                                    <rect width="2" antialias="false" height="5" y="186" style="line-style:normal;line-weight:thin;filling:none;color:black" x="69"/>
+                                    <rect width="2" antialias="false" height="5" y="101" style="line-style:normal;line-weight:thin;filling:none;color:black" x="35"/>
+                                    <rect width="2" antialias="false" height="5" y="151" style="line-style:normal;line-weight:thin;filling:none;color:black" x="35"/>
+                                    <circle diameter="2.5" antialias="true" y="76.75" style="line-style:normal;line-weight:normal;filling:none;color:black" x="108.75"/>
+                                    <text text="RX" rotation="90" y="66" size="4" x="90"/>
+                                    <rect width="2" antialias="false" height="5" y="94" style="line-style:normal;line-weight:thin;filling:none;color:black" x="35"/>
+                                    <rect width="2" antialias="false" height="5" y="101" style="line-style:normal;line-weight:thin;filling:none;color:black" x="69"/>
+                                    <rect width="2" antialias="false" height="5" y="165" style="line-style:normal;line-weight:thin;filling:none;color:black" x="69"/>
+                                    <rect width="2" antialias="false" height="5" y="115" style="line-style:normal;line-weight:thin;filling:none;color:black" x="69"/>
+                                    <rect width="2" antialias="false" height="5" y="115" style="line-style:normal;line-weight:thin;filling:none;color:black" x="35"/>
+                                    <text text="L" rotation="90" y="69" size="4" x="108"/>
+                                    <rect width="2" antialias="false" height="5" y="193" style="line-style:normal;line-weight:thin;filling:none;color:black" x="35"/>
+                                    <rect width="2" antialias="false" height="5" y="80" style="line-style:normal;line-weight:thin;filling:none;color:black" x="35"/>
+                                    <rect width="4" antialias="false" height="6" y="75" style="line-style:dotted;line-weight:thin;filling:none;color:black" x="108"/>
+                                    <rect width="2" antialias="false" height="5" y="151" style="line-style:normal;line-weight:thin;filling:none;color:black" x="69"/>
+                                    <rect width="2" antialias="false" height="5" y="80" style="line-style:normal;line-weight:thin;filling:none;color:black" x="69"/>
+                                    <rect width="2" antialias="false" height="5" y="66" style="line-style:normal;line-weight:thin;filling:none;color:black" x="35"/>
+                                    <rect width="4" antialias="false" height="6" y="75" style="line-style:dotted;line-weight:thin;filling:none;color:black" x="97"/>
+                                    <rect width="2" antialias="false" height="5" y="66" style="line-style:normal;line-weight:thin;filling:none;color:black" x="69"/>
+                                    <rect width="2" antialias="false" height="5" y="193" style="line-style:normal;line-weight:thin;filling:none;color:black" x="69"/>
+                                    <circle diameter="12" antialias="true" y="216" style="line-style:normal;line-weight:normal;filling:none;color:black" x="91"/>
+                                    <rect width="2" antialias="false" height="5" y="143" style="line-style:normal;line-weight:thin;filling:none;color:black" x="35"/>
+                                    <rect width="2" antialias="false" height="5" y="143" style="line-style:normal;line-weight:thin;filling:none;color:black" x="69"/>
+                                    <rect width="2" antialias="false" height="5" y="122" style="line-style:normal;line-weight:thin;filling:none;color:black" x="35"/>
+                                    <rect width="2" antialias="false" height="5" y="122" style="line-style:normal;line-weight:thin;filling:none;color:black" x="69"/>
+                                    <circle diameter="12" antialias="true" y="19" style="line-style:normal;line-weight:normal;filling:none;color:black" x="145"/>
+                                    <circle diameter="12" antialias="true" y="216" style="line-style:normal;line-weight:normal;filling:none;color:black" x="11"/>
+                                    <rect width="2" antialias="false" height="5" y="108" style="line-style:normal;line-weight:thin;filling:none;color:black" x="35"/>
+                                    <rect width="2" antialias="false" height="5" y="108" style="line-style:normal;line-weight:thin;filling:none;color:black" x="69"/>
+                                    <rect width="2" antialias="false" height="5" y="172" style="line-style:normal;line-weight:thin;filling:none;color:black" x="69"/>
+                                    <rect width="8" antialias="false" height="18" y="206" style="line-style:normal;line-weight:normal;filling:none;color:black" x="76"/>
+                                    <rect width="2" antialias="false" height="5" y="129" style="line-style:normal;line-weight:thin;filling:none;color:black" x="69"/>
+                                    <rect width="2" antialias="false" height="5" y="129" style="line-style:normal;line-weight:thin;filling:none;color:black" x="35"/>
+                                    <rect width="2" antialias="false" height="5" y="87" style="line-style:normal;line-weight:thin;filling:none;color:black" x="69"/>
+                                    <rect width="2" antialias="false" height="5" y="87" style="line-style:normal;line-weight:thin;filling:none;color:black" x="35"/>
+                                    <rect width="8" antialias="false" height="18" y="206" style="line-style:normal;line-weight:normal;filling:none;color:black" x="66"/>
+                                    <rect width="4" antialias="false" height="4" y="218" style="line-style:normal;line-weight:normal;filling:none;color:black" x="68"/>
+                                    <rect width="4" antialias="false" height="4" y="28" style="line-style:normal;line-weight:normal;filling:none;color:black" x="128"/>
+                                    <rect width="4" antialias="false" height="4" y="208" style="line-style:normal;line-weight:normal;filling:none;color:black" x="78"/>
+                                    <rect width="4" antialias="false" height="4" y="218" style="line-style:normal;line-weight:normal;filling:none;color:black" x="58"/>
+                                    <ellipse width="11" antialias="true" height="15" y="108" style="line-style:normal;line-weight:normal;filling:none;color:black" x="99"/>
+                                    <rect width="12" antialias="false" height="182" y="34" style="line-style:normal;line-weight:normal;filling:none;color:black" x="144"/>
+                                    <rect width="4" antialias="false" height="4" y="208" style="line-style:normal;line-weight:normal;filling:none;color:black" x="68"/>
+                                    <rect width="4" antialias="false" height="4" y="218" style="line-style:normal;line-weight:normal;filling:none;color:black" x="78"/>
+                                    <rect width="4" antialias="false" height="4" y="38" style="line-style:normal;line-weight:normal;filling:none;color:black" x="128"/>
+                                    <rect width="18" antialias="false" height="8" y="36" style="line-style:normal;line-weight:normal;filling:none;color:black" x="116"/>
+                                    <rect width="1" antialias="false" height="8" y="112" style="line-style:normal;line-weight:normal;filling:none;color:black" x="104"/>
+                                    <rect width="4" antialias="false" height="4" y="48" style="line-style:normal;line-weight:normal;filling:none;color:black" x="128"/>
+                                    <text text="A5" y="214" size="7" x="-2"/>
+                                    <rect width="18" antialias="false" height="8" y="26" style="line-style:normal;line-weight:normal;filling:none;color:black" x="116"/>
+                                    <text text="A4" y="204" size="7" x="-2"/>
+                                    <text text="A3" y="194" size="7" x="-2"/>
+                                    <rect width="4" antialias="false" height="4" y="38" style="line-style:normal;line-weight:normal;filling:none;color:black" x="118"/>
+                                    <text text="A0" y="164" size="7" x="-2"/>
+                                    <rect width="4" antialias="false" height="4" y="48" style="line-style:normal;line-weight:normal;filling:none;color:black" x="118"/>
+                                    <text text="A2" y="184" size="7" x="-2"/>
+                                    <rect width="4" antialias="false" height="4" y="28" style="line-style:normal;line-weight:normal;filling:none;color:black" x="118"/>
+                                    <text text="A1" y="174" size="7" x="-2"/>
+                                    <rect width="18" antialias="false" height="8" y="46" style="line-style:normal;line-weight:normal;filling:none;color:black" x="116"/>
+                                    <text text="~9" y="123" size="7" x="128"/>
+                                    <text text="12" y="94" size="7" x="130"/>
+                                    <text text="~10" y="114" size="7" x="122"/>
+                                    <text text="TX->1" y="204" size="7" x="114"/>
+                                    <text text="RX&lt;-0" y="214" size="7" x="114"/>
+                                    <text text="~11" y="104" size="7" x="123"/>
+                                    <text text="8" y="133" size="7" x="136"/>
+                                    <text text="4" y="173" size="7" x="136"/>
+                                    <text text="7" y="144" size="7" x="136"/>
+                                    <text text="~3" y="183" size="7" x="128"/>
+                                    <text text="2" y="193" size="7" x="136"/>
+                                    <text text="13" y="83" size="7" x="130"/>
+                                    <text text="DIGITAL (PWM~)" rotation="90" y="131" size="5" x="117"/>
+                                    <text text="~5" y="163" size="7" x="128"/>
+                                    <text text="~6" y="154" size="7" x="128"/>
+                                    <text text="AREF" y="63" size="7" x="118"/>
+                                    <rect width="6" antialias="false" height="6" y="167" style="line-style:normal;line-weight:normal;filling:none;color:black" x="147"/>
+                                    <rect width="12" antialias="false" height="82" y="64" style="line-style:normal;line-weight:normal;filling:none;color:black" x="-16"/>
+                                    <rect width="6" antialias="false" height="6" y="177" style="line-style:normal;line-weight:normal;filling:none;color:black" x="147"/>
+                                    <rect width="6" antialias="false" height="6" y="47" style="line-style:normal;line-weight:normal;filling:none;color:black" x="147"/>
+                                    <rect width="6" antialias="false" height="6" y="157" style="line-style:normal;line-weight:normal;filling:none;color:black" x="147"/>
+                                    <rect width="6" antialias="false" height="6" y="57" style="line-style:normal;line-weight:normal;filling:none;color:black" x="147"/>
+                                    <rect width="6" antialias="false" height="6" y="37" style="line-style:normal;line-weight:normal;filling:none;color:black" x="147"/>
+                                    <rect width="6" antialias="false" height="6" y="167" style="line-style:normal;line-weight:normal;filling:none;color:black" x="-13"/>
+                                    <rect width="6" antialias="false" height="6" y="147" style="line-style:normal;line-weight:normal;filling:none;color:black" x="147"/>
+                                    <rect width="6" antialias="false" height="6" y="137" style="line-style:normal;line-weight:normal;filling:none;color:black" x="147"/>
+                                    <rect width="6" antialias="false" height="6" y="197" style="line-style:normal;line-weight:normal;filling:none;color:black" x="147"/>
+                                    <rect width="6" antialias="false" height="6" y="127" style="line-style:normal;line-weight:normal;filling:none;color:black" x="147"/>
+                                    <rect width="6" antialias="false" height="6" y="207" style="line-style:normal;line-weight:normal;filling:none;color:black" x="147"/>
+                                    <rect width="6" antialias="false" height="6" y="97" style="line-style:normal;line-weight:normal;filling:none;color:black" x="-13"/>
+                                    <rect width="6" antialias="false" height="6" y="107" style="line-style:normal;line-weight:normal;filling:none;color:black" x="147"/>
+                                    <rect width="6" antialias="false" height="6" y="187" style="line-style:normal;line-weight:normal;filling:none;color:black" x="147"/>
+                                    <arc width="12" antialias="false" angle="-90" start="-180" height="12" y="-20" style="line-style:normal;line-weight:normal;filling:none;color:black" x="-20"/>
+                                    <arc width="12" antialias="false" angle="-90" start="90" height="12" y="-20" style="line-style:normal;line-weight:normal;filling:none;color:black" x="148"/>
+                                    <rect width="4" antialias="false" height="4" y="208" style="line-style:normal;line-weight:normal;filling:none;color:black" x="58"/>
+                                    <rect width="6" antialias="false" height="6" y="187" style="line-style:normal;line-weight:normal;filling:none;color:black" x="-13"/>
+                                    <rect width="6" antialias="false" height="6" y="87" style="line-style:normal;line-weight:normal;filling:none;color:black" x="-13"/>
+                                    <rect width="6" antialias="false" height="6" y="117" style="line-style:normal;line-weight:normal;filling:none;color:black" x="147"/>
+                                    <rect width="6" antialias="false" height="6" y="77" style="line-style:normal;line-weight:normal;filling:none;color:black" x="147"/>
+                                    <rect width="6" antialias="false" height="6" y="197" style="line-style:normal;line-weight:normal;filling:none;color:black" x="-13"/>
+                                    <rect width="6" antialias="false" height="6" y="97" style="line-style:normal;line-weight:normal;filling:none;color:black" x="147"/>
+                                    <rect width="6" antialias="false" height="6" y="177" style="line-style:normal;line-weight:normal;filling:none;color:black" x="-13"/>
+                                    <rect width="6" antialias="false" height="6" y="107" style="line-style:normal;line-weight:normal;filling:none;color:black" x="-13"/>
+                                    <rect width="6" antialias="false" height="6" y="87" style="line-style:normal;line-weight:normal;filling:none;color:black" x="147"/>
+                                    <rect width="6" antialias="false" height="6" y="67" style="line-style:normal;line-weight:normal;filling:none;color:black" x="147"/>
+                                    <rect width="6" antialias="false" height="6" y="157" style="line-style:normal;line-weight:normal;filling:none;color:black" x="-13"/>
+                                    <rect width="6" antialias="false" height="6" y="77" style="line-style:normal;line-weight:normal;filling:none;color:black" x="-13"/>
+                                    <rect width="6" antialias="false" height="6" y="207" style="line-style:normal;line-weight:normal;filling:none;color:black" x="-13"/>
+                                    <rect width="6" antialias="false" height="6" y="67" style="line-style:normal;line-weight:normal;filling:none;color:black" x="-13"/>
+                                    <rect width="6" antialias="false" height="6" y="127" style="line-style:normal;line-weight:normal;filling:none;color:black" x="-13"/>
+                                    <rect width="6" antialias="false" height="6" y="137" style="line-style:normal;line-weight:normal;filling:none;color:black" x="-13"/>
+                                    <rect width="6" antialias="false" height="6" y="117" style="line-style:normal;line-weight:normal;filling:none;color:black" x="-13"/>
+                                    <rect width="12" antialias="false" height="62" y="154" style="line-style:normal;line-weight:normal;filling:none;color:black" x="-16"/>
+                                    <text text="GND" y="73" size="7" x="121"/>
+                                    <line end1="none" x1="146" antialias="false" end2="none" length1="1.5" length2="1.5" y1="135" x2="154" style="line-style:dotted;line-weight:normal;filling:none;color:black" y2="135"/>
+                                    <line end1="none" x1="113" antialias="false" end2="none" length1="1.5" length2="1.5" y1="213" x2="113" style="line-style:normal;line-weight:thin;filling:none;color:black" y2="79"/>
+                                    <text text="ARDUINO" rotation="90" y="87" size="7" x="88"/>
+                                    <ellipse width="11" antialias="true" height="15" y="93" style="line-style:normal;line-weight:normal;filling:none;color:black" x="99"/>
+                                    <rect width="1" antialias="false" height="8" y="97" style="line-style:normal;line-weight:normal;filling:none;color:black" x="104"/>
+                                    <rect width="7" antialias="false" height="1" y="115" style="line-style:normal;line-weight:normal;filling:none;color:black" x="101"/>
+                                    <ellipse width="21" antialias="true" height="32" y="143" style="line-style:dashed;line-weight:thin;filling:none;color:black" x="89"/>
+                                    <text text="UNO" rotation="90" y="145" size="9" x="95"/>
+                                    <rect width="8" antialias="false" height="18" y="206" style="line-style:normal;line-weight:normal;filling:none;color:black" x="56"/>
+                                    <circle diameter="10" antialias="true" y="-8" style="line-style:dotted;line-weight:thin;filling:none;color:black" x="145"/>
+                                    <rect width="17" antialias="false" height="16" y="-11" style="line-style:dashed;line-weight:thin;filling:none;color:black" x="141"/>
+                                    <rect width="20" antialias="false" height="31" y="-29" style="line-style:normal;line-weight:normal;filling:none;color:black" x="1"/>
+                                    <line end1="none" x1="1" antialias="false" end2="none" length1="1.5" length2="1.5" y1="-22" x2="21" style="line-style:normal;line-weight:normal;filling:none;color:black" y2="-22"/>
+                                    <rect width="10" antialias="false" height="1" y="2" style="line-style:normal;line-weight:normal;filling:none;color:black" x="6"/>
+                                    <line end1="none" x1="-13" antialias="false" end2="none" length1="1.5" length2="1.5" y1="-20" x2="1" style="line-style:normal;line-weight:normal;filling:none;color:black" y2="-20"/>
+                                    <circle diameter="2.5" antialias="true" y="76.75" style="line-style:normal;line-weight:normal;filling:none;color:black" x="89.75"/>
+                                    <rect width="4" antialias="false" height="6" y="75" style="line-style:dotted;line-weight:thin;filling:none;color:black" x="89"/>
+                                    <text text="TX" rotation="90" y="66" size="4" x="98"/>
+                                    <text text="AIMEL" rotation="270" y="135" size="5" x="51"/>
+                                    <line end1="none" x1="45" antialias="false" end2="none" length1="1.5" length2="1.5" y1="131" x2="45" style="line-style:normal;line-weight:thin;filling:none;color:black" y2="117"/>
+                                    <rect width="32" antialias="false" height="137" y="65" style="line-style:dotted;line-weight:thin;filling:none;color:black" x="37"/>
+                                    <rect width="2" antialias="false" height="5" y="172" style="line-style:normal;line-weight:thin;filling:none;color:black" x="35"/>
+                                    <line end1="none" x1="26" antialias="false" end2="none" length1="1.5" length2="1.5" y1="97" x2="26" style="line-style:normal;line-weight:thin;filling:none;color:black" y2="145"/>
+                                    <line end1="none" x1="26" antialias="false" end2="none" length1="1.5" length2="1.5" y1="155" x2="26" style="line-style:normal;line-weight:thin;filling:none;color:black" y2="213"/>
+                                    <ellipse width="9" antialias="true" height="22" y="19" style="line-style:dashed;line-weight:thin;filling:none;color:black" x="68"/>
+                                    <circle diameter="20.5913" antialias="true" y="40.7044" style="line-style:dotted;line-weight:thin;filling:none;color:black" x="1.70437"/>
+                                    <rect width="16" antialias="false" height="8" y="-12" style="line-style:dashed;line-weight:thin;filling:none;color:black" x="51"/>
+                                    <text text="MADE IN ITALY" rotation="90" y="169" size="2" x="78"/>
+                                    <line end1="none" x1="22" antialias="false" end2="none" length1="1.5" length2="1.5" y1="-20" x2="94" style="line-style:normal;line-weight:normal;filling:none;color:black" y2="-20"/>
+                                    <line end1="none" x1="154" antialias="false" end2="none" length1="1.5" length2="1.5" y1="-20" x2="131" style="line-style:normal;line-weight:normal;filling:none;color:black" y2="-20"/>
+                                    <input text="_" tagg="label" y="10" size="9" x="-40" rotate="true"/>
+                                    <terminal orientation="e" y="210" x="150"/>
+                                    <terminal orientation="e" y="50" x="150"/>
+                                    <terminal orientation="e" y="60" x="150"/>
+                                    <terminal orientation="e" y="70" x="150"/>
+                                    <terminal orientation="e" y="40" x="150"/>
+                                    <terminal orientation="w" y="80" x="-10"/>
+                                    <terminal orientation="w" y="90" x="-10"/>
+                                    <terminal orientation="w" y="100" x="-10"/>
+                                    <terminal orientation="w" y="110" x="-10"/>
+                                    <terminal orientation="w" y="120" x="-10"/>
+                                    <terminal orientation="w" y="170" x="-10"/>
+                                    <terminal orientation="w" y="180" x="-10"/>
+                                    <terminal orientation="w" y="190" x="-10"/>
+                                    <terminal orientation="w" y="200" x="-10"/>
+                                    <terminal orientation="w" y="210" x="-10"/>
+                                    <terminal orientation="e" y="200" x="150"/>
+                                    <terminal orientation="e" y="190" x="150"/>
+                                    <terminal orientation="e" y="180" x="150"/>
+                                    <terminal orientation="w" y="70" x="-10"/>
+                                    <terminal orientation="w" y="160" x="-10"/>
+                                    <terminal orientation="e" y="130" x="150"/>
+                                    <terminal orientation="e" y="140" x="150"/>
+                                    <terminal orientation="e" y="150" x="150"/>
+                                    <terminal orientation="e" y="160" x="150"/>
+                                    <terminal orientation="e" y="170" x="150"/>
+                                    <terminal orientation="e" y="80" x="150"/>
+                                    <terminal orientation="e" y="90" x="150"/>
+                                    <terminal orientation="e" y="120" x="150"/>
+                                    <terminal orientation="e" y="110" x="150"/>
+                                    <terminal orientation="e" y="100" x="150"/>
+                                    <terminal orientation="w" y="130" x="-10"/>
+                                    <terminal orientation="w" y="140" x="-10"/>
+                                    <terminal orientation="n" y="-20" x="10"/>
+                                    <terminal orientation="n" y="-20" x="110"/>
+                                </description>
+                            </definition>
+                        </element>
+                    </category>
+                </category>
+            </category>
+            <element name="ir-empfaenger.elmt">
+                <definition width="100" hotspot_x="43" orientation="dyyy" type="element" height="70" link_type="simple" version="0.60" hotspot_y="35">
+                    <uuid uuid="{8d1ff4f7-0969-4779-b361-98d267b7906c}"/>
+                    <names>
+                        <name lang="de">Infrarot-Empfänger (IR)</name>
+                    </names>
+                    <informations/>
+                    <description>
+                        <rect width="60" antialias="false" height="60" y="-30" style="line-style:normal;line-weight:normal;filling:none;color:black" x="-30"/>
+                        <ellipse width="30" antialias="false" height="50" y="-25" style="line-style:normal;line-weight:normal;filling:black;color:black" x="-3"/>
+                        <line end1="simple" x1="35" antialias="false" end2="none" length1="1.5" length2="1.5" y1="-10" style="line-style:normal;line-weight:normal;filling:none;color:black" x2="50" y2="-20"/>
+                        <line end1="simple" x1="35" antialias="false" end2="none" length1="1.5" length2="1.5" y1="0" style="line-style:normal;line-weight:normal;filling:none;color:black" x2="50" y2="-10"/>
+                        <line end1="simple" x1="35" antialias="false" end2="none" length1="1.5" length2="1.5" y1="10" style="line-style:normal;line-weight:normal;filling:none;color:black" x2="50" y2="0"/>
+                        <text text="GND" y="-10" size="9" x="-29"/>
+                        <text text="5V" y="5" size="9" x="-29"/>
+                        <text text="S" y="20" size="9" x="-29"/>
+                        <input text="_" tagg="label" y="30" size="9" x="40" rotate="true"/>
+                        <terminal orientation="w" y="-15" x="-35"/>
+                        <terminal orientation="w" y="15" x="-35"/>
+                        <terminal orientation="w" y="0" x="-35"/>
+                    </description>
+                </definition>
+            </element>
+        </category>
+    </collection>
+</project>

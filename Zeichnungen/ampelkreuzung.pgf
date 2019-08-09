@@ -1,0 +1,59 @@
+\begin{tikzpicture}[scale=0.5]
+	%Seitenstra√?e
+	\fill[gray!50] (-4,1) -- (2,1) -- (2,4.5) -- (-3,4.5) -- cycle;
+	\fill[white] (-2,2.75) -- ++(0.95,0) -- ++(0.05,0.2) -- ++(-0.95,0) -- cycle;
+	%Hauptstra√?e
+	\fill[gray!50] (0,-1) -- (8,-1) -- (7,7) -- (1,7) -- cycle;
+	\fill[white] (3.9,1.2) rectangle ++(0.2,1);
+	\fill[white] (3.9,3.2) rectangle ++(0.2,1);
+	\fill[white] (3.9,5.9) rectangle ++(0.2,1);
+	\foreach \x in {0.4,0.9,...,7.4} {
+		\fill[white] (\x,-0.5) rectangle ++(0.25,0.15);
+		\fill[white] (\x,0.5) rectangle ++(0.25,0.15);
+		\fill[white] (\x,4.5) rectangle ++(0.25,0.15);
+		\fill[white] (\x,5.5) rectangle ++(0.25,0.15);
+	}
+	\fill[white] (0.5,-0.5) rectangle ++(0.25,0.15);
+	% S√§ule links hinten
+	\fill[gray] (0.5,5) ellipse [x radius=0.5, y radius=0.1];
+	\fill[gray] (0.5,8.5) ellipse [x radius=0.5, y radius=0.1];
+	\shade [left color=gray, right color=gray!40] (0,5) rectangle ++(0.5,3.5);
+	\shade [left color=gray!40, right color=gray] (0.5,5) rectangle ++(0.5,3.5);
+	% S√§ule rechts hinten
+	\fill[gray] (7.5,5) ellipse [x radius=0.5, y radius=0.1];
+	\fill[gray] (7.5,8.5) ellipse [x radius=0.5, y radius=0.1];
+	\shade [left color=gray, right color=gray!40] (7,5) rectangle ++(0.5,3.5);
+	\shade [left color=gray!40, right color=gray] (7.5,5) rectangle ++(0.5,3.5);
+	% S√§ule links
+	\fill[gray] (0,0) ellipse [x radius=0.5, y radius=0.1];
+	\fill[gray] (0,5) ellipse [x radius=0.5, y radius=0.1];
+	\shade [left color=gray, right color=gray!40] (-0.5,0) rectangle ++(0.5,5);
+	\shade [left color=gray!40, right color=gray] (0,0) rectangle ++(0.5,5);
+	% gro√?e Ampel links
+	\fill[black!80] (0,3.3) rectangle ++(0.5,1.6);
+	\fill[red] (0.25,4.6) circle [radius=2mm];
+	\fill[yellow!30!gray] (0.25,4.1) circle [radius=2mm];
+	\fill[green!30!gray] (0.25,3.6) circle [radius=2mm];
+	%Fu√?g√§ngerampel links
+	\fill[black!80] (-0.5,3.5) -- ++(0.4,-0.2) -- ++(0,1) -- ++ (-0.4,0.2) -- cycle;
+	\fill[red!30!gray] (-0.3,4.1) ellipse [x radius=1.8mm, y radius=1.5mm,rotate=-30];
+	\fill[green] (-0.3,3.7) ellipse [x radius=1.8mm, y radius=1.5mm,rotate=-30];
+	\fill[orange,rounded corners=0.5mm] (-0.5,1.5) rectangle ++(0.25,0.5);
+	\fill[red] (-0.375,1.7) circle [radius=1mm];
+	% S√§ule rechts
+	\fill[gray] (8,0) ellipse [x radius=0.5, y radius=0.1];
+	\fill[gray] (8,5) ellipse [x radius=0.5, y radius=0.1];
+	\shade [left color=gray, right color=gray!40] (7.5,0) rectangle ++(0.5,5);
+	\shade [left color=gray!40, right color=gray] (8,0) rectangle ++(0.5,5);
+	\fill[orange,rounded corners=0.5mm] (8.25,1.5) rectangle ++(0.25,0.5);
+	\fill[red] (8.375,1.7) circle [radius=1mm];
+	% gro√?e Ampel rechts
+	\fill[black!80] (7.5,3.3) rectangle ++(0.5,1.6);
+	\fill[red] (7.75,4.6) circle [radius=2mm];
+	\fill[yellow!30!gray] (7.75,4.1) circle [radius=2mm];
+	\fill[green!30!gray] (7.75,3.6) circle [radius=2mm];
+	%Fu√?g√§ngerampel rechts
+	\fill[black!80] (8.1,3.3) -- ++(0.4,0.2) -- ++(0,1) -- ++ (-0.4,-0.2) -- cycle;
+	\fill[red!30!gray] (8.3,4.1) ellipse [x radius=1.8mm, y radius=1.5mm,rotate=30];
+	\fill[green] (8.3,3.7) ellipse [x radius=1.8mm, y radius=1.5mm,rotate=30];
+\end{tikzpicture}

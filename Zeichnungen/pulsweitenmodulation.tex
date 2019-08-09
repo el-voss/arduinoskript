@@ -1,0 +1,16 @@
+﻿\begin{tikzpicture}[]
+	\fill [white] (-1,-1) rectangle (7,7);
+	\draw [->] (0,-1) -- (0,6.5);
+	\draw [->] (-1,0) -- (6.5,0);
+	\draw [dashed] (4,-1) -- ++(0,7.5);
+	\node at (-0.2,-0.3) {\scriptsize 0};
+	\foreach \x in {1,...,6} {
+		\draw (\x,0.1) -- (\x,-0.1) node [anchor=north, fill=white] {\scriptsize\x};
+		\draw (0.1,\x) -- (-0.1,\x) node [anchor=east] {\scriptsize\x};
+	}
+	\node at (6.5,-0.35) {\scriptsize Zeit};
+	\node at (0,6.5) {\parbox{1.7cm}{\scriptsize El. Potential in V}};
+	\draw [thick, blue] (0,5) -- ++(1,0) ++(0,-5) -- ++(3,0) ++(0,5) -- ++(1,0) ++(0,-5) -- ++(1.5,0);
+	\draw [thick, red] (0,1.25) -- ++(6.5,0) node [above] {$\overline{U}$};
+	\draw [<->] (0,-0.6) -- (4,-0.6) node [below left=1mm] {\scriptsize Periodendauer T};
+\end{tikzpicture}
