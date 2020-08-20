@@ -1,20 +1,20 @@
-<definition hotspot_x="36" orientation="dyyy" width="80" link_type="simple" version="0.60" type="element" hotspot_y="37" height="60">
-    <uuid uuid="{a9aaf139-9255-4e05-b45e-e8f2a68bee9f}"/>
+<definition width="50" version="0.60" hotspot_x="24" height="40" hotspot_y="26" orientation="dyyy" type="element" link_type="simple">
+    <uuid uuid="{a1b4ace1-e1b7-4152-8e80-a877890ad9e0}"/>
     <names>
         <name lang="de">Heißleiter (NTC)</name>
     </names>
     <informations></informations>
     <description>
-        <rect width="40" y="-10" x="-20" height="20" style="line-style:normal;line-weight:normal;filling:none;color:black" antialias="false"/>
-        <line end2="none" x2="-10" x1="-20" end1="none" length2="1.5" y1="20" y2="20" length1="1.5" style="line-style:normal;line-weight:normal;filling:none;color:black" antialias="false"/>
-        <line end2="none" x2="20" x1="-10" end1="none" length2="1.5" y1="20" y2="-20" length1="1.5" style="line-style:normal;line-weight:normal;filling:none;color:black" antialias="false"/>
-        <line end2="simple" x2="40" x1="40" end1="none" length2="1.5" y1="-30" y2="-10" length1="1.5" style="line-style:normal;line-weight:normal;filling:none;color:black" antialias="false"/>
-        <line end2="simple" x2="30" x1="30" end1="none" length2="1.5" y1="-10" y2="-30" length1="1.5" style="line-style:normal;line-weight:normal;filling:none;color:black" antialias="false"/>
-        <text y="-20" text="T" x="-10" size="9"/>
-        <input y="15" text="_" x="25" size="9" tagg="label" rotate="true"/>
-        <line end2="none" x2="-25" x1="-20" end1="none" length2="1.5" y1="0" y2="0" length1="1.5" style="line-style:normal;line-weight:normal;filling:none;color:black" antialias="false"/>
-        <line end2="none" x2="25" x1="20" end1="none" length2="1.5" y1="0" y2="0" length1="1.5" style="line-style:normal;line-weight:normal;filling:none;color:black" antialias="false"/>
-        <terminal orientation="e" y="0" x="30"/>
-        <terminal orientation="w" y="0" x="-30"/>
+        <rect antialias="false" width="28" style="line-style:normal;line-weight:normal;filling:none;color:black" x="-14" height="12" y="-6"/>
+        <line end1="none" length2="1.5" antialias="false" length1="1.5" y1="10" end2="none" style="line-style:normal;line-weight:normal;filling:none;color:black" y2="10" x2="-4" x1="-10"/>
+        <line end1="none" length2="1.5" antialias="false" length1="1.5" y1="10" end2="none" style="line-style:normal;line-weight:normal;filling:none;color:black" y2="-12" x2="14" x1="-4"/>
+        <line end1="none" length2="1.5" antialias="false" length1="1.5" y1="-20" end2="simple" style="line-style:normal;line-weight:normal;filling:none;color:black" y2="-10" x2="22" x1="22"/>
+        <line end1="none" length2="1.5" antialias="false" length1="1.5" y1="-10" end2="simple" style="line-style:normal;line-weight:normal;filling:none;color:black" y2="-20" x2="18" x1="18"/>
+        <text text="T" x="-20" y="-9" size="9"/>
+        <input text="_" x="25" tagg="label" y="15" size="9" rotate="true"/>
+        <line end1="none" length2="1.5" antialias="false" length1="1.5" y1="0" end2="none" style="line-style:normal;line-weight:normal;filling:none;color:black" y2="0" x2="-19" x1="-14"/>
+        <line end1="none" length2="1.5" antialias="false" length1="1.5" y1="0" end2="none" style="line-style:normal;line-weight:normal;filling:none;color:black" y2="0" x2="19" x1="14"/>
+        <terminal x="19" y="0" orientation="e"/>
+        <terminal x="-19" y="0" orientation="w"/>
     </description>
 </definition>

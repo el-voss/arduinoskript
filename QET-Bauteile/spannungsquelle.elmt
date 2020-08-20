@@ -1,0 +1,16 @@
+<definition version="0.60" orientation="dyyy" width="60" hotspot_y="10" height="20" link_type="simple" hotspot_x="29" type="element">
+    <uuid uuid="{cccaff0c-b6ee-4126-9540-a8ef5960fc02}"/>
+    <names>
+        <name lang="de">Spannungsquelle</name>
+    </names>
+    <informations></informations>
+    <description>
+        <circle diameter="10" y="-5" x="-15" style="line-style:normal;line-weight:normal;filling:none;color:black" antialias="false"/>
+        <circle diameter="10" y="-5" x="5" style="line-style:normal;line-weight:normal;filling:none;color:black" antialias="false"/>
+        <line y2="0" x1="15" length2="1.5" y1="0" end2="none" length1="1.5" x2="25" style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" antialias="false"/>
+        <line y2="0" x1="-15" length2="1.5" y1="0" end2="none" length1="1.5" x2="-25" style="line-style:normal;line-weight:normal;filling:none;color:black" end1="none" antialias="false"/>
+        <input y="5" rotate="true" tagg="label" size="9" x="20" text="_"/>
+        <terminal y="0" orientation="e" x="25"/>
+        <terminal y="0" orientation="w" x="-25"/>
+    </description>
+</definition>
