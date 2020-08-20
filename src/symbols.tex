@@ -148,6 +148,53 @@
 	\end{tikzpicture}
 }
 
+
+
+% Open Roberta Lab - Menü
+\newcommand{\nepomenu}{%
+	\begin{tikzpicture}[scale=0.3]
+		\draw [thick,gray, rounded corners=0.2mm] (0,0) rectangle (1,1.4);
+		\foreach \y in {0.2, 0.4, ..., 1.2} {
+			\draw [thick, gray] (0.2,\y) -- (0.8,\y);
+		}
+	\end{tikzpicture}
+}
+
+% Open Roberta Lab - export
+\newcommand{\nepoexport}{%
+	\begin{tikzpicture}[scale=0.3]
+	\fill [black] (0,0) rectangle (1,0.3);
+	\draw [thick] (0.03,0.3) -- (0.35,0.7);
+	\draw [thick] (0.97,0.3) -- (0.65,0.7);
+	\draw [thick] (0.35, 0.5) -- ++(0.15,-0.1) -- ++(0,0.6) ++(0,-0.6) ++(0.15,0.1) -- ++(-0.15,-0.1)  ;
+	\end{tikzpicture}
+}
+
+% Open Roberta Lab - Quellcode
+\newcommand{\nepoquellcode}{%
+	\begin{tikzpicture}
+		\fill[gray!40, rounded corners] (0,0) rectangle (0.5,0.4);
+		\draw [thick] (0.22,0.1) -- (0.1,0.2) -- (0.22,0.3);
+		\draw [thick] (0.28,0.1) -- (0.4,0.2) -- (0.28,0.3);
+	\end{tikzpicture}
+}
+%\newcommand{\nepoquellcode}{\tcbox[size=fbox,box align = base,colback=gray!20, colframe=gray,nobeforeafter]{\bfseries\texttt{<>}}}
+
+% Open Roberta Lab - Hilfe
+\newcommand{\nepohilfe}{%
+	\begin{tikzpicture}
+	\fill[gray!40, rounded corners] (0,0) rectangle (0.5,0.4) node at (0.25,0.2) {\color{black}\sffamily\bfseries ?};
+	\end{tikzpicture}
+}
+
+% Open Roberta Lab - Expertenblöcke
+\newcommand{\nepoexpert}{%
+	\begin{tikzpicture}
+	\draw [scale=0.5, thick] (0.5,1) -- (0.39,0.65) -- (0.02,0.65) -- (0.32,0.44) -- (0.21,0.1) --  (0.5,0.31) -- (0.79,0.1) -- (0.68,0.44) -- (0.98,0.65) -- (0.61,0.65) -- (0.5,1);
+	\node at (0.75,0.25) {\bfseries\sffamily 2};
+	\end{tikzpicture}
+}
+
 %%%%%%%%%%%%% Arduino / Überschrift %%%%%%%%%%%%%%%%%%
 \newcommand{\ardusym}{}
 \def\ardusym(#1,#2) {%
