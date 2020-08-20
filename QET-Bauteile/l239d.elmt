@@ -1,0 +1,78 @@
+<definition hotspot_x="52" width="110" orientation="dyyy" version="0.60" link_type="simple" type="element" hotspot_y="99" height="160">
+    <uuid uuid="{5f21bc87-5ffc-46fc-a3f1-c3b3d22d0aa8}"/>
+    <names>
+        <name lang="de">Motortreiber L293D</name>
+    </names>
+    <informations></informations>
+    <description>
+        <rect antialias="false" width="80" y="-75" style="line-style:normal;line-weight:normal;filling:none;color:black" x="-40" height="130"/>
+        <line y1="-65" length1="1.5" length2="1.5" antialias="false" y2="-65" end1="none" x2="-45" style="line-style:normal;line-weight:normal;filling:none;color:black" x1="-40" end2="none"/>
+        <line y1="40" length1="1.5" length2="1.5" antialias="false" y2="40" end1="none" x2="-45" style="line-style:normal;line-weight:normal;filling:none;color:black" x1="-40" end2="none"/>
+        <line y1="25" length1="1.5" length2="1.5" antialias="false" y2="25" end1="none" x2="-45" style="line-style:normal;line-weight:normal;filling:none;color:black" x1="-40" end2="none"/>
+        <line y1="-50" length1="1.5" length2="1.5" antialias="false" y2="-50" end1="none" x2="-45" style="line-style:normal;line-weight:normal;filling:none;color:black" x1="-40" end2="none"/>
+        <line y1="-35" length1="1.5" length2="1.5" antialias="false" y2="-35" end1="none" x2="-45" style="line-style:normal;line-weight:normal;filling:none;color:black" x1="-40" end2="none"/>
+        <line y1="-20" length1="1.5" length2="1.5" antialias="false" y2="-20" end1="none" x2="-45" style="line-style:normal;line-weight:normal;filling:none;color:black" x1="-40" end2="none"/>
+        <line y1="-5" length1="1.5" length2="1.5" antialias="false" y2="-5" end1="none" x2="-45" style="line-style:normal;line-weight:normal;filling:none;color:black" x1="-40" end2="none"/>
+        <line y1="10" length1="1.5" length2="1.5" antialias="false" y2="10" end1="none" x2="-45" style="line-style:normal;line-weight:normal;filling:none;color:black" x1="-40" end2="none"/>
+        <line y1="-65" length1="1.5" length2="1.5" antialias="false" y2="-65" end1="none" x2="45" style="line-style:normal;line-weight:normal;filling:none;color:black" x1="40" end2="none"/>
+        <line y1="-50" length1="1.5" length2="1.5" antialias="false" y2="-50" end1="none" x2="45" style="line-style:normal;line-weight:normal;filling:none;color:black" x1="40" end2="none"/>
+        <line y1="-35" length1="1.5" length2="1.5" antialias="false" y2="-35" end1="none" x2="45" style="line-style:normal;line-weight:normal;filling:none;color:black" x1="40" end2="none"/>
+        <line y1="-20" length1="1.5" length2="1.5" antialias="false" y2="-20" end1="none" x2="45" style="line-style:normal;line-weight:normal;filling:none;color:black" x1="40" end2="none"/>
+        <line y1="-5" length1="1.5" length2="1.5" antialias="false" y2="-5" end1="none" x2="40" style="line-style:normal;line-weight:normal;filling:none;color:black" x1="45" end2="none"/>
+        <line y1="10" length1="1.5" length2="1.5" antialias="false" y2="10" end1="none" x2="45" style="line-style:normal;line-weight:normal;filling:none;color:black" x1="40" end2="none"/>
+        <line y1="25" length1="1.5" length2="1.5" antialias="false" y2="25" end1="none" x2="40" style="line-style:normal;line-weight:normal;filling:none;color:black" x1="45" end2="none"/>
+        <line y1="40" length1="1.5" length2="1.5" antialias="false" y2="40" end1="none" x2="45" style="line-style:normal;line-weight:normal;filling:none;color:black" x1="40" end2="none"/>
+        <text text="L293D" y="-80" size="9" x="-15"/>
+        <arc antialias="true" angle="90" width="20" y="-84" start="270" style="line-style:normal;line-weight:normal;filling:none;color:black" x="-10" height="20"/>
+        <arc antialias="true" angle="90" width="20" y="-84" start="180" style="line-style:normal;line-weight:normal;filling:none;color:black" x="-10" height="20"/>
+        <text text="En1,2" y="-60" size="8" x="-35"/>
+        <text text="In1" y="-45" size="9" x="-35"/>
+        <text text="Out1" y="-30" size="9" x="-35"/>
+        <text text="GND" y="-15" size="9" x="-35"/>
+        <text text="GND" y="0" size="9" x="-35"/>
+        <text text="Out2" y="15" size="9" x="-35"/>
+        <text text="In2" y="30" size="9" x="-35"/>
+        <text text="Vmotor" y="45" size="9" x="-35"/>
+        <text text="Vcc" y="-60" size="9" x="10"/>
+        <text text="In3" y="-45" size="9" x="10"/>
+        <text text="Out3" y="-30" size="9" x="10"/>
+        <text text="GND" y="-15" size="9" x="10"/>
+        <text text="GND" y="0" size="9" x="10"/>
+        <text text="Out4" y="15" size="9" x="10"/>
+        <text text="In4" y="30" size="9" x="10"/>
+        <text text="En3,4" y="45" size="9" x="10"/>
+        <input text="_" y="55" tagg="label" size="9" rotate="true" x="40"/>
+        <text text="1" y="-66" size="8" x="-48"/>
+        <text text="2" y="-50" size="8" x="-48"/>
+        <text text="3" y="-36" size="8" x="-48"/>
+        <text text="4" y="-20" size="8" x="-48"/>
+        <text text="5" y="-6" size="8" x="-48"/>
+        <text text="6" y="10" size="8" x="-48"/>
+        <text text="7" y="24" size="8" x="-48"/>
+        <text text="8" y="40" size="8" x="-48"/>
+        <text text="16" y="-66" size="8" x="42"/>
+        <text text="15" y="-52" size="8" x="42"/>
+        <text text="14" y="-36" size="8" x="42"/>
+        <text text="13" y="-22" size="8" x="42"/>
+        <text text="12" y="-6" size="8" x="42"/>
+        <text text="11" y="8" size="8" x="42"/>
+        <text text="10" y="24" size="8" x="42"/>
+        <text text="9" y="40" size="8" x="42"/>
+        <terminal y="40" orientation="w" x="-45"/>
+        <terminal y="-35" orientation="w" x="-45"/>
+        <terminal y="10" orientation="w" x="-45"/>
+        <terminal y="-50" orientation="w" x="-45"/>
+        <terminal y="25" orientation="w" x="-45"/>
+        <terminal y="-65" orientation="e" x="45"/>
+        <terminal y="-65" orientation="w" x="-45"/>
+        <terminal y="-20" orientation="w" x="-45"/>
+        <terminal y="-5" orientation="w" x="-45"/>
+        <terminal y="-50" orientation="e" x="45"/>
+        <terminal y="-20" orientation="e" x="45"/>
+        <terminal y="-35" orientation="e" x="45"/>
+        <terminal y="25" orientation="e" x="45"/>
+        <terminal y="40" orientation="e" x="45"/>
+        <terminal y="-5" orientation="e" x="45"/>
+        <terminal y="10" orientation="e" x="45"/>
+    </description>
+</definition>

@@ -1,0 +1,70 @@
+<definition version="0.60" type="element" height="190" hotspot_y="109" orientation="dyyy" hotspot_x="114" link_type="simple" width="200">
+    <uuid uuid="{95e59142-0917-4dc9-aa03-14a3bc0da67a}"/>
+    <names>
+        <name lang="de">Spulen in unipolarem Motor</name>
+    </names>
+    <informations></informations>
+    <description>
+        <ellipse height="70" antialias="false" x="-36" y="-34.75" width="72" style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <arc start="180" angle="90" height="17.5" antialias="true" x="45" y="17.75" width="18" style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <arc start="90" angle="90" height="17.5" antialias="true" x="45" y="17.75" width="18" style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <arc start="180" angle="90" height="17.5" antialias="true" x="45" y="0.25" width="18" style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <arc start="90" angle="90" height="17.5" antialias="true" x="45" y="0.25" width="18" style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <arc start="180" angle="90" height="17.5" antialias="true" x="45" y="-17.25" width="18" style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <arc start="90" angle="90" height="17.5" antialias="true" x="45" y="-17.25" width="18" style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <arc start="180" angle="90" height="17.5" antialias="true" x="45" y="-34.75" width="18" style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <arc start="90" angle="90" height="17.5" antialias="true" x="45" y="-34.75" width="18" style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <arc start="90" angle="90" height="17.5" antialias="true" x="-37" y="44" width="18" style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <arc start="0" angle="90" height="17.5" antialias="true" x="-37" y="44" width="18" style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <arc start="90" angle="90" height="17.5" antialias="true" x="-19" y="44" width="18" style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <arc start="0" angle="90" height="17.5" antialias="true" x="-19" y="44" width="18" style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <arc start="90" angle="90" height="17.5" antialias="true" x="-1" y="44" width="18" style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <arc start="0" angle="90" height="17.5" antialias="true" x="-1" y="44" width="18" style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <arc start="90" angle="90" height="17.5" antialias="true" x="17" y="44" width="18" style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <arc start="0" angle="90" height="17.5" antialias="true" x="17" y="44" width="18" style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <arc start="270" angle="90" height="17.5" antialias="true" x="18" y="-61" width="18" style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <arc start="180" angle="90" height="17.5" antialias="true" x="18" y="-61" width="18" style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <arc start="270" angle="90" height="17.5" antialias="true" x="0" y="-61" width="18" style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <arc start="180" angle="90" height="17.5" antialias="true" x="0" y="-61" width="18" style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <arc start="270" angle="90" height="17.5" antialias="true" x="-18" y="-61" width="18" style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <arc start="180" angle="90" height="17.5" antialias="true" x="-18" y="-61" width="18" style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <arc start="270" angle="90" height="17.5" antialias="true" x="-36" y="-61" width="18" style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <arc start="180" angle="90" height="17.5" antialias="true" x="-36" y="-61" width="18" style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <arc start="0" angle="90" height="17.5" antialias="true" x="-63" y="-34.75" width="18" style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <arc start="270" angle="90" height="17.5" antialias="true" x="-63" y="-34.75" width="18" style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <arc start="0" angle="90" height="17.5" antialias="true" x="-63" y="-17.25" width="18" style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <arc start="270" angle="90" height="17.5" antialias="true" x="-63" y="-17.25" width="18" style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <arc start="0" angle="90" height="17.5" antialias="true" x="-63" y="0.25" width="18" style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <arc start="270" angle="90" height="17.5" antialias="true" x="-63" y="0.25" width="18" style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <arc start="0" angle="90" height="17.5" antialias="true" x="-63" y="17.75" width="18" style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <arc start="270" angle="90" height="17.5" antialias="true" x="-63" y="17.75" width="18" style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <input tagg="label" size="9" x="60" text="_" rotate="true" y="60"/>
+        <text size="8" x="-30" text="Permanent&#xa;magnet" y="0"/>
+        <text rotation="270" size="9" x="75" text="Spule1" y="15"/>
+        <text size="9" x="-25" text="Spule4" y="-60"/>
+        <text rotation="270" size="9" x="-65" text="Spule3" y="25"/>
+        <text size="9" x="-20" text="Spule2" y="70"/>
+        <text size="9" x="-76" text="3" y="-24"/>
+        <text size="9" x="-46" text="4" y="-63"/>
+        <text size="9" x="36" text="2" y="72"/>
+        <text size="9" x="70" text="1" y="33"/>
+        <line y1="35" x2="55" end1="none" length1="1.5" y2="35" end2="none" antialias="false" x1="70" length2="1.5" style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <line y1="65" x2="35" end1="none" length1="1.5" y2="53" end2="none" antialias="false" x1="35" length2="1.5" style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <line y1="35" x2="-37" end1="none" length1="1.5" y2="53" end2="none" antialias="false" x1="-55" length2="1.5" style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <line y1="44" x2="-61" end1="none" length1="1.5" y2="60" end2="none" antialias="false" x1="-46" length2="1.5" style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <line y1="-53" x2="54" end1="none" length1="1.5" y2="-35" end2="none" antialias="false" x1="36" length2="1.5" style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <line y1="-43" x2="60" end1="none" length1="1.5" y2="-55" end2="none" antialias="false" x1="46" length2="1.5" style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <line y1="-53" x2="-36" end1="none" length1="1.5" y2="-65" end2="none" antialias="false" x1="-36" length2="1.5" style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <line y1="-35" x2="-67" end1="none" length1="1.5" y2="-35" end2="none" antialias="false" x1="-54" length2="1.5" style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <line y1="-55" x2="60" end1="none" length1="1.5" y2="-85" end2="none" antialias="false" x1="60" length2="1.5" style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <line y1="-85" x2="-100" end1="none" length1="1.5" y2="-85" end2="none" antialias="false" x1="60" length2="1.5" style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <line y1="60" x2="-90" end1="none" length1="1.5" y2="60" end2="none" antialias="false" x1="-61" length2="1.5" style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <line y1="60" x2="-90" end1="none" length1="1.5" y2="-85" end2="none" antialias="false" x1="-90" length2="1.5" style="line-style:normal;line-weight:normal;filling:none;color:black"/>
+        <text size="9" x="-100" text="5V" y="-90"/>
+        <terminal orientation="e" x="74" y="35"/>
+        <terminal orientation="n" x="-36" y="-68"/>
+        <terminal orientation="w" x="-105" y="-85"/>
+        <terminal orientation="s" x="35" y="68"/>
+        <terminal orientation="w" x="-70" y="-35"/>
+    </description>
+</definition>

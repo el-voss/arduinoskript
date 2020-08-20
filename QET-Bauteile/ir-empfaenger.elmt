@@ -1,21 +1,28 @@
-<definition height="70" version="0.60" hotspot_x="43" orientation="dyyy" width="100" type="element" hotspot_y="35" link_type="simple">
-    <uuid uuid="{8d1ff4f7-0969-4779-b361-98d267b7906c}"/>
+<definition hotspot_y="35" height="70" orientation="dyyy" type="element" link_type="simple" version="0.60" hotspot_x="43" width="120">
+    <uuid uuid="{09fa026b-cb0d-4c30-a613-4173fe33ec29}"/>
     <names>
-        <name lang="de">Infrarot-Empfänger (IR)</name>
+        <name lang="de">Infrarot-Sensor mit Anzeige</name>
     </names>
     <informations></informations>
     <description>
-        <rect height="60" width="60" y="-30" style="line-style:normal;line-weight:normal;filling:none;color:black" x="-30" antialias="false"/>
-        <ellipse height="50" width="30" y="-25" style="line-style:normal;line-weight:normal;filling:black;color:black" x="-3" antialias="false"/>
-        <line length1="1.5" x1="35" y2="-20" y1="-10" end2="none" style="line-style:normal;line-weight:normal;filling:none;color:black" length2="1.5" end1="simple" x2="50" antialias="false"/>
-        <line length1="1.5" x1="35" y2="-10" y1="0" end2="none" style="line-style:normal;line-weight:normal;filling:none;color:black" length2="1.5" end1="simple" x2="50" antialias="false"/>
-        <line length1="1.5" x1="35" y2="0" y1="10" end2="none" style="line-style:normal;line-weight:normal;filling:none;color:black" length2="1.5" end1="simple" x2="50" antialias="false"/>
-        <text size="9" y="-10" x="-29" text="GND"/>
-        <text size="9" y="5" x="-29" text="5V"/>
-        <text size="9" y="20" x="-29" text="S"/>
-        <input size="9" y="30" rotate="true" x="40" text="_" tagg="label"/>
-        <terminal orientation="w" y="-15" x="-35"/>
+        <rect height="60" y="-30" style="line-style:normal;line-weight:normal;filling:none;color:black" x="-30" antialias="false" width="90"/>
+        <line x1="55" length2="1.5" y1="5" y2="-5" end1="simple" length1="1.5" style="line-style:normal;line-weight:normal;filling:none;color:black" x2="70" end2="none" antialias="false"/>
+        <line x1="55" length2="1.5" y1="10" y2="0" end1="simple" length1="1.5" style="line-style:normal;line-weight:normal;filling:none;color:black" x2="70" end2="none" antialias="false"/>
+        <line x1="55" length2="1.5" y1="15" y2="5" end1="simple" length1="1.5" style="line-style:normal;line-weight:normal;filling:none;color:black" x2="70" end2="none" antialias="false"/>
+        <text text="GND" y="-10" x="-29" size="9"/>
+        <text text="5V" y="5" x="-29" size="9"/>
+        <text text="S" y="20" x="-29" size="9"/>
+        <input text="_" y="35" rotate="true" tagg="label" x="60" size="9"/>
+        <rect height="10" y="-20" style="line-style:normal;line-weight:normal;filling:none;color:black" x="5" antialias="false" width="20"/>
+        <rect height="20" y="0" style="line-style:normal;line-weight:normal;filling:none;color:black" x="30" antialias="false" width="20"/>
+        <text text="IR" y="15" x="35" size="9"/>
+        <line x1="35" length2="1.5" y1="-15" y2="-20" end1="none" length1="1.5" style="line-style:normal;line-weight:normal;filling:none;color:black" x2="45" end2="none" antialias="false"/>
+        <line x1="45" length2="1.5" y1="-10" y2="-20" end1="none" length1="1.5" style="line-style:normal;line-weight:normal;filling:none;color:black" x2="45" end2="none" antialias="false"/>
+        <line x1="35" length2="1.5" y1="-15" y2="-10" end1="none" length1="1.5" style="line-style:normal;line-weight:normal;filling:none;color:black" x2="45" end2="none" antialias="false"/>
+        <line x1="40" length2="1.5" y1="-20" y2="-25" end1="none" length1="1.5" style="line-style:normal;line-weight:normal;filling:none;color:black" x2="45" end2="simple" antialias="false"/>
+        <line x1="35" length2="1.5" y1="-20" y2="-25" end1="none" length1="1.5" style="line-style:normal;line-weight:normal;filling:none;color:black" x2="40" end2="simple" antialias="false"/>
         <terminal orientation="w" y="15" x="-35"/>
         <terminal orientation="w" y="0" x="-35"/>
+        <terminal orientation="w" y="-15" x="-35"/>
     </description>
 </definition>
