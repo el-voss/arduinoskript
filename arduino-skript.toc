@@ -1,0 +1,71 @@
+\babel@toc {ngerman}{}
+\contentsline {chapter}{\numberline {1}Einleitung}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Weitere Informationen: Bücher und Internet}{2}{section.1.1}%
+\contentsline {chapter}{\numberline {2}Eine kurze Einführung zum Arduino und zu Nepo}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Der Aufbau des Arduino UNO}{4}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Das Open Roberta Lab und Nepo4Arduino}{5}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Digitale Ausgänge steuern}{6}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Aufbau von Schaltungen auf der Steckplatine}{7}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Widerstandsringe ablesen}{8}{section.2.5}%
+\contentsline {section}{\numberline {2.6}Vermischte Übungen}{10}{section.2.6}%
+\contentsline {chapter}{\numberline {3}Bausteine von Algorithmen}{11}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Entscheidungen programmieren}{12}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Kommunikation mit dem Arduino: Der serielle Monitor}{14}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Reflexion: Datentypen}{15}{subsection.3.2.1}%
+\contentsline {section}{\numberline {3.3}Entscheidungen mit mehreren Kriterien treffen}{16}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Programme mit Variablen und Schleifen effizient steuern}{19}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Zufällige Ereignisse und Wiederholungen programmieren}{20}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Wiederholungen mit Bedingungen steuern}{21}{subsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.4.3}Zählschleifen programmieren}{22}{subsection.3.4.3}%
+\contentsline {section}{\numberline {3.5}Programme mit Struktogrammen dokumentieren}{25}{section.3.5}%
+\contentsline {section}{\numberline {3.6}Eigene Funktionen definieren}{27}{section.3.6}%
+\contentsline {section}{\numberline {3.7}Debugging: Fehler im Programm finden}{31}{section.3.7}%
+\contentsline {section}{\numberline {3.8}Das EVA-Prinzip}{32}{section.3.8}%
+\contentsline {section}{\numberline {3.9}Vermischte Übungen}{35}{section.3.9}%
+\contentsline {section}{\numberline {3.10}Ausblick}{36}{section.3.10}%
+\contentsline {chapter}{\numberline {4}Elektrische Grundlagen zu digitalen und analogen Pins}{37}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Spannung, Stromstärke und Widerstand berechnen}{38}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Das elektrische Potential}{41}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Pulsweitenmodulation}{44}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Spannung messen}{46}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Drehregler verwenden}{48}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}Die Verwendung eines Potentiometers ohne Mikrocontroller}{49}{subsection.4.5.1}%
+\contentsline {section}{\numberline {4.6}Helligkeit messen}{51}{section.4.6}%
+\contentsline {section}{\numberline {4.7}Temperatur messen}{56}{section.4.7}%
+\contentsline {section}{\numberline {4.8}Schaltungen mit Transistoren steuern}{58}{section.4.8}%
+\contentsline {section}{\numberline {4.9}Elektromotor und Diode}{61}{section.4.9}%
+\contentsline {subsection}{\numberline {4.9.1}Elektromotor mit Transistor steuern}{63}{subsection.4.9.1}%
+\contentsline {subsection}{\numberline {4.9.2}Elektromotor mit Relais steuern}{64}{subsection.4.9.2}%
+\contentsline {subsection}{\numberline {4.9.3}Elektromotoren mit dem Motortreiber-IC L293D steuern (inkl. Drehrichtung)}{68}{subsection.4.9.3}%
+\contentsline {section}{\numberline {4.10}Vermischte Übungen}{71}{section.4.10}%
+\contentsline {section}{\numberline {4.11}Ausblick}{72}{section.4.11}%
+\contentsline {chapter}{\numberline {5}Erweiterung des Werkzeugkastens: Bauteilkunde}{73}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Servo}{74}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Schrittmotor}{75}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Liquid Crystal Display (LCD)}{77}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Neigungsschalter}{80}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Bewegungsmelder}{82}{section.5.5}%
+\contentsline {section}{\numberline {5.6}Joystick}{84}{section.5.6}%
+\contentsline {section}{\numberline {5.7}Infrarot-Sensor mit Fernbedienung}{86}{section.5.7}%
+\contentsline {section}{\numberline {5.8}Temperatur- und Luftfeuchtigkeitssensor DHT-11}{88}{section.5.8}%
+\contentsline {section}{\numberline {5.9}Temperatursensor TMP36}{89}{section.5.9}%
+\contentsline {section}{\numberline {5.10}Tropfensensor und Feuchtigkeitssensor}{90}{section.5.10}%
+\contentsline {section}{\numberline {5.11}Pulssensor}{92}{section.5.11}%
+\contentsline {section}{\numberline {5.12}Ultraschallsensor}{94}{section.5.12}%
+\contentsline {section}{\numberline {5.13}RFID}{95}{section.5.13}%
+\contentsline {section}{\numberline {5.14}Projektarbeit}{98}{section.5.14}%
+\contentsline {chapter}{\numberline {6}Steuerung komplexer Informatik-Systeme}{99}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Automaten}{100}{section.6.1}%
+\contentsline {chapter}{\numberline {A}Anhang}{105}{appendix.A}%
+\contentsline {section}{\numberline {A.1}Ein kurzer Überblick - die Funktionseinheiten des Arduino Uno}{105}{section.A.1}%
+\contentsline {section}{\numberline {A.2}Installation der integrierten Entwicklungsumgebung (IDE) für den Arduino}{107}{section.A.2}%
+\contentsline {section}{\numberline {A.3}Mit der Arduino IDE ein Programm auf den Arduino Uno übertragen}{107}{section.A.3}%
+\contentsline {chapter}{\numberline {B}Didaktisch-Methodische Bemerkungen}{110}{appendix.B}%
+\contentsline {section}{\numberline {B.1}Zielgruppe}{111}{section.B.1}%
+\contentsline {section}{\numberline {B.2}Organisatorisches: Arduino Starter Kits, Raum, Zusammenarbeit}{111}{section.B.2}%
+\contentsline {section}{\numberline {B.3}Zum Aufbau dieses Skripts}{112}{section.B.3}%
+\contentsline {subsection}{\numberline {B.3.1}Aufbau der Kapitel}{112}{subsection.B.3.1}%
+\contentsline {subsection}{\numberline {B.3.2}Erklärung zu Links, Symbolen und eingebetteten Arbeitsblättern}{113}{subsection.B.3.2}%
+\contentsline {section}{\numberline {B.4}Erfahrungsbericht}{114}{section.B.4}%
+\contentsline {section}{\numberline {B.5}Ausblick}{115}{section.B.5}%
+\contentsline {section}{\numberline {B.6}Anpassung / Weiterentwicklung}{115}{section.B.6}%
