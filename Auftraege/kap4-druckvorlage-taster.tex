@@ -1,0 +1,63 @@
+\documentclass[ngerman, 11pt]{scrreprt}
+
+\usepackage{etoolbox}
+\newtoggle{FOLIE}
+\toggletrue{FOLIE}
+
+\input{../src/package-config.tex}
+\input{../src/symbols.tex}
+\input{../src/commands.tex}	
+
+\setlength{\parindent}{0cm}
+\setcapindent{0.2cm}
+\setlength{\footnotemargin}{0pt}
+\onehalfspacing
+
+
+\begin{document}
+%	\setcounter{page}{16}
+%	\setcounter{chapter}{4}
+%	\setcounter{section}{6}
+%	\setcounter{subsection}{1}
+	\subsection*{Pulldown- und Pullup-Schaltung}
+	
+	\begin{aufgabe}\emph{Pulldown-Widerstand}
+		
+		In dem unten abgebildeten Schaltplan ist dargestellt, wie man einen Taster am Arduino so anschließt, dass man seinen Zustand im digitalen Pin 3 auslesen kann. Der Widerstand wird auch als \emph{Pulldown-Widerstand} bezeichnet und sollte relativ groß sein. $\SI{10}{\kilo\ohm}$ sind üblich.
+		
+		Markiere die Kabel farbig, sodass die Kabel, die auf dem gleichen elektrischen Potential liegen, die gleiche Farbe haben. Notiere zudem den Wert des elektrischen Potentials.
+	\end{aufgabe}
+	
+	\begin{figure}[H]
+		\hfill
+		\begin{minipage}{0.4\textwidth}
+			\includegraphics[width=0.75\textwidth]{../Zeichnungen/taster-an-arduino.png}
+%			\caption{Taster offen (kein Stromfluss).}
+		\end{minipage}
+		\hfill
+		\begin{minipage}{0.4\textwidth}
+			\includegraphics[width=0.75\textwidth]{../Zeichnungen/taster-an-arduino-geschlossen.png}
+%			\caption{Taster geschlossen (Stromfluss).}
+		\end{minipage}
+		\hfill
+		\label{abb:schaltplan-taster-pulldown}
+	\end{figure}
+	
+	\begin{aufgabe} \emph{Pullup-Widerstand}
+		
+		Eine Alternative zu der bekannten oberen Schaltung ist die Schaltung mit einem sogenannten Pullup-Widerstand. In der Abbildung ist die Schaltung mit einem Taster und einem Pullup-Widerstand dargestellt.
+		
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.75\textwidth]{../Zeichnungen/schaltplan-pullup.png}
+		\end{figure}
+		
+		\begin{enumerate}[label=\alph*), itemsep=0ex, parsep=0ex]
+			\item Markiere die Kabel jeweils farbig, sodass die Kabel, die auf dem gleichen elektrischen Potential liegen, die gleiche Farbe haben. Notiere zudem den Wert des elektrischen Potentials.
+			\item Erläutere die Bedeutung der beiden Begriffe \emph{Pulldown} und \emph{Pullup}.
+			
+			\emph{Hinweis: to pull - engl. für \enquote{ziehen}}
+		\end{enumerate}
+	\end{aufgabe}
+	
+\end{document}

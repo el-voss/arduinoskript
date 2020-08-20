@@ -1,0 +1,40 @@
+\documentclass[ngerman, 11pt]{scrreprt}
+
+\usepackage{etoolbox}
+\newtoggle{FOLIE}
+\toggletrue{FOLIE}
+
+\input{../src/package-config.tex}
+\input{../src/symbols.tex}
+\input{../src/commands.tex}	
+
+\setlength{\parindent}{0cm}
+\setcapindent{0.2cm}
+\setlength{\footnotemargin}{0pt}
+
+
+\begin{document}
+	\setcounter{chapter}{3}
+	~
+	\vspace{\baselineskip}
+	
+	\begin{aufgabe*} \emph{Informationsverarbeitung}
+		
+		Lies die beiden Beschreibungen zur Informationsverarbeitung bei der Straßenlampe und beim Menschen. Beschreibe Gemeinsamkeiten.
+	\end{aufgabe*}
+	
+	\bigskip
+	
+	\begin{tabu} to \textwidth {X[L]X[L]}
+		\emph{\bfseries Beispiel Dämmerungsschaltung:}
+		
+		Der Aufbau von Festwiderstand und LDR ermöglicht die Eingabe von Daten zur Helligkeit. Auf dem Arduino werden die elektrischen Signale entsprechend des laufenden Programms verarbeitet. Letztlich erfolgt die Ausgabe durch das Leuchten einer LED, wenn es dunkel ist, bzw. durch das Nicht-Leuchten der LED.
+		
+		&
+		
+		\emph{\bfseries Beispiel Mensch:}
+		
+		Unsere Sinne (Augen zum Sehen, Ohren zum Hören, \dots) ermöglichen die Eingabe von Informationen in das System Mensch. Im Gehirn und den weiteren Nervenbahnen im Körper werden die Signale verarbeitet. Schließlich kommt es zu einer Ausgabe - zum Beispiel zu einer Bewegung (Musik leiser drehen, Augen zukneifen, sprechen mit dem Mund \dots).
+		\\
+	\end{tabu}
+\end{document}

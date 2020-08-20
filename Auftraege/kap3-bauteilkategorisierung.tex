@@ -1,0 +1,41 @@
+\documentclass[ngerman, 11pt]{scrreprt}
+
+\usepackage{etoolbox}
+\newtoggle{FOLIE}
+\toggletrue{FOLIE}
+
+\input{../src/package-config.tex}
+\input{../src/symbols.tex}
+\input{../src/commands.tex}	
+
+\setlength{\parindent}{0cm}
+\setcapindent{0.2cm}
+\setlength{\footnotemargin}{0pt}
+\onehalfspacing
+
+\begin{document}
+	\setcounter{chapter}{3}
+	\setcounter{section}{1}
+	~
+	\vspace{\baselineskip}
+	
+	\begin{aufgabe*}
+		Du hast bisher (mindestens) folgende Bauteile verwendet:
+		
+		\medskip
+		\begin{center}
+			\begin{tikzpicture}[rect/.style={shape=rectangle, thick, draw=black!50, fill=black!10}]
+			\node at (5,2) [rect] {LED};
+			\node at (3,0.5) [rect] {Widerstand};
+			\node at (0,0) [rect] {Taster};	
+			\node at (1,1.5) [rect] {Piezo-Summer};
+			\node at (3,2.5) [rect] {LDR};
+			\node at (7.25,0.5) [rect] {Bewegungsmelder};
+			\end{tikzpicture}
+		\end{center}
+		
+		\medskip
+		Benenne Gemeinsamkeiten und Unterschiede. Welche Bauteile lassen sich zusammenfassen?
+	\end{aufgabe*}
+	
+\end{document}
