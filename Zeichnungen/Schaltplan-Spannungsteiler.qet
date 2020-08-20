@@ -1,0 +1,209 @@
+<project folioSheetQuantity="0" version="0.60" title="">
+    <properties/>
+    <newdiagrams>
+        <border cols="17" rows="8" displaycols="true" rowsize="80" colsize="60" displayrows="true"/>
+        <inset machine="" folio="%id/%total" displayAt="bottom" filename="" date="null" author="" locmach="" indexrev="" version="" auto_page_num="" title=""/>
+        <conductors condsize="1" onetextperfolio="0" num="_" numsize="7" horizrotatetext="0" displaytext="1" formula="" function="" type="multi" tension-protocol="" vertirotatetext="270"/>
+        <report label="%f-%l%c"/>
+        <xrefs>
+            <xref powerprefix="" delayprefix="" master_label="%f-%l%c" switchprefix="" snapto="label" displayhas="cross" slave_label="(%f-%l%c)" showpowerctc="false" offset="0" type="protection"/>
+            <xref powerprefix="" delayprefix="" master_label="%f-%l%c" switchprefix="" snapto="label" displayhas="cross" slave_label="(%f-%l%c)" showpowerctc="false" offset="0" type="commutator"/>
+            <xref powerprefix="" delayprefix="" master_label="%f-%l%c" switchprefix="" snapto="label" displayhas="cross" slave_label="(%f-%l%c)" showpowerctc="false" offset="0" type="coil"/>
+        </xrefs>
+        <conductors_autonums current_autonum="" freeze_new_conductors="false"/>
+        <folio_autonums/>
+        <element_autonums freeze_new_elements="false" current_autonum=""/>
+    </newdiagrams>
+    <diagram freezeNewElement="false" rowsize="80" auto_page_num="Neue auto-nummerierte Folie anlegen" order="1" displayrows="true" colsize="60" freezeNewConductor="false" rows="8" locmach="" displayAt="bottom" author="" cols="17" title="spannungsteiler" machine="" version="0.60" date="null" indexrev="" filename="" height="660" folio="%id/%total" displaycols="true">
+        <defaultconductor condsize="1" onetextperfolio="0" num="_" numsize="7" horizrotatetext="0" displaytext="1" formula="" function="" type="multi" tension-protocol="" vertirotatetext="270"/>
+        <elements>
+            <element uuid="{91c67989-a3cd-4ed9-a7b8-534ee634c56c}" prefix="R" y="140" freezeLabel="false" x="90" type="embed://import/10_electric/10_allpole/395_electronics&amp;semiconductors/01_resistors/resistance.elmt" orientation="0">
+                <terminals>
+                    <terminal id="0" name="_" nameHidden="0" y="17" number="_" x="0" orientation="2"/>
+                    <terminal id="1" name="_" nameHidden="0" y="-17" number="_" x="0" orientation="0"/>
+                </terminals>
+                <inputs>
+                    <input text="" y="0" x="6"/>
+                </inputs>
+                <elementInformations>
+                    <elementInformation name="comment" show="1"></elementInformation>
+                    <elementInformation name="label" show="1"></elementInformation>
+                    <elementInformation name="formula" show="1"></elementInformation>
+                    <elementInformation name="location" show="1"></elementInformation>
+                </elementInformations>
+            </element>
+            <element uuid="{e2c8a025-3ca2-4e2c-baa8-a18e4cfad50e}" prefix="R" y="90" freezeLabel="false" x="90" type="embed://import/10_electric/10_allpole/395_electronics&amp;semiconductors/01_resistors/resistance.elmt" orientation="0">
+                <terminals>
+                    <terminal id="2" name="_" nameHidden="0" y="17" number="_" x="0" orientation="2"/>
+                    <terminal id="3" name="_" nameHidden="0" y="-17" number="_" x="0" orientation="0"/>
+                </terminals>
+                <inputs>
+                    <input text="" y="0" x="6"/>
+                </inputs>
+                <elementInformations>
+                    <elementInformation name="label" show="1"></elementInformation>
+                    <elementInformation name="formula" show="1"></elementInformation>
+                </elementInformations>
+            </element>
+        </elements>
+        <conductors>
+            <conductor condsize="1" onetextperfolio="0" terminal1="2" num="" numsize="7" horizrotatetext="0" displaytext="1" terminal2="1" formula="" function="" y="0" x="0" freezeLabel="false" type="multi" tension-protocol="" vertirotatetext="270">
+                <sequentialNumbers/>
+            </conductor>
+        </conductors>
+        <inputs>
+            <input text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:400; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>&lt;span style=&quot; font-size:10pt;&quot;>R&lt;/span>&lt;span style=&quot; font-size:10pt; vertical-align:sub;&quot;>2&lt;/span>&lt;span style=&quot; font-size:10pt;&quot;>, U&lt;/span>&lt;span style=&quot; font-size:10pt; vertical-align:sub;&quot;>2&lt;/span>&lt;/p>&lt;/body>&lt;/html>" y="80" x="100"/>
+            <input text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:400; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>&lt;span style=&quot; font-size:10pt;&quot;>R&lt;/span>&lt;span style=&quot; font-size:10pt; vertical-align:sub;&quot;>1&lt;/span>&lt;span style=&quot; font-size:10pt;&quot;>, U&lt;/span>&lt;span style=&quot; font-size:10pt; vertical-align:sub;&quot;>1&lt;/span>&lt;/p>&lt;/body>&lt;/html>" y="130" x="100"/>
+        </inputs>
+        <shapes>
+            <shape x1="90" x2="170" is_movable="1" closed="0" y2="70" type="Line" y1="70">
+                <pen style="SolidLine" widthF="1" color="#000000"/>
+                <brush style="NoBrush" color="#000000"/>
+            </shape>
+            <shape x1="90" x2="170" is_movable="1" closed="0" y2="160" type="Line" y1="160">
+                <pen style="SolidLine" widthF="1" color="#000000"/>
+                <brush style="NoBrush" color="#000000"/>
+            </shape>
+        </shapes>
+    </diagram>
+    <collection>
+        <category name="import">
+            <names>
+                <name lang="en">Imported elements</name>
+                <name lang="ca">Elements importats</name>
+                <name lang="fr">Éléments importés</name>
+                <name lang="ru">Импортированные элементы</name>
+                <name lang="ro">Elemente importate</name>
+                <name lang="it">Elementi importati</name>
+                <name lang="cs">Zavedené prvky</name>
+                <name lang="el">Εισηγμένα στοιχεία</name>
+                <name lang="de">Importierte elemente</name>
+                <name lang="pt">elementos importados</name>
+                <name lang="nl">Elementen geïmporteerd</name>
+                <name lang="es">Elementos importados</name>
+                <name lang="hr">Uvezeni elementi</name>
+                <name lang="pl">Elementy importowane</name>
+            </names>
+            <category name="10_electric">
+                <names>
+                    <name lang="cs">Elektrotechnika</name>
+                    <name lang="da">Elektrisk</name>
+                    <name lang="es">Eléctrica</name>
+                    <name lang="it">Elettrica</name>
+                    <name lang="pl">Elektrotechnika</name>
+                    <name lang="el">Ηλεκτρικά</name>
+                    <name lang="en">Electric</name>
+                    <name lang="de">Elektrik</name>
+                    <name lang="nl">Elektrotechniek</name>
+                    <name lang="fr">Electrique</name>
+                    <name lang="ru">Электротехника</name>
+                </names>
+                <category name="10_allpole">
+                    <names>
+                        <name lang="cs">Vícežilový</name>
+                        <name lang="da">Flere ledere</name>
+                        <name lang="es">Multifilar</name>
+                        <name lang="it">Multifilare</name>
+                        <name lang="pl">Schematy wieloliniowe</name>
+                        <name lang="el">Πολυγραμμικό</name>
+                        <name lang="en">All-pole</name>
+                        <name lang="de">Allpolig</name>
+                        <name lang="fr">Multifilaire</name>
+                        <name lang="nl">Veel polig</name>
+                        <name lang="ru">Многополюсные</name>
+                    </names>
+                    <category name="395_electronics&amp;semiconductors">
+                        <names>
+                            <name lang="es">Electrónica y semiconductores</name>
+                            <name lang="it">Elettronica e semiconduttori</name>
+                            <name lang="pl">Elektronika i półprzewodniki</name>
+                            <name lang="el">Ηλεκτρονικά και ημιαγωγοί</name>
+                            <name lang="en">Electronics and semiconductors</name>
+                            <name lang="de">Elektronik und Halbleiter</name>
+                            <name lang="fr">Electronique et semi-conducteurs</name>
+                            <name lang="nl">Electronica en halfgeleiders</name>
+                            <name lang="ru">Электроника и полупроводники</name>
+                        </names>
+                        <category name="01_resistors">
+                            <names>
+                                <name lang="cs">Odporník</name>
+                                <name lang="es">Resistencia</name>
+                                <name lang="it">Resistori</name>
+                                <name lang="pt">Resistência</name>
+                                <name lang="pl">Rezystory</name>
+                                <name lang="el">Αντιστάσεις</name>
+                                <name lang="en">Resistors</name>
+                                <name lang="de">Widerstände</name>
+                                <name lang="fr">Résistances</name>
+                                <name lang="nl">Weerstand</name>
+                                <name lang="ar">مُقاومة</name>
+                                <name lang="ru">Резисторы</name>
+                            </names>
+                            <element name="resistance.elmt">
+                                <definition width="20" hotspot_x="10" link_type="simple" hotspot_y="29" version="0.5" orientation="dyyy" height="60" type="element">
+                                    <uuid uuid="{af30335a-4d6f-4d8c-a3a5-60c5e1d43dc7}"/>
+                                    <names>
+                                        <name lang="el">Αντίσταση</name>
+                                        <name lang="fr">Résistance</name>
+                                        <name lang="de">Widerstand</name>
+                                        <name lang="cs">Odporník</name>
+                                        <name lang="ru">Резистор</name>
+                                        <name lang="es">Resistencia</name>
+                                        <name lang="ar">مُقاومة</name>
+                                        <name lang="it">Resistore</name>
+                                        <name lang="pl">Rezystor</name>
+                                        <name lang="en">Resistor</name>
+                                        <name lang="pt">Resistência</name>
+                                        <name lang="nl">Weerstand</name>
+                                    </names>
+                                    <informations>EN 60617: 04-01-01</informations>
+                                    <description>
+                                        <line x1="0" x2="0" length2="1.5" end1="none" end2="none" style="line-style:normal;line-weight:normal;filling:none;color:black" y2="-20" length1="1.5" antialias="false" y1="-10"/>
+                                        <line x1="0" x2="0" length2="1.5" end1="none" end2="none" style="line-style:normal;line-weight:normal;filling:none;color:black" y2="20" length1="1.5" antialias="false" y1="10"/>
+                                        <line x1="4" x2="4" length2="1.5" end1="none" end2="none" style="line-style:normal;line-weight:normal;filling:none;color:black" y2="-10" length1="1.5" antialias="false" y1="10"/>
+                                        <line x1="-4" x2="4" length2="1.5" end1="none" end2="none" style="line-style:normal;line-weight:normal;filling:none;color:black" y2="10" length1="1.5" antialias="false" y1="10"/>
+                                        <line x1="4" x2="-4" length2="1.5" end1="none" end2="none" style="line-style:normal;line-weight:normal;filling:none;color:black" y2="-10" length1="1.5" antialias="false" y1="-10"/>
+                                        <line x1="-4" x2="-4" length2="1.5" end1="none" end2="none" style="line-style:normal;line-weight:normal;filling:none;color:black" y2="10" length1="1.5" antialias="false" y1="-10"/>
+                                        <input text="_" tagg="label" size="9" y="0" x="6" rotate="true"/>
+                                        <terminal y="21" x="0" orientation="s"/>
+                                        <terminal y="-21" x="0" orientation="n"/>
+                                    </description>
+                                </definition>
+                            </element>
+                            <element name="photo-resistance.elmt">
+                                <definition width="30" hotspot_x="10" link_type="simple" hotspot_y="28" version="0.60" orientation="dyyy" height="60" type="element">
+                                    <uuid uuid="{8a13bd81-db19-46f0-b8f9-8df27c7ae4c3}"/>
+                                    <names>
+                                        <name lang="en">Light dependent resistor LDR</name>
+                                        <name lang="pl">Fotorezystor</name>
+                                        <name lang="fr">Photorésistance</name>
+                                        <name lang="ar">مُقاومة ضوئيّة</name>
+                                        <name lang="nl">Weerstand lichtgevoelig LDR</name>
+                                        <name lang="de">Photowiderstand</name>
+                                        <name lang="cs">Fotoodporník</name>
+                                        <name lang="el">Φωτοαντίσταση</name>
+                                        <name lang="it">Fotoresistore</name>
+                                    </names>
+                                    <informations>EN 60617: 05-06-01</informations>
+                                    <description>
+                                        <line x1="-1" x2="4" length2="1.5" end1="none" end2="simple" style="line-style:normal;line-weight:normal;filling:none;color:black" y2="-7" length1="1.5" antialias="false" y1="-12"/>
+                                        <line x1="10" x2="10" length2="1.5" end1="none" end2="none" style="line-style:normal;line-weight:normal;filling:none;color:black" y2="-19" length1="1.5" antialias="false" y1="-9"/>
+                                        <line x1="-4" x2="1" length2="1.5" end1="none" end2="simple" style="line-style:normal;line-weight:normal;filling:none;color:black" y2="-3" length1="1.5" antialias="false" y1="-8"/>
+                                        <line x1="10" x2="10" length2="1.5" end1="none" end2="none" style="line-style:normal;line-weight:normal;filling:none;color:black" y2="21" length1="1.5" antialias="false" y1="11"/>
+                                        <line x1="14" x2="14" length2="1.5" end1="none" end2="none" style="line-style:normal;line-weight:normal;filling:none;color:black" y2="-9" length1="1.5" antialias="false" y1="11"/>
+                                        <line x1="6" x2="14" length2="1.5" end1="none" end2="none" style="line-style:normal;line-weight:normal;filling:none;color:black" y2="11" length1="1.5" antialias="false" y1="11"/>
+                                        <line x1="14" x2="6" length2="1.5" end1="none" end2="none" style="line-style:normal;line-weight:normal;filling:none;color:black" y2="-9" length1="1.5" antialias="false" y1="-9"/>
+                                        <line x1="6" x2="6" length2="1.5" end1="none" end2="none" style="line-style:normal;line-weight:normal;filling:none;color:black" y2="11" length1="1.5" antialias="false" y1="-9"/>
+                                        <input text="_" tagg="label" size="9" y="-5" x="20" rotate="true"/>
+                                        <terminal y="22" x="10" orientation="s"/>
+                                        <terminal y="-20" x="10" orientation="n"/>
+                                    </description>
+                                </definition>
+                            </element>
+                        </category>
+                    </category>
+                </category>
+            </category>
+        </category>
+    </collection>
+</project>
