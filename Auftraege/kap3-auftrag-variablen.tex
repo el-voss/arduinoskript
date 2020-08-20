@@ -1,0 +1,43 @@
+\documentclass[ngerman, 11pt]{scrreprt}
+
+\usepackage{etoolbox}
+\newtoggle{FOLIE}
+\toggletrue{FOLIE}
+
+\input{../src/package-config.tex}
+\input{../src/symbols.tex}
+\input{../src/commands.tex}	
+
+\setlength{\parindent}{0cm}
+\setcapindent{0.2cm}
+\setlength{\footnotemargin}{0pt}
+
+
+\begin{document}
+	% Variablen strukturieren Programme: Vergleich von Programm mit und ohne Variablen - Thorsten hat anderen Pin gewählt; wie viel muss er ändern? Oder anderen Pausenwert o.ä.
+	% -> Vorstellung als Koffer; Zeichnung mit Verweis auf Speicherfläche
+	% -> sinnvolle Benennung von Variablen
+	\setcounter{chapter}{3}
+
+	\begin{aufgabe*}
+		Jana und Jonas haben jeweils LEDs an den Arduino angeschlossen und steuern diese mit den unten abgebildeten Programmen. Vergleiche die beiden Programme im Hinblick auf ihre Wirkung und die Art der Programmierung. Welches gefällt dir besser?
+		
+		Zusatzüberlegung: Wie viel muss man ändern, wenn man die Leuchtdauer ändern will?
+	\end{aufgabe*}
+	
+	\begin{figure}[H]
+		\begin{adjustwidth}{-1.5cm}{1.5cm}
+			\begin{minipage}{0.58\textwidth}
+				\centering
+				\includegraphics[width=0.8\textwidth]{../pics/lauflicht-ohne-variable.png}
+				\caption{Janas Programm zum Steuern der LEDs.}
+			\end{minipage}
+			\hfill
+			\begin{minipage}{0.58\textwidth}
+				\centering
+				\includegraphics[width=\textwidth]{../pics/lauflicht-mit-variable.png}
+				\caption{Jonas Programm zum Steuern der LEDs.}
+			\end{minipage}
+		\end{adjustwidth}
+	\end{figure}
+\end{document}
