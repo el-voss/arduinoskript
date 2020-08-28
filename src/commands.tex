@@ -1,0 +1,205 @@
+% Befehle mit tcolorbox-Paket
+\newcommand{\button}[1]{\tcbox[size=fbox,box align = base,colback=gray!20, colframe=gray,nobeforeafter]{\texttt{#1}}}
+%\newtcolorbox{zsfg}{before=\medskip, enhanced, interior style={top color=CadetBlue!80!green, bottom color=DarkCyan!70!DarkGreen}, coltext=white, colframe=white, after=\medskip}
+%\newtcolorbox{zsfg}[1]{before=\medskip, breakable, enhanced, colback=CadetBlue!70!green, coltext=black, colframe=DarkCyan!70!DarkGreen, fonttitle=\bfseries, after=\medskip, title=#1, attach title to upper, after title={\medskip}}
+\newtcolorbox{zsfg}[1]{before=\medskip, breakable, enhanced, colback=CadetBlue!70!green, coltext=black, frame style={left color=CadetBlue!75!green, right color=DarkCyan!70!DarkGreen},fonttitle=\bfseries, after=\medskip, title=#1}
+\newtcolorbox{ziel}{before=\medskip, breakable, sharp corners=all, enhanced, frame style={left color=CadetBlue!70!green, right color=DarkCyan!70!DarkGreen}, after=\medskip}
+
+
+%	Definition der Aufgabenumgebung
+\newcounter{aufgabennummer}[chapter]	%durch das optionale Argument wird der section-Counter als übergeordneter Zähler festgelegt,
+% sodass die aufgabennummer auf null gesetzt wird, wenn section erhöht wird
+\newenvironment{aufgabe}{%
+	\medbreak %
+	\textbf{\sffamily Aufgabe}%
+	\stepcounter{aufgabennummer}%Counter beginnt immer bei 0, also vor der Ausgabe hochzählen
+%	\ifnum \value{section}>0 %
+%		~\textbf{\sffamily\thesection.\theaufgabennummer}%
+%	\else ~\textbf{\sffamily\theaufgabennummer}%
+%	\fi% falls die Aufgabe in einem Abschnitt steht, wird dieser zur Nummerierung herangezogen
+	~\textbf{\sffamily\theaufgabennummer}:~%
+}{ %
+	\par\medskip %
+
+}
+
+\newenvironment{aufgabe*}{%
+	\medbreak %
+	\textbf{\sffamily Aufgabe}%
+	:~%
+}{ %
+	\par\medskip %
+	
+}
+
+\newcounter{projektnummer}[chapter]
+\newenvironment{projekt}[1][\unskip]{%
+	\begin{tcolorbox}[breakable,before=\medbreak, enhanced, frame hidden, interior hidden, borderline west={1mm}{-4mm}{CadetBlue!70!green}, top=0mm,bottom=0mm,boxsep=0mm, left=0mm, right=0mm, after=\medskip]
+	\textbf{\sffamily Projekt}%
+	\stepcounter{projektnummer}% 
+%	\ifnum \value{section}>0 %
+%	~\textbf{\sffamily\thesection.\theprojektnummer}%
+%	\else ~\textbf{\sffamily\theprojektnummer}%
+%	\fi% falls die Aufgabe in einem Abschnitt steht, wird dieser zur Nummerierung herangezogen
+	~\textbf{\sffamily\theprojektnummer}:~%
+	\textbf{#1} \smallbreak%
+}{ %
+	\end{tcolorbox}
+	\par\medskip %
+	 %
+}
+
+\newenvironment{projekt*}[1][\unskip]{%
+	\begin{tcolorbox}[breakable,before=\medbreak, enhanced, frame hidden, interior hidden, borderline west={1mm}{-4mm}{CadetBlue!70!green}, top=0mm,bottom=0mm,boxsep=0mm, left=0mm, right=0mm, after=\medskip]
+		\textbf{\sffamily Projekt}%
+		:~%
+		\textbf{#1} \smallbreak%
+	}{ %
+	\end{tcolorbox}
+	\par\medskip %
+	%
+}
+
+\newenvironment{links}{%
+	\begin{tcolorbox}[before=\bigbreak, enhanced, frame hidden, colback=gray!20, after=\medskip]
+	\wlan \textbf{\sffamily Motivationsquellen}%
+	\begin{itemize}[noitemsep, itemindent=0pt, leftmargin=5mm, label=>]
+}{%
+	\end{itemize}
+	\end{tcolorbox}
+	\par\medskip %
+	%
+}
+
+\newenvironment{projektueberblick}{%
+	\begin{tcolorbox}[before=\bigbreak, enhanced, frame hidden, colback=DarkCyan!70!DarkGreen, coltext=gray!30, after=\medskip]
+	\textbf{\sffamily Projekte in diesem Kapitel:}%
+	\setlength{\columnsep}{2cm}
+	\begin{multicols}{2}
+	\begin{itemize}[noitemsep, itemindent=0pt, leftmargin=5mm, label=>]
+	}{%
+	\end{itemize}
+	\end{multicols}
+	\end{tcolorbox}
+	\par\medskip %
+	%
+}
+
+\newenvironment{recherche}[1]{%
+	\medbreak
+	\lupe ~ \textbf{Recherche:~#1}
+	\par
+}{%
+	\par \medskip
+}
+
+\definecolor{blueviolet}{RGB}{138,43,226}
+\definecolor{turquoise1}{RGB}{0,245,255}
+\definecolor{chocolate}{RGB}{210,105,30}
+\definecolor{olivedrab}{RGB}{107,142,35}
+\definecolor{khaki}{RGB}{240,230,140}
+\definecolor{deeppink}{RGB}{255,20,147}
+\definecolor{navyblue}{RGB}{0,0,128}
+\definecolor{aquamarine}{RGB}{127,255,212}
+\definecolor{sandybrown}{RGB}{244,164,96}
+\definecolor{seagreen}{RGB}{46,139,87}
+\definecolor{coral}{RGB}{255,127,80}
+\definecolor{darkorchid}{RGB}{153,50,204}
+\definecolor{seagreen3}{RGB}{67,205,128}
+\definecolor{dodgerblue}{RGB}{30,144,255}
+\definecolor{burlywood4}{RGB}{139,115,85}
+
+
+\definecolor{nepoLogik}{RGB}{51,184,202}
+
+%\newenvironment{wichtig}[1][]{%
+%	\begin{mdframed}[%
+%		backgroundcolor={gray!15}, hidealllines=true,
+%		skipabove=0.7\baselineskip, skipbelow=0.7\baselineskip,
+%		splitbottomskip=2pt, splittopskip=4pt, #1]%
+%		\makebox[0pt]{
+%			\smash{\raisebox{0pt}[0pt][0pt]{%
+%					\fontsize{30pt}{30pt}\selectfont%
+%					\hspace*{-23pt}%
+%					\raisebox{-2pt}{%
+%						{\color{gray!80!black}\sffamily\bfseries !}%
+%					}%
+%				}}%
+%			}%
+%		}{\end{mdframed}}
+%	
+%\newenvironment{info}[1][]{%
+%	\begin{mdframed}[%
+%		skipabove=0.7\baselineskip, skipbelow=0.7\baselineskip, roundcorner=5pt, hidealllines=true,%
+%		frametitlefont={\bfseries\sffamily\normalsize\color{white}}, backgroundcolor=gray!10, frametitlebackgroundcolor=black!70!blue,%
+%		frametitleaboveskip=6pt, frametitlebelowskip=6pt, innertopmargin=8pt, #1]%
+%		\makebox[0pt]{
+%			\smash{\raisebox{0pt}[0pt][0pt]{%
+%					\fontsize{30pt}{30pt}\selectfont%
+%					\hspace*{0pt}%
+%					\raisebox{12pt}{%
+%						{\infosym}%
+%					}%
+%				}}%
+%			}%
+%		}{\end{mdframed}}
+%	
+%% grau hinterlegte Randbemerkung definieren
+%\newcommand{\randnotiz}[1]{\marginpar{\vspace{-0.84\baselineskip}%mdframed fÃ¼gt automatisch etwas vertikalen Abstand ein, der hiermit wieder weg gemacht wird und zwar so, dass der Text unten bÃ¼ndig ist (aus dem VerhÃ¤ltnis footnotesize zu normalsize ergibt sich 0.84)
+%\begin{mdframed}[backgroundcolor=gray!10, hidealllines=true, innerrightmargin=3pt, innerleftmargin=3pt] %
+%	\footnotesize#1%
+%\end{mdframed} %
+%}}
+
+%\newenvironment{code}{%
+%	\begin{center}
+%	\begin{minipage}[t]{0.9\textwidth}
+%	\begin{lstlisting}[frame=single, framerule=0pt, style=Arduino]
+%}{%
+%	\end{lstlisting}
+%	\end{minipage}
+%	\end{center}
+%}
+
+%Vorlage 1:
+%\begin{figure}[h]
+%   \centering
+%   \includegraphics[width=0.8\textwidth]{xx.eps}
+%   \caption[Kurz für Abbildungsverzeichnis]{Lang}
+%   \label{abb:}
+%\end{figure}
+
+%Vorlage 2:
+%\begin{wrapfigure}{r}[Überhang in Rand]{0.4\textwidth}
+%   \centering
+%   \includegraphics{xx.eps}
+%   \setcapindent{24pt}
+%   \caption{}
+%   \label{abb:}
+%\end{wrapfigure}
+
+% Vorlage 3:
+%\begin{figure}[H]
+%	\centering
+%	\subfloat[Kurzbeschreibung]{\includegraphics[width=0.49\textwidth]{Leistungskurve_TEM00_gross.png}}
+%	\subfloat[Kurzbeschreibung]{\includegraphics[width=0.49\textwidth]{Strahl-undPumpleistung_gross.png}}
+%	\caption[Leistungskurve des fertigen Lasers]{}
+%	\label{abb:leistungtem00}
+%\end{figure}
+
+% Vorlage:
+%\begin{table}[h]
+%   \centering
+%   \begin{minipage}[c]{\textwidth}
+%      \begin{tabu} to \textwidth {X[C]X[L,$$]}
+%         \toprule
+%         Spalte 1 & Spalte 2 \\
+%         \midrule
+%         Spalte 1 & Spalte 2 \\
+%         Spalte 1 & Spalte 2 \\
+%         \bottomrule
+%      \end{tabu}
+%   \end{minipage}
+%   \caption{}
+%   \label{tab:}
+%\end{table}

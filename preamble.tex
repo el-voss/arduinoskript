@@ -1,0 +1,19 @@
+\documentclass[ngerman, 11pt, %headings=small,%
+				twoside, BCOR=13mm,%
+				titlepage=true, bibliography=numbered%
+				%liststotocnumbered%
+				]{scrreprt}
+
+% Die Einstellungen sind abhängig davon, ob es sich um das Hauptdokument oder eine Folie handelt.
+% Diese Präambel gehört nicht zu einer Folie, sondern zum Hauptdokument.
+\usepackage{etoolbox}
+\newtoggle{FOLIE}
+\togglefalse{FOLIE}
+
+\input{./src/package-config.tex}
+
+\setlength{\parindent}{0cm}
+\setcapindent{0.2cm}
+\setlength{\footnotemargin}{0pt}
+\setlength{\headheight}{25.82pt}
+\pgfplotsset{compat=1.15}

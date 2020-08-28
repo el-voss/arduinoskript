@@ -1,0 +1,43 @@
+\documentclass[ngerman, 11pt]{scrreprt}
+
+\usepackage{etoolbox}
+\newtoggle{FOLIE}
+\toggletrue{FOLIE}
+
+\input{../src/package-config.tex}
+\input{../src/symbols.tex}
+\input{../src/commands.tex}	
+
+\setlength{\parindent}{0cm}
+\setcapindent{0.2cm}
+\setlength{\footnotemargin}{0pt}
+\pgfplotsset{compat=1.15}
+\onehalfspacing
+
+\begin{document}
+%	\setcounter{chapter}{5}
+%	\setcounter{section}{2}
+	
+	\textbf{Die Spannungsteilerformel}
+	
+	Die Änderung der Spannung resultiert aus der Änderung des Widerstands des LDR. Um einen Eindruck vom Wertebereich des Widerstands eines LDR zu bekommen, soll dieser nun berechnet werden. Anschließend lässt sich aus dem Widerstand des LDR auch die Helligkeit berechnen.
+	
+	\medskip
+	\begin{minipage}{0.73\textwidth}
+		\begin{aufgabe*} \emph{Genaue Analyse des Spannungsteilers}
+			\vspace{-0.3\baselineskip}
+			\begin{enumerate}[label=\alph*), itemsep=0ex, parsep=0mm]
+				\item Leite eine Formel für den Spannungsteiler her, mit der du den Widerstand $R_{LDR}$ des LDR mithilfe der Spannung $U_{LDR}$ am LDR, dem Festwiderstand $R_F$ und der Spannung $U_F$ am Festwiderstand berechnen kannst.
+				
+				Tipp: Betrachte zuerst die Stromstärken $I_F$ und $I_{LDR}$ durch den Festwiderstand und den LDR. Durch das Sensorkabel fließt (näherungsweise) kein Strom.
+				\item Berechne, welchen Widerstand der LDR hat, wenn er komplett abgedunkelt ist und wenn er mit einer Smartphone-Taschenlampe bestrahlt wird.
+			\end{enumerate}
+		\end{aufgabe*}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.25\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{../Zeichnungen/spannungsteiler-ldr-beschriftet.png}
+	\end{minipage}
+
+\end{document}

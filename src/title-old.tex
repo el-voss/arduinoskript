@@ -1,0 +1,44 @@
+\begin{titlepage}
+	\newgeometry{left=0cm, right=0cm, top=0cm, bottom=0cm}
+	\begin{tikzpicture}[ultra thick] %Wenn die Bauteile verschoben werden sollen, braucht stets nur der erste Punkt in den zugehörigen Pfaden verändert zu werden!
+		\shade [top color=CadetBlue!70!green, bottom color=CadetBlue!80!green] (0,0) rectangle (\textwidth,\textheight);
+		%  Diode
+		\draw [rotate around={45:(10,13)}, color=green!50!yellow] (10,13) -- ++(1,0) ++(0,0.5) -- ++(0,-1) -- ++(1,0.5) ++(-1,0.5) -- ++(1,-0.5) ++(0,0.5) -- ++(0,-1) ++ (0,0.5) -- ++(1,0);
+		%  LED
+		\draw [rotate around={-15:(5,8)}, color=yellow] (5,8) -- ++(1,0) ++(0,0.5) -- ++(0,-1) -- ++(1,0.5) ++(-1,0.5) -- ++(1,-0.5) ++(0,0.5) -- ++(0,-1) ++ (0,0.5) -- ++(1,0);
+		\draw [->, color=yellow, rotate around={-15:(5,8)}] (5,8) ++(1.2,0.5) -- ++(0.2,0.4);
+		\draw [->, color=yellow, rotate around={-15:(5,8)}] (5,8) ++(1.5,0.5) -- ++(0.2,0.4);
+		% Widerstand
+		\draw [rotate around={30:(3,10)}, color=red!80!black] (3,10) -- ++(1,0) ++(0,-0.5) rectangle ++(2,1) ++(0,-0.5) -- ++(1,0);
+		%  LDR
+		\draw [color=blue!80!black] (13,9) -- ++(1,0) ++(0,-0.5) rectangle ++(2,1) ++(0,-0.5) -- ++(1,0);
+		\draw [color=blue!80!black, <-] (13,9) ++(2,0.6) -- ++(-0.2,0.4);
+		\draw [color=blue!80!black, <-] (13,9) ++(1.7,0.6) -- ++(-0.2,0.4);
+		\draw [color=blue!80!black, ->] (13,9) ++(1.1,-0.7) -- ++(0.3,0) -- ++(1.6,1.6);
+		% Piezo-Lautsprecher
+		\draw [color=cyan!80!black] (13,27) -- ++(1,0) -- ++(0,0.5) -- ++(1,0) -- ++(0.4,0.8) -- ++(0,-2.6) -- ++(-0.4,0.8) -- ++(-1,0) -- ++(0,0.5) ++(1.4,0) -- ++ (1,0); 
+		%Taster
+		\draw (3,3) -- ++(0,0.5) -- ++(1,0) -- ++(0,-0.5) ++(-0.5,0.5) -- ++(0,0.2) -- ++(0.2,0.2) ++(-0.2,0) -- ++(0,0.2) ++(-0.5,0.5) -- ++(0,-0.5) -- ++(1,0) -- ++(0,0.5);
+		% Motor
+		\draw [rotate around={-30:(16,7)}, color=magenta!80!black] (16,7) -- ++(1,0) ++(0.5,0) circle [radius=0.5cm] node {\huge \bfseries \sffamily M} ++(0.5,0) -- ++(1,0);
+		% Transistor
+		\draw [rotate around={20:(3,26)}, color=yellow!50!red] (3,26) -- ++(0.5,0) -- ++(0.2,-0.4) -- ++(0.2,0) -- ++(0,-0.4) ++(0,0.4) -- ++(0.2,0) -- ++(0.2,0.4) -- ++(0.5,0) ++(-0.9,-0.05) circle [radius=0.5cm];
+		\draw [rotate around={20:(3,26)}, color=yellow!50!red,->] (3,26) ++(1.1,-0.4) -- ++(0.15,0.3);
+		% Arduino mit Überschrift
+		\ardusym (4,17)
+		%Befehle
+		\node at (10,4) [rotate=45] {\color{blue}\ttfamily\bfseries digitalWrite(13,HIGH);};
+		\node at (16,3)  {%
+			\parbox{6cm}{\color{green!20!black}\ttfamily\bfseries%
+				if (interested==true)\{\\
+				\quad read.turnpage();\\
+				\quad read.begin();\\
+				\}
+		}};
+		\node at (3,14) [rotate=-25] {\color{red}\ttfamily\bfseries \#define pin 10};
+		\node at (11,10) [rotate=10] {\color{yellow}\ttfamily\bfseries analogRead(A0);};
+		\node at (18,15) [rotate=-20] {\color{yellow!50!red}\ttfamily\bfseries delay(1000);};
+		\node at (14,13) [rotate=60] {\color{blue!50!red}\ttfamily\bfseries Serial.println(a);};
+		\node at (9,26) [rotate=10] {\color{green!20!yellow}\ttfamily\bfseries void setup\{...\}};
+	\end{tikzpicture}
+\end{titlepage}

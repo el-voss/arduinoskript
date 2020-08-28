@@ -1,0 +1,34 @@
+\begin{tikzpicture}[scale=0.7]
+	%Stra√??e
+	\fill[gray!30] (0,0) rectangle (16,1);
+	\fill[gray] (0,1) rectangle (16,5);
+	\fill[gray!30] (0,5) rectangle (16,6);
+	%Kartenleser
+	\fill[black] (1,0.5) rectangle ++(1,1) node at (1.8,0.2)  {\sffamily\small Kartenleser K1};
+	\fill[black] (14,4.5) rectangle ++(1,1) node at (14.3,5.75) {\sffamily\small Kartenleser K2};
+	%Lichtschranke 1
+	\fill[black] (5,1) ellipse [x radius=0.5, y radius=0.25];
+	\fill[red] (5,4.8) circle [radius=0.2];
+	\fill[black] (5,5) ellipse [x radius=0.5, y radius=0.25] node at (5,5.6) {\sffamily\small Lichtschranke L1};
+	\foreach \y in {1.5, 2, ..., 4.5} {
+		\fill[red] (4.95,\y) rectangle ++(0.1,0.2);
+	}
+	%Lichtschranke 2
+	\fill[black] (11,1) ellipse [x radius=0.5, y radius=0.25];
+	\fill[red] (11,4.8) circle [radius=0.2];
+	\fill[black] (11,5) ellipse [x radius=0.5, y radius=0.25] node at (11,0.4) {\sffamily\small Lichtschranke L2};
+	\foreach \y in {1.5, 2, ..., 4.5} {
+		\fill[red] (10.95,\y) rectangle ++(0.1,0.2);
+	}
+	%Schranke
+	\foreach \y in {0.5,1.5,...,4.5} {
+		\fill[red] (7.8,\y) -- ++(0.4,0.3) -- ++(0,0.5) -- ++(-0.4,-0.3) -- cycle;
+		\fill[white] (7.8,\y+0.5) -- ++(0.4,0.3) -- ++(0,0.5) -- ++(-0.4,-0.3) -- cycle;
+	}
+	\fill[white] (7.8,0.4) -- ++(0.4,0) -- ++(0,0.4) -- ++(-0.4,-0.3) -- cycle;
+	\fill[black] (7.5,5.5) rectangle ++(1,1) node at (8,6.5) [above] {\sffamily\small Schranke S};
+	% Parkplatzzeichen
+	\fill [blue, rounded corners=0.5cm] (16.5,1.7) rectangle ++(2.6,2.6);
+	\fill [white, rounded corners=0.5cm] (16.7,1.9) rectangle ++(2.2,2.2);
+	\fill [blue, rounded corners=0.5cm] (16.8,2) rectangle ++(2,2) node at ++(-1,-1) {\Huge\color{white}\sffamily \bfseries P};
+\end{tikzpicture}

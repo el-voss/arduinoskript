@@ -1,0 +1,23 @@
+<definition hotspot_x="43" hotspot_y="25" orientation="dyyy" width="170" link_type="simple" version="0.60" type="element" height="50">
+    <uuid uuid="{b0a6f89a-17cc-4b8f-aa1f-0436bd94a2b0}"/>
+    <names>
+        <name lang="de">LED Strip Neopixels</name>
+    </names>
+    <informations></informations>
+    <description>
+        <rect width="135" y="-20" height="40" style="line-style:normal;line-weight:normal;filling:none;color:black" antialias="false" x="-30"/>
+        <circle diameter="20" y="-10" style="line-style:normal;line-weight:normal;filling:none;color:black" antialias="false" x="-10"/>
+        <circle diameter="20" y="-10" style="line-style:normal;line-weight:normal;filling:none;color:black" antialias="false" x="20"/>
+        <circle diameter="20" y="-10" style="line-style:normal;line-weight:normal;filling:none;color:black" antialias="false" x="50"/>
+        <circle diameter="20" y="-10" style="line-style:normal;line-weight:normal;filling:none;color:black" antialias="false" x="80"/>
+        <line y2="-20" end2="none" x1="105" length1="1.5" y1="-20" length2="1.5" x2="120" style="line-style:dotted;line-weight:normal;filling:none;color:black" antialias="false" end1="none"/>
+        <line y2="20" end2="none" x1="105" length1="1.5" y1="20" length2="1.5" x2="120" style="line-style:dotted;line-weight:normal;filling:none;color:black" antialias="false" end1="none"/>
+        <input size="9" y="30" text="_" rotate="true" tagg="label" x="60"/>
+        <text size="5" y="-2" text="5V" x="-29"/>
+        <text size="5" y="7" text="Din" x="-29"/>
+        <text size="5" y="18" text="GND" x="-29"/>
+        <terminal orientation="w" y="-10" x="-35"/>
+        <terminal orientation="w" y="0" x="-35"/>
+        <terminal orientation="w" y="10" x="-35"/>
+    </description>
+</definition>

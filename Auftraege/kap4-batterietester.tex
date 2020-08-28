@@ -1,0 +1,128 @@
+\documentclass[ngerman, 11pt]{scrreprt}
+
+\usepackage{etoolbox}
+\newtoggle{FOLIE}
+\toggletrue{FOLIE}
+
+\input{../src/package-config.tex}
+\input{../src/symbols.tex}
+\input{../src/commands.tex}	
+
+\setlength{\parindent}{0cm}
+\setcapindent{0.2cm}
+\setlength{\footnotemargin}{0pt}
+
+
+\begin{document}	
+	\section*{Spannung messen an analogen Eingängen}
+	
+	Wenn Batterien kaum noch Ladung gespeichert haben, lässt die Spannung an ihren Polen nach und sinkt unter den Wert, der auf der Batterie vermerkt ist. Mithilfe der analogen Eingänge A0 bis A5 lässt sich die Spannung messen und so entscheiden, ob die Batterie noch brauchbar ist.
+	
+	\begin{ziel}
+		\textbf{Frage:} Wie kann man mit dem Arduino eine Spannung messen?
+	\end{ziel}
+	
+	%Batterietester unter 5V
+	% Batterietester mit Spannungsteiler für Batterien über 5V
+	\begin{projekt*}[Batterietester ($U<5\,V$)]
+		\begin{minipage}{\textwidth}
+			\begin{minipage}{0.68\textwidth}
+				Für eine einfache Messung bei einer 1,5\,V-Batterie wird der negative Pol der Batterie mit GND verbunden, sodass ein gemeinsames Nullpotential vorliegt. Der positive Pol der Batterie wird mit einem der analogen Eingänge A0 bis A5 verbunden. Über einen eingebauten Analog-Digital-Wandler (\emph{engl. analog-to-digital converter, ADC}) wird der Spannungswert durch eine Zahl zwischen 0 und 1023 ausgedrückt.
+			\end{minipage}
+			\hfill
+			\begin{minipage}{0.3\textwidth}
+				\centering
+				\begin{tabular}{c | c}
+					\textbf{Analogwert} & \textbf{Spannung} \\ \hline
+					0 & 0\,V \\ \hline
+					1 &  \\ \hline
+					100 &  \\ \hline
+					1023 & 5\,V \\ \hline
+				\end{tabular}
+			\end{minipage}
+		\end{minipage}
+		\begin{enumerate}[label=\alph*), itemsep=0mm, parsep=0mm]
+			\item Schließe eine mit 1,5\,V beschriftete Batterie an den Arduino an und miss die Spannung. Berechne aus dem Analogwert die Spannung und lass sie auf dem seriellen Monitor ausgeben.
+			\item Ergänze den Batterietester um eine Ampel, die anzeigt, ob die Batterie voll aufgeladen bzw. noch in Ordnung bzw. leer ist.
+		\end{enumerate}	
+	\end{projekt*}
+	
+	\begin{projekt*}[Batterietester ($U>5\,V$)]
+		Da der Arduino beim direkten Anschließen nur maximal 5\,V \enquote{verträgt}, muss man zum Testen von z.\,B. 9\,V-Blöcken weitere Bauteile verwenden. Mit zwei $\SI{10}{\kilo\ohm}$ Widerständen kann man einen einfachen \emph{Spannungsteiler} aufbauen, der die Messung ermöglicht.
+		%\vspace{-\baselineskip}
+		\begin{minipage}{\textwidth}
+			\begin{minipage}{0.48\textwidth}
+				\begin{enumerate}[label=\alph*), itemsep=0mm, parsep=0mm]
+					\item Berechne die Stromstärke und die Spannung an den Widerständen. Warum sind große Widerstände hier sinnvoll?
+					\item Markiere die Kabel in der Abbildung farbig, sodass die Kabel, die auf dem gleichen elektrischen Potential liegen, die gleiche Farbe haben. Notiere zudem den Wert des elektrischen Potentials.
+				\end{enumerate}
+			\end{minipage}
+			\hfill
+			\begin{minipage}{0.48\textwidth}
+				\centering
+				\includegraphics[width=0.95\textwidth]{../Zeichnungen/schaltplan-batterietester.png}
+			\end{minipage}
+		\end{minipage}
+		\begin{enumerate}[label=\alph*), itemsep=0mm, parsep=0mm,start=3]
+			\item Gib an, wie man mit dem Arduino die Spannung am 9\,V-Block berechnet. Baue den Batterietester dann auf und probiere ihn mit dem 9\,V-Block aus der Box aus.
+			\item \emph{Zum Nachdenken:} Wie groß darf die Spannung beim oben verwendeten Spannungsteiler maximal sein, damit am Arduino nicht mehr als 5\,V anliegen? Wie könnte man den Spannungsteiler bauen, sodass man Spannungen bis zu 15\,V messen kann?
+		\end{enumerate}
+	\end{projekt*}
+
+	\newpage
+	\section*{Spannung messen an analogen Eingängen}
+	
+	Wenn Batterien kaum noch Ladung gespeichert haben, lässt die Spannung an ihren Polen nach und sinkt unter den Wert, der auf der Batterie vermerkt ist. Mithilfe der analogen Eingänge A0 bis A5 lässt sich die Spannung messen und so entscheiden, ob die Batterie noch brauchbar ist.
+	
+	\begin{ziel}
+		\textbf{Frage:} Wie kann man mit dem Arduino eine Spannung messen?
+	\end{ziel}
+
+	%Batterietester unter 5V
+	% Batterietester mit Spannungsteiler für Batterien über 5V
+	\begin{projekt*}[Batterietester ($U<5\,V$)]
+		\begin{minipage}{\textwidth}
+			\begin{minipage}{0.68\textwidth}
+				Für eine einfache Messung bei einer 1,5\,V-Batterie wird der negative Pol der Batterie mit GND verbunden, sodass ein gemeinsames Nullpotential vorliegt. Der positive Pol der Batterie wird mit einem der analogen Eingänge A0 bis A5 verbunden. Über einen eingebauten Analog-Digital-Wandler (\emph{engl. analog-to-digital converter, ADC}) wird der Spannungswert durch eine Zahl zwischen 0 und 1023 ausgedrückt.
+			\end{minipage}
+			\hfill
+			\begin{minipage}{0.3\textwidth}
+				\centering
+				\begin{tabular}{c | c}
+					\textbf{Analogwert} & \textbf{Spannung} \\ \hline
+					0 & 0\,V \\ \hline
+					1 &  \\ \hline
+					100 &  \\ \hline
+					1023 & 5\,V \\ \hline
+				\end{tabular}
+			\end{minipage}
+		\end{minipage}
+		\begin{enumerate}[label=\alph*), itemsep=0mm, parsep=0mm]
+			\item Schließe eine mit 1,5\,V beschriftete Batterie an den Arduino an und miss die Spannung. Berechne aus dem Analogwert die Spannung und lass sie auf dem seriellen Monitor ausgeben.
+			\item Ergänze den Batterietester um eine Ampel, die anzeigt, ob die Batterie voll aufgeladen bzw. noch in Ordnung bzw. leer ist.
+		\end{enumerate}	
+	\end{projekt*}
+	
+	\begin{projekt*}[Batterietester ($U>5\,V$)]
+		Da der Arduino beim direkten Anschließen nur maximal 5\,V \enquote{verträgt}, muss man zum Testen von z.\,B. 9\,V-Blöcken weitere Bauteile verwenden. Mit zwei $\SI{10}{\kilo\ohm}$ Widerständen kann man einen einfachen \emph{Spannungsteiler} aufbauen, der die Messung ermöglicht.
+		%\vspace{-\baselineskip}
+		\begin{minipage}{\textwidth}
+			\begin{minipage}{0.48\textwidth}
+				\begin{enumerate}[label=\alph*), itemsep=0mm, parsep=0mm]
+					\item Berechne die Stromstärke und die Spannung an den Widerständen. Warum sind große Widerstände hier sinnvoll?
+					\item Markiere die Kabel in der Abbildung farbig, sodass die Kabel, die auf dem gleichen elektrischen Potential liegen, die gleiche Farbe haben. Notiere zudem den Wert des elektrischen Potentials.
+				\end{enumerate}
+			\end{minipage}
+			\hfill
+			\begin{minipage}{0.48\textwidth}
+				\centering
+				\includegraphics[width=0.95\textwidth]{../Zeichnungen/schaltplan-batterietester.png}
+			\end{minipage}
+		\end{minipage}
+		\begin{enumerate}[label=\alph*), itemsep=0mm, parsep=0mm,start=3]
+			\item Gib an, wie man mit dem Arduino die Spannung am 9\,V-Block berechnet. Baue den Batterietester dann auf und probiere ihn mit dem 9\,V-Block aus der Box aus.
+			\item \emph{Zum Nachdenken:} Wie groß darf die Spannung beim oben verwendeten Spannungsteiler maximal sein, damit am Arduino nicht mehr als 5\,V anliegen? Wie könnte man den Spannungsteiler bauen, sodass man Spannungen bis zu 15\,V messen kann?
+		\end{enumerate}
+	\end{projekt*}
+
+\end{document}

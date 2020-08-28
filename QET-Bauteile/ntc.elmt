@@ -1,0 +1,20 @@
+<definition width="50" version="0.60" hotspot_x="24" height="40" hotspot_y="26" orientation="dyyy" type="element" link_type="simple">
+    <uuid uuid="{a1b4ace1-e1b7-4152-8e80-a877890ad9e0}"/>
+    <names>
+        <name lang="de">Heißleiter (NTC)</name>
+    </names>
+    <informations></informations>
+    <description>
+        <rect antialias="false" width="28" style="line-style:normal;line-weight:normal;filling:none;color:black" x="-14" height="12" y="-6"/>
+        <line end1="none" length2="1.5" antialias="false" length1="1.5" y1="10" end2="none" style="line-style:normal;line-weight:normal;filling:none;color:black" y2="10" x2="-4" x1="-10"/>
+        <line end1="none" length2="1.5" antialias="false" length1="1.5" y1="10" end2="none" style="line-style:normal;line-weight:normal;filling:none;color:black" y2="-12" x2="14" x1="-4"/>
+        <line end1="none" length2="1.5" antialias="false" length1="1.5" y1="-20" end2="simple" style="line-style:normal;line-weight:normal;filling:none;color:black" y2="-10" x2="22" x1="22"/>
+        <line end1="none" length2="1.5" antialias="false" length1="1.5" y1="-10" end2="simple" style="line-style:normal;line-weight:normal;filling:none;color:black" y2="-20" x2="18" x1="18"/>
+        <text text="T" x="-20" y="-9" size="9"/>
+        <input text="_" x="25" tagg="label" y="15" size="9" rotate="true"/>
+        <line end1="none" length2="1.5" antialias="false" length1="1.5" y1="0" end2="none" style="line-style:normal;line-weight:normal;filling:none;color:black" y2="0" x2="-19" x1="-14"/>
+        <line end1="none" length2="1.5" antialias="false" length1="1.5" y1="0" end2="none" style="line-style:normal;line-weight:normal;filling:none;color:black" y2="0" x2="19" x1="14"/>
+        <terminal x="19" y="0" orientation="e"/>
+        <terminal x="-19" y="0" orientation="w"/>
+    </description>
+</definition>

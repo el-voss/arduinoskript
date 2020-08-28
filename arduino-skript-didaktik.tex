@@ -1,0 +1,124 @@
+\chapter{Didaktisch-Methodische Bemerkungen}\label{kap:didaktik}
+
+Im Jahr 2016 bin ich das erste Mal in einem Youtube-Video auf den Arduino aufmerksam geworden. Darin wurde er für ein Heimwerker-Projekt genutzt und als einfache Möglichkeit vorgestellt, programmieren zu lernen und Projekte umzusetzen. Ich war schnell begeistert und schaffte mir selbst ein Arduino-Starter-Kit an. Ich arbeitete mich durch einige Tutorials und lernte schnell, immer komplexere Projekte aufzubauen und zu programmieren - dabei war mein Studium in Mathematik und Physik sicherlich hilfreich. Aber endlich war das ganze Wissen, das ich mir angeeignet hatte, nicht nur theoretisch wertvoll, sondern auch ganz praktisch anwendbar! Diese Mischung aus theoretischem Wissen, praktischem Aufbau, Verständnis für den technischen Alltag sowie insbesondere der Möglichkeit, \emph{eigene Projekte} anzugehen und \emph{kreativ} zu werden, war es, die mich tief begeisterte und die ich bald weitergeben wollte.
+
+Der Bezug zur Schule ist offensichtlich. Nachdem man ein wenig in die Arduino-Welt eingetaucht ist, erscheint es fast fahrlässig, dass man im Physikunterricht Halbleiterbauelemente behandelt, \emph{ohne} gleichzeitig zu thematisieren, wie man sie über ein Programm anspricht und ausliest, sodass sie zu etwas Praktischem beitragen können.\footnote{Dass man stattdessen auch eine Transistorschaltung o.\,ä. aufbauen kann, ist mir bewusst, aber da diese recht kompliziert werden, werden Transistorschaltungen wenn überhaupt erst ganz am Ende der Halbleiterelektronik behandelt.} Zudem werden sie in Plastikkästen versteckt, die zwar verhindern, dass etwas kaputt geht und für wenige Cent neu beschafft werden muss, aber auch dazu führt, dass die meisten Schülerinnen und Schüler kaum wissen, wie die elektrischen Bauteile, die sie im Bändermodell erklären sollen, aussehen. Auf diese Art und Weise kann die Elektronik nur furchtbar theoretisch und dementsprechend wenig motivierend werden. Und so versuchte ich mich schon bald an der Integration des Arduino in den Unterricht - zunächst ein kleines Projekt im Physikunterricht, dann eine Arduino-AG und schließlich ein Arduino-Wahlpflichtfach im MINT-Profil.
+
+Was mir für den Unterricht noch fehlte, war ein Skript wie dieses, welches das theoretische Wissen, das sich rund um den Arduino vermitteln lässt, didaktisch aufbereitet und strukturiert, sodass es sich im Unterricht anwenden lässt. Im Gegensatz zu den vielen Internet-Tutorials sollte zum Einen eine graphische Programmiersprache im Vordergrund stehen, weil meine Erfahrungen im Unterricht zeigten, dass die Schüler bei ihrer ersten Begegnung mit dem Programmieren größere Probleme mit der komplexen Syntax von C++ bekamen. Zum Anderen sollte das Wissen mit den Schülern erarbeitet werden statt es einmal zu erklären und dann nachmachen zu lassen.
+
+So verwendete ich im Schuljahr 2018/19 sehr viel Zeit und Arbeit in dieses Skript. Mein Ziel ist, meine Begeisterung für die Arduino-Welt mit der beschriebenen Mischung aus theoretischem Wissen, praktischem Aufbau, Verständnis für den technischen Alltag sowie der Möglichkeit eigene Projekte umzusetzen an möglichst viele Schülerinnen und Schüler weiter zu geben. Aus diesem Grund veröffentliche ich dieses Skript auch unter einer CC-Lizenz (\href{https://creativecommons.org/licenses/by-nc-sa/4.0/deed.de}{BY-NC-SA 4.0}), die es jedem erlaubt, dieses Skript zu vervielfältigen und anzupassen, solange mein Name genannt und mögliche Anpassungen unter der gleichen Lizenz weitergegeben werden, die zudem enthält, dass dieses Skript (von Verlagen etc.) nicht kommerziell vertrieben werden darf.
+
+Im Jahr 2020 hatte ich dann durch den Shutdown während der Corona-Pandemie noch einmal genug Zeit, um eine große Umstellung vorzunehmen. Statt wie bisher auf das Programm mBlock zu setzen, das eigentlich auf die Programmierung von firmeneigenen \enquote{mBots} ausgelegt ist und in der neuesten Version über keinen seriellen Monitor mehr verfügte, probierte ich nun Nepo4Arduino von der Fraunhofer-Gesellschaft aus und merkte, dass sich damit noch viel mehr Projekte und Inhalte umsetzen lassen würden. Zudem ist der Aufbau an einigen Stellen intuitiver und macht die Anbindung von Bauteilen an den Arduino leichter. Die andere Vorgehensweise machte es aber auch notwendig, das Skript noch einmal komplett zu überarbeiten. So gut wie jede einzelne Seite wurde noch einmal angefasst und umgearbeitet; außerdem sollte eine ganz andere Struktur entstehen. Und so bin ich froh und stolz, dieses große Projekt zu einer ersten fertigen Version gebracht zu haben.
+
+\section{Zielgruppe}
+
+Das Skript wurde für das MINT-Profil im Jahrgang 10 geschrieben. Die Schülerinnen und Schüler haben bis dahin den gewöhnlichen Physikunterricht zu Stromstärke, Spannung und Widerstand gehabt. Die Behandlung von Halbleitern erfolgt bei uns ebenfalls im Jahrgang 10, also parallel zu diesem Kurs. Dies ist sicherlich hilfreich, aber nicht notwendig für den Einsatz dieses Skripts. Dieses Skript behandelt nur die elektrotechnische Anwendung von Halbleiterelementen, nicht jedoch die Funktionsweise im Bänder- oder Teilchenmodell, die im Physikunterricht erläutert wird. Viele der teilnehmenden Schülerinnen und Schüler haben vorher bereits im MINT-Profil mit LegoMindstorms-Robotern gearbeitet und dadurch etwas Programmiererfahrung gewonnen. Dies ist ebenfalls hilfreich, aber nicht notwendig für den Einsatz dieses Skripts. Es sind keine vorherigen informatischen Kenntnisse notwendig!
+
+Neben Jahrgang 10 erscheint es auch denkbar, dieses Skript in Jahrgang 9 oder höheren Jahrgangsstufen einzusetzen, da dort bereits (fast) alle physikalischen und mathematischen Grundlagen gelegt sind - ggf. ist bei der Regression zum Messen von Helligkeit oder Temperatur eine Anpassung notwendig.
+
+\section{Organisatorisches: Arduino Starter Kits, Raum, Zusammenarbeit}
+
+Für den Wahlpflichtkurs wurden 15 Arduino Starter Kits angeschafft, die neben einem Arduino-Klon auch fast alle hier beschriebenen Bauteile enthielten. Zusätzlich wurden Bewegungsmelder und USB-Kabel mit 2\,m Länge angeschafft. Da die mitgelieferten Boxen sehr eng gepackt sind und nie wieder ordentlich zusammengepackt werden, wurden zusätzlich größere Aufbewahrungsboxen angeschafft, in die später auch die aufgebauten Schaltungen gesteckt werden konnten, sodass sie am Anfang der nächsten Stunde direkt wieder zur Verfügung standen.
+
+Die Schüler bekamen jeweils zu zweit eine Box zugewiesen, auf die eine Nummer geschrieben wurde, sodass die Namen der Schüler und die zugehörige Box festgehalten werden konnten. Damit waren die Schüler auch für den Inhalt der Box verantwortlich. Im Unterricht arbeiteten die Schüler in den Praxisübungen dann auch stets zu zweit zusammen. Die Arbeit zu zweit kann gut dazu genutzt werden, dass einer hauptsächlich für die Schaltung und einer hauptsächlich für das Programmieren zuständig ist. Der Unterricht fand stets im Computerraum statt, da Computer für die Arbeit mit dem Arduino unerlässlich sind. Aus diesem Grund ist dieses Skript auch nicht zum Ausdrucken gedacht.
+
+\section{Zum Aufbau dieses Skripts}
+
+\subsection{Aufbau der Kapitel}
+
+Im Einführungskapitel stehen die Grundlagen im Vordergrund: Nach etwas Theorie zum Aufbau des Arduino, die auch später thematisiert werden könnte, wird die Programmierumgebung Open Roberta vorgestellt, um dann möglichst schnell mit dem praktischen Programmieren der Board-LED loslegen zu können. Erst im zweiten Schritt geht es dann um eine externe LED, weil dazu auch das Steckbrett und die Bedeutung der Beinlänge der LED verstanden werden muss. Während die Farben des Widerstands hier noch genau vorgegeben werden, geht es danach um die Bedeutung der Farbringe. Damit sind die wichtigsten Grundlagen gelegt, um Schaltungen nach Anleitung aufbauen zu können.
+
+Im Kapitel zu Bausteinen von Algorithmen geht es dann um die schrittweise Einführung von Blöcken zum Ansteuern von Bauteilen oder algorithmischen Strukturen wie Sequenz, Verzweigung, Schleifen und schließlich Funktionen. Dabei wird der physikalische Aspekt der Schaltungen kaum thematisiert, damit das Skript ggf. auch in einem reinen Informatikunterricht eingesetzt werden kann, bei dem die Anbindung an den Arduino eine Black Box bleiben darf. So kann man sich im Algorithmen-Kapitel voll auf die Programmierung konzentrieren und schnelle Fortschritte machen, die der Motivation hilfreich sein dürften. Der ausgewählten Schaltungen sind darauf ausgelegt, dass sie einfach zu handhaben sind und die Funktionsweise des Algorithmus interaktiv erlebbar machen (z.\,B. bei boolschen Ausdrücken) oder visualisieren (z.\,B. bei Lauflichtern). Zum Abschluss des Kapitels wird das EVA-Prinzip angebahnt, um von den bisherigen Erfahrungen auf eine verallgemeinernde Sichtweise zu abstrahieren, die auch für das physikalische Verständnis hilfreich ist.
+
+Im nächsten Kapitel geht es dann um die elektrischen Grundlagen, die im Algorithmenkapitel vernachlässigt wurden. \emph{Wenn eine tiefergehende Thematisierung der elektrischen Grundlagen nicht gewünscht ist, kann dieses Kapitel auch ohne Nachteile für die nachfolgenden Kapitel übersprungen werden.} Hier werden noch einmal die elektrischen Grundlagen zu Spannung, Widerstand und Stromstärke wiederholt, bevor sie um das elektrische Potential erweitert werden. In den folgenden Abschnitten liegt der Schwerpunkt auf dem Verständnis des Spannungsteilers, der in verschiedenster Form immer wieder auftaucht. Die Formel zum Spannungsteiler wird dabei immer in der Form
+\begin{equation*}
+\frac{U_1}{U_2} = \frac{R_1}{R_2} \quad \text{ oder } \quad \frac{U_1}{R_1} = \frac{U_2}{R_2} = \frac{U_{ges}}{R_{ges}}
+\end{equation*}
+belassen, ohne bereits $U_1 = U_{ges} - U_2$ o.\,ä. einzusetzen, weil sich gezeigt hat, dass die Schüler dies mit konkreten Zahlen sehr gut schrittweise hinkriegen und flexibel an die Situation anpassen können, was bei einer allgemeinen Formel nicht der Fall war. Die einhergehende Thematisierung von Potentiometer, LDR, NTC und Transistor sind auch klassische Themen des Physikunterrichts, allerdings wird hier der Fokus auf die elektrische Schaltung und praktische Anwendung gelegt und nicht auf die interne Funktionsweise und abstrakte quantenphysikalische Modelle.
+
+Weiterhin wird der Elektromotor mit verschiedenen Ansteuerungsmöglichkeiten (Transistor, Relais, Motortreiber) ausführlich thematisiert, um einen umfassenden Einblick in verschiedene Bauteile sowie deren Vor- und Nachteile für ein bestimmtes Ziel zu erreichen.
+
+Das Kapitel zur Erweiterung des Werkzeugkastens nimmt eine Sonderrolle ein. Hierin werden alle fehlenden Bauteile eingeführt, die bisher nicht auftraten und die sich mit Nepo4Arduino ansprechen lassen. Es ist nicht notwendig, die vorherigen Kapitel komplett durchgearbeitet zu haben, um dieses Kapitel bearbeiten zu können. Im Gegenteil kann es sich immer wieder zwischendurch anbieten, auf ein neues Bauteil aufmerksam zu machen, weil diese Abschnitte weniger Theorie, aber dafür fast immer ein neues Projekt enthalten. Alternativ oder ergänzend kann das Kapitel unter der Vorgabe ein eigenes Projekt umzusetzen, von den Schülern eigenständig nach Bedarf bearbeitet werden, um sich die Grundlagen für die von ihnen benötigten Bauteile zu verschaffen (vgl. Abschnitt \ref{sec:projektarbeit}).
+
+Als (bisher) letztes Kapitel folgt die Thematisierung von Automaten zur Steuerung von komplexeren Informatik-Systemen. Hier wurde versucht, das Informatik-KC (in Niedersachsen) zu berücksichtigen, das die Thematisierung von Automaten fordert. Es ist geplant, einen weiteren Abschnitt zum Steuern und Regeln hinzuzufügen.
+
+\subsection{Erklärung zu Links, Symbolen und eingebetteten Arbeitsblättern}
+
+Dieses Skript enthält verschiedenfarbige Links, die teilweise mit Symbolen ergänzt sind und teilweise zu eingebetteten Arbeitsblättern führen.
+
+\bigskip
+\textbf{Links}
+
+\medskip
+\begin{tabu} to \textwidth {X[l]X[3l]}
+	\textcolor{red!60!black}{Dunkelroter Link} & Link innerhalb des Dokuments, z.\,B. zu einem anderen Abschnitt \\
+	\textcolor{magenta!60!black}{Dunkelvioletter Link} & Link ins Internet \\
+	\textcolor{blue!60!black}{Dunkelblauer Link} & Link zu einer eingebetteten Datei, die als Arbeitsblatt oder Folie verwendet werden kann\\
+\end{tabu}
+
+\bigskip
+\textbf{Symbole}
+
+\medskip
+\begin{minipage}{\textwidth}
+	\extrarowsep=3mm
+	\begin{tabu} to \textwidth {X[l]X[l8]} 
+		\zurueck & kennzeichnet Links, die an eine frühere Stelle im Dokument führen \\ 
+		\werkzeug & kennzeichnet Links, die zu einem späteren Abschnitt führen, an denen ein Bauteil eingeführt wird, für das nun alle Grundlagen gelegt wurden \\ 
+		\drucker & kennzeichnet Links zu eingebetteten Arbeitsblättern, die ausgedruckt werden können \\ 
+		\video & kennzeichnet Internet-Links, die zu einem passenden Video führen \\ 
+		\folie & kennzeichnet Links zu eingebetteten Folien, die per Beamer gezeigt werden können und die Aufmerksamkeit auf das Wesentliche richten sollen\\
+		\ausrufezeichen & Hinweis auf ein Arbeitsblatt, das die ganze oder Teile der Lösung enthält. Daher ist das Ausrufezeichen selbst der Link zu dem Arbeitsblatt, sodass man den Link nicht so leicht als solchen erkennt. Wenn kein Link vorliegt, handelt es um einen wichtigen Hinweis zum Text. \\ 
+	\end{tabu}
+\end{minipage}
+
+
+\section{Erfahrungsbericht}
+
+\emph{Der folgende Erfahrungsbericht bezieht sich auf eine erste Version dieses Skriptes. Zur aktuellen, vollständig überarbeiteten Version liegen noch keine Erfahrungen vor, weil Corona-bedingt kein jahrgangsübergreifender Wahlpflichtunterricht angeboten werden konnte (Stand 20.08.20).}
+
+Ich habe dieses Skript im Laufe des Schuljahres 2018/19 geschrieben und in meinem Kurs mit 16 Schülern eingesetzt und ausprobiert. Dadurch sind bereits viele kleine Anpassungen in das Skript eingeflossen, um kleine Fehler zu beseitigen, Missverständnisse zu umgehen oder Hinweise besser zu platzieren.
+
+Im ersten Halbjahr habe ich Kapitel 1 bis 4 (Bausteine von Algorithmen) behandelt und darüber auch eine Arbeit schreiben lassen. Dies hat insgesamt gut geklappt. Die vermischten Übungen am Ende von Kapitel 3 und 4 dienten zur Vorbereitung auf die Arbeit. Die Lösungen dazu, die auch in diesem Paket enthalten sind, habe ich den Schülern vor der Arbeit ebenfalls zur Selbstkontrolle zur Verfügung gestellt. Auf die Verweise zu zusätzlichen Bauteilen in Kapitel 6 habe ich in der letzten Doppelstunde vor den Weihnachtsferien zurückgegriffen.
+
+Ich bin bereits im ersten Halbjahr mit Kapitel 5 zu analogen Ausgängen und Eingängen angefangen, welches sich über einen recht langen Zeitraum bis Anfang März zog. Über Kapitel 5 wurde auch die Klausur geschrieben, weshalb hier wiederum vermischte Übungen (und eine Extradatei mit Lösungen) bereitstehen. Weitere Bauteile aus Kapitel 6 habe ich selbstgesteuert erarbeiten lassen, um Freiraum zum Experimentieren zu geben. Die Recherche-Aufträge kamen dabei letztlich nicht zum Einsatz. Erst in Kapitel 7 zu Elektromotoren habe ich den Unterricht wieder stärker kontrolliert und für einen gemeinsamen Vergleich gesorgt. Zum Ende des Schuljahres hin haben wir in einem gemeinsamen Projekt eine Wasserrakete mit Sensoren bestückt, sodass wir letztlich nur noch eine kurze Einführung zu Funktionen hatten. Den Abschnitt zu Automaten konnte ich dadurch noch nicht im Unterricht testen.
+
+Insgesamt haben die teilnehmenden Schüler den Unterricht zum Arduino interessiert mitgemacht. Es kommen immer wieder Fragen auf, ob man dies oder das nachbauen könnte oder wie etwas genau funktioniert. Zudem ist immer wieder zu bemerken, dass sich einzelne Schüler selbst ein Arduino-Kit zulegen und damit zu Hause experimentieren. So macht Unterricht Spaß!
+
+\section{Ausblick}
+
+Ein Schuljahr ist mit diesem Skript zwar schon gut gefüllt, aber ich habe schon ein paar Ideen zur Erweiterung des Skripts, die entweder von interessierten Schülern zu Hause gelesen oder im Unterricht genutzt werden können, wenn vorherige Abschnitte übersprungen oder kurz gehalten werden. Dazu gehört ein Abschnitt zu \enquote{Steuern und Regeln} im letzten Kapitel \enquote{Steuerung komplexer Informatik-Systeme} sowie ein Kapitel zur Spannungsversorgung des Arduino (Batterie, Spannungsregler, Akku, Laderegelung, Solarzellen) und schließlich ein Kapitel zu verschiedenen Codes und evtl. zur Kommunikation von Rechnern mittels Codes (Morse, Binärcode, Hexadezimalcode, ASCII-Code).
+
+\section{Anpassung / Weiterentwicklung}
+
+Wer das Skript für seine Zwecke anpassen oder gar weiterentwickeln will, ist herzlich dazu eingeladen, benötigt allerdings einige Kenntnisse zu \LaTeX. Dazu muss man sich außerdem die Entwicklerversion des Arduino-Skripts, das alle tex-Dateien, Bilddateien etc enthält, herunterladen.
+
+Ich habe dieses Skript mit der TeX Live - Distribution und Texstudio als Editor verfasst. Es ist in mehrere tex-Dateien aufgeteilt, die sich im Hauptordner sowie im Ordner \texttt{src} befinden. Als Erstes muss die Präampel vorkompiliert werden. Dazu wählt man in Texstudio \button{Options} - \button{Configure Texstudio}. Beim Untermenü \texttt{Commands} gibt man folgenden Befehl für pdflatex ein:
+
+\medskip
+\verb|pdflatex -ini -jobname="preamble" "&pdflatex preamble.tex\dump"|
+
+\bigskip
+Nun öffnet man die Datei \texttt{preamble.tex} und kompiliert diese mit pdflatex (standardmäßig drückt man dazu \texttt{F5}). Danach ändert man den Befehl von pdflatex wieder zurück auf:
+
+\bigskip
+\verb|pdflatex -synctex=1 -interaction=nonstopmode --shell-escape %.tex|
+\bigskip
+
+Nun kann die Hauptdatei \texttt{arduino-skript.tex} oder auch jede beliebige Teildatei mit pdflatex kompiliert werden (standardmäßig \texttt{F5}). Nach dem Vorkompilieren der Präambel muss das Hauptdokument ggf. zwei Mal kompiliert werden, damit alles funktioniert.
+
+\vspace{2\baselineskip}
+\emph{Weitere Programme:}
+
+\begin{itemize}
+	\item Zeichnungen habe ich in der Regel mit TikZ erstellt, für das es ein praktisches kleines Programm namens \emph{KTikz} (Linux) bzw. \emph{QTikz} (Windows) gibt, mit dem man die Zeichnung programmieren kann und dabei stets sieht, wie der aktuelle Code aussieht.
+	\item Schaltpläne habe ich mit \emph{QElectroTech} erstellt. Die vorhandenen Schaltpläne können damit geöffnet und bearbeitet werden. Dazu sollten auch die selbst erstellten Bauteile im Ordner \texttt{QET-Bauteile} importiert werden.
+\end{itemize}
+
+
+
+
+
+
+
+

@@ -1,0 +1,20 @@
+<definition hotspot_x="35" hotspot_y="56" orientation="dyyy" width="70" link_type="simple" version="0.60" type="element" height="100">
+    <uuid uuid="{83c746ea-bed4-47ab-892c-f4e163a85abe}"/>
+    <names>
+        <name lang="de">Spannungsregler L7805CV</name>
+    </names>
+    <informations></informations>
+    <description>
+        <rect width="60" y="-30" height="60" style="line-style:normal;line-weight:normal;filling:none;color:black" antialias="false" x="-30"/>
+        <input size="9" y="25" text="_" rotate="true" tagg="label" x="35"/>
+        <text size="5" y="27" text="Vin" x="-26"/>
+        <text size="5" y="27" text="GND" x="-8"/>
+        <text size="5" y="27" text="Vout" x="12"/>
+        <text size="9" y="-6" text="L7805CV" x="-28"/>
+        <polygon y3="-50" y4="-50" y2="-40" x1="-30" y5="-40" x4="20" y1="-30" x7="-30" closed="false" x5="30" y7="-30" x3="-20" y6="-30" x2="-30" x6="30" style="line-style:normal;line-weight:normal;filling:none;color:black" antialias="false"/>
+        <circle diameter="10" y="-45" style="line-style:normal;line-weight:normal;filling:none;color:black" antialias="false" x="-5"/>
+        <terminal orientation="s" y="35" x="0"/>
+        <terminal orientation="s" y="35" x="20"/>
+        <terminal orientation="s" y="35" x="-20"/>
+    </description>
+</definition>
