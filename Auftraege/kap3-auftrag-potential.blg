@@ -1,9 +1,0 @@
-[0] Config.pm:302> INFO - This is Biber 2.9
-[0] Config.pm:305> INFO - Logfile is 'kap3-auftrag-potential.blg'
-[25] biber:313> INFO - === Mi Sep 12, 2018, 07:39:02
-[43] Biber.pm:371> INFO - Reading 'kap3-auftrag-potential.bcf'
-[98] Biber.pm:857> INFO - Found 0 citekeys in bib section 0
-[104] Utils.pm:169> WARN - The file 'kap3-auftrag-potential.bcf' does not contain any citations!
-[110] bbl.pm:617> INFO - Writing 'kap3-auftrag-potential.bbl' with encoding 'UTF-8'
-[110] bbl.pm:720> INFO - Output to kap3-auftrag-potential.bbl
-[110] Biber.pm:110> INFO - WARNINGS: 1
