@@ -12,7 +12,7 @@
 \newenvironment{aufgabe}{%
 	\medbreak %
 	\textbf{\sffamily Aufgabe}%
-	\stepcounter{aufgabennummer}%Counter beginnt immer bei 0, also vor der Ausgabe hochzählen
+	\refstepcounter{aufgabennummer}%Counter beginnt immer bei 0, also vor der Ausgabe hochzählen
 %	\ifnum \value{section}>0 %
 %		~\textbf{\sffamily\thesection.\theaufgabennummer}%
 %	\else ~\textbf{\sffamily\theaufgabennummer}%
@@ -30,6 +30,13 @@
 }{ %
 	\par\medskip %
 	
+}
+
+\newenvironment{loesung}[1]{%
+	\medbreak %
+	\textbf{\sffamily Lösungshinweise zu Aufgabe Nr. #1:} \smallbreak
+}{%
+	\par \medskip %
 }
 
 \newcounter{projektnummer}[chapter]

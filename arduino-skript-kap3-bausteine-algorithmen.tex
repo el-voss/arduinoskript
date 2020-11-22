@@ -39,7 +39,7 @@ In diesem Kapitel lernst du\dots
 \section{Entscheidungen programmieren}
 \label{sec:entscheidungen}
 
-Schaltungen und Programme werden erst dann richtig interessant, wenn sie auf ihre Umwelt reagieren. Im einfachsten Fall lässt sich dazu ein Taster einbauen, mit dem von außen sich entscheiden lässt, wie das Programm weiterlaufen soll. Dementsprechend müssen im Programm \emph{Fallunterscheidungen} eingebaut werden.
+Schaltungen und Programme werden erst dann richtig interessant, wenn sie auf ihre Umwelt reagieren. Im einfachsten Fall lässt sich dazu ein Taster einbauen, mit dem sich von außen entscheiden lässt, wie das Programm weiterlaufen soll. Dementsprechend müssen im Programm \emph{Fallunterscheidungen} eingebaut werden.
 
 \begin{ziel}
 	\textbf{Ziel:} Der Arduino soll auf Eingaben aus seiner Umwelt reagieren.
@@ -1320,9 +1320,51 @@ In diesem Kapitel hast du bereits einige Bauteile kennengelernt, aber es gibt no
 \section{Vermischte Übungen}
 \label{sec:algo-uebungen}
 
-% TODO: vermischte Übungen ergänzen
+\begin{aufgabe} \emph{Konfigurierbares Blinken} \label{aufg:konfigurierbares-blinken}
+	
+	Am Arduino ist ein Taster und eine LED angeschlossen. Die LED soll zunächst jeweils eine Sekunde lang an sein und eine Sekunde aus. Mit dem Taster lässt sich die Zeit jedoch mit jedem Drücken um 100\,ms verringern. Wenn die Zeit dabei auf 200\,ms gestellt wird, wird sie stattdessen wieder auf 2000\,ms hochgesetzt.
+	\begin{enumerate}[label=\alph*), itemsep=0ex]
+		\item Zeichne einen Schaltplan und benenne die Größe der jeweils notwendigen Widerstände.
+		\item Entwickle ein Programm nach den beschriebenen Anforderungen und stelle es als Struktogramm dar.
+	\end{enumerate}
+	
+\end{aufgabe}
+
+\begin{aufgabe} \emph{Hörbare Helligkeit} \label{aufg:hoerbare-helligkeit}
+	
+	Am Arduino wird ein LDR und ein Piezo-Summer angebracht.
+	
+	\begin{enumerate}[label=\alph*), itemsep=0ex]
+		\item Beschreibe mit einem Je-Desto-Satz das Verhalten des Widerstands des LDR, wenn es dunkel wird.
+		\item Die Helligkeit wird mit einem Prozentwert zwischen 0 und 100 gemessen. Entwickle mit den unten abgebildeten Blöcken ein Programm, dass die Helligkeit in eine Tonhöhe zwischen 300\,Hz und 600\,Hz übersetzt und diesen Ton ausgibt. Stelle das Programm als Struktogramm dar.
+	\end{enumerate}
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.75\textwidth]{./pics/hoerbare-helligkeit.png}
+		\caption{Blöcke zum Programmieren der Aufgabe \enquote{Hörbare Helligkeit}. Es können alle Blöcke genutzt werden, allerdings ist es nicht notwendig alle Blöcke zu nutzen. \emph{Mit dem Mathematik-Block zur Addition stehen auch alle weiteren Rechenoperationen zur Verfügung}.}
+	\end{figure}
+\end{aufgabe}
+
+\bigskip
+\newpage
+
 % Komplexere Juke-Box
-% 
+\begin{aufgabe} \emph{Juke-Box 2.0} \label{aufg:jukebox-2}
+	
+	\begin{wrapfigure}{r}{0.45\textwidth}
+		\centering
+		\includegraphics[width=0.4\textwidth]{./pics/jukebox2.png}
+		\caption{Vorlage zur JukeBox 2.0.}
+	\end{wrapfigure}
+	Logische Operationen lassen sich nutzen, um die Juke-Box vom Anfang des Kapitels zu erweitern, ohne Hardware nachrüsten zu müssen. Zur Erinnerung: Es wurden zwei Taster T1 und T2 und ein Piezo-Summer an den Arduino angeschlossen. Wenn Taster1 gedrückt wurde, gab der Befehl \texttt{Taste T1 gedrückt?} WAHR zurück und es wurde ein entsprechender Song gespielt.
+	
+	Die Idee: Man kann auch beide Taster gleichzeitig oder gar keinen Taster drücken, sodass sich vier Fälle für vier Songs ergeben. Sinnvollerweise
+	wird nur irgendeine Standardmusik gespielt, wenn gar kein Taster gedrückt wurde.
+	
+	Formuliere für jeden der vier Fälle eine trennscharfe Bedingung!
+	
+\end{aufgabe}
 
 % Vier Taster angeschlossen; Kombinationen von logischen Operationen durchdenken lassen
 % Form:
@@ -1331,10 +1373,104 @@ In diesem Kapitel hast du bereits einige Bauteile kennengelernt, aber es gibt no
 % Sonst
 % 	Serial Monitor: Leider falsch
 
+%\begin{aufgabe} \emph{Logische Operationen}
+%	
+%\end{aufgabe}
+
+\bigskip
 % Gesetze von de Morgan
+\begin{aufgabe} \emph{Gesetze von de Morgan} \label{aufg:de-morgan}
+	
+	Die Gesetze von de Morgan sagen aus, wie sich die Kombination des NICHT-Operators und des UND-Operators bzw. des ODER-Operators umformen lässt. Für zwei Aussagen A und B, die jeweils wahr oder falsch sein können, gilt:
+	
+	\begin{center}
+		(1) \texttt{NICHT(} A \texttt{ODER} B \texttt{)} = \texttt{NICHT(} A \texttt{) UND NICHT(} B \texttt{)}, \\
+		(2) \texttt{NICHT(} A \texttt{UND} B \texttt{)} = \texttt{NICHT(} A \texttt{) ODER NICHT(} B \texttt{)}.
+	\end{center}
+
+	Weise die Aussagen der Gesetze von de Morgan nach. Erstelle dazu für beide Seiten Wahrheitswerttabellen und zeige, dass für die gleiche Wahrheitswertkombination zu A und B immer auf beiden Seiten das gleiche Ergebnis herauskommt.
+	
+	Zu (1):\smallskip
+	
+	\begin{minipage}{0.4\textwidth}
+		\scriptsize
+		links\smallskip
+		
+		\begin{tabular}{c|c|c|c}
+			A & B & A \texttt{ODER} B & \texttt{NICHT(} A \texttt{ODER} B \texttt{)} \\ \hline
+			1 & 1 & 1 		 & ... \\ \hline
+			... & ... & ... & ...\\
+		\end{tabular}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.58\textwidth}
+		\scriptsize
+		rechts\smallskip
+
+		\begin{tabular}{c|c|c|c|c}
+			A & B & \texttt{NICHT(} A \texttt{)} & \texttt{NICHT(} B \texttt{)} & \texttt{NICHT(} A \texttt{) UND NICHT(} B \texttt{)} \\ \hline
+			1 & 1 & 0 		   & 0          & ... \\ \hline
+			... & ... & ... & ... & ...\\
+		\end{tabular}			
+	\end{minipage}
+\end{aufgabe}
+
+\bigskip
+\begin{aufgabe} \emph{Variablen und Datentypen} \label{aufg:variablen-datentypen}
+	
+	\begin{enumerate}[label=\alph*), itemsep=0ex]
+		\item Nenne Vorteile, die für die Verwendung von Variablen sprechen.
+		\item Nenne drei Datentypen, die in Variablen gespeichert werden können.
+	\end{enumerate}
+\end{aufgabe}
+
+\bigskip
+\begin{aufgabe} \emph{Programme verstehen} \label{aufg:programme-verstehen}
+	
+	\begin{minipage}{0.48\textwidth}
+		Am Arduino wird an Pin 9 eine LED mit Vorwiderstand und an Pin 10 ein Piezo-Summer angebracht.
+		
+		\begin{enumerate}[label=\alph*), itemsep=0ex]
+			\item Stelle das rechts abgebildete Programm als Struktogramm dar.
+			\item Beschreibe die Wirkung des rechts abgebildeten Programms.
+			\item Erkläre, wie man das Programm ändern müsste, damit die LED zwei Mal blinkt, bevor wieder der Piezo-Summer piept.
+		\end{enumerate}
+	\end{minipage}
+	\hfil
+	\begin{minipage}{0.48\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{./pics/Aufg-Programme-verstehen.png}
+	\end{minipage}
+\end{aufgabe}
+
+\bigskip
+\begin{aufgabe} \emph{Zählschleife analysieren} \label{aufg:zaehlschleife-analysieren}
+	
+	An allen Digitalpins des Arduino wird eine LED mit Vorwiderstand angeschlossen. Dann wird das abgebildete Programm ausgeführt.
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.7\textwidth]{./pics/zaehlschleife-analysieren.png}
+		\caption{Zählschleife zur Analyse.}
+	\end{figure}
+	
+	\begin{enumerate}[label=\alph*), itemsep=0ex]
+		\item Erstelle eine Trace-Tabelle für einen Durchlauf der \texttt{wiederhole unendlich oft}-Schleife.
+		\item Nenne die Pin-Nummern der LEDs, die nach einem Durchlauf dieses Programms geleuchtet haben.
+		\item Stelle das Programm als Struktogramm dar.
+	\end{enumerate}
+\end{aufgabe}
+
+% Übung zur Umwandlung von Schleifen in andere Schleife
+
+% Übung zu Break und continue
+
+% Übungen zu Funktionen
+
 
 % Collatz-Zahl
 
+% Lauflicht mit Tastern am Ende
 
 \newpage
 \section{Ausblick}

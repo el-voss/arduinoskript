@@ -1,5 +1,242 @@
 \chapter{Anhang}
 
+\section{Lösungshinweise zu den vermischten Übungen}
+\label{sec:loesungen}
+Im Folgenden finden sich Hinweise zur Lösung der Aufgaben, die sich jeweils im Abschnitt vermischte Übungen befinden. Sie dienen eher als Skizze denn als Musterlösung.
+
+\subsection{Vermischte Übungen zum Kapitel \ref{kap:nepo}}
+\label{sec:lsg-nepo}
+
+\begin{loesung}{\ref{aufg:blaulicht}}
+	Schaltplan:
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.4\textwidth]{./Zeichnungen/schaltplan-blaulicht.png}
+	\end{figure}
+		
+	Zu beachten ist die Ausrichtung der LEDs. Der Arduino kann auch als Rechteck gezeichnet werden, in dem nur die benötigten Pins als Striche gekennzeichnet sind. Die Widerstände sollten eine Größe von 330\,Ohm haben.
+	
+	Programm:
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.3\textwidth]{./lsg/prog-blaulicht.png}	
+	\end{figure}	
+\end{loesung}
+
+\begin{loesung}{\ref{aufg:widerstaende-farben}}
+	
+	\begin{enumerate}[label=\alph*), itemsep=0ex]
+		\item Farbcodierung:
+			\begin{enumerate}[label=(\arabic*)]
+				\item $\SI{330}{\ohm} \pm 1\%$: orange - orange - schwarz - schwarz - braun,
+				\item $\SI{10}{\kilo\ohm} \pm 2\%$: braun - schwarz - schwarz - rot - rot,
+				\item $\SI{4,7}{\kilo\ohm} \pm 10\%$: gelb - lila - schwarz - braun - silber.
+			\end{enumerate}
+		\item Größe der Widerstände:
+		\begin{multicols}{2}
+			\begin{enumerate}[label=(\arabic*)]
+				\item \begin{tikzpicture}[scale=0.3]
+				\shade [top color=lightgray, bottom color=gray] (-5,0.8) rectangle (10,1.2);
+				\shade [top color=LightSkyBlue, bottom color=NavyBlue] (0,0) -- (5,0) arc [start angle=-135, end angle=135, radius=1.414] -- (0,2) arc [start angle=45, end angle=315, radius=1.414];
+				\draw [fill=red] (0,0) rectangle ++(0.5,2);
+				\draw [fill=red] (1,0) rectangle ++(0.5,2);
+				\draw [fill=black] (2,0) rectangle ++(0.5,2);
+				\draw [fill=black] (3,0) rectangle ++(0.5,2);
+				\draw [fill=brown] (4.5,0) rectangle ++(0.5,2);
+				\end{tikzpicture}
+				
+				$\SI{220}{\ohm} \pm 1\%$
+				\item \begin{tikzpicture}[scale=0.3]
+				\shade [top color=lightgray, bottom color=gray] (-5,0.8) rectangle (10,1.2);
+				\shade [top color=LightSkyBlue, bottom color=NavyBlue] (0,0) -- (5,0) arc [start angle=-135, end angle=135, radius=1.414] -- (0,2) arc [start angle=45, end angle=315, radius=1.414];
+				\draw [fill=green] (0,0) rectangle ++(0.5,2);
+				\draw [fill=blue] (1,0) rectangle ++(0.5,2);
+				\draw [fill=black] (2,0) rectangle ++(0.5,2);
+				\draw [fill=yellow] (3,0) rectangle ++(0.5,2);
+				\draw [fill=lightgray] (4.5,0) rectangle ++(0.5,2);
+				\end{tikzpicture}
+				
+				$\SI{560e4}{\ohm} \pm 10\%$
+			\end{enumerate}
+		\end{multicols}
+	\end{enumerate}
+\end{loesung}
+
+\subsection{Vermischte Übungen zum Kapitel \ref{kap:bausteinealgorithmen}}
+\label{sec:lsg-bausteinealgorithmen}
+
+\begin{loesung}{\ref{aufg:konfigurierbares-blinken}}
+	Schaltplan:
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.4\textwidth]{./Zeichnungen/schaltplan-konfigurierbares-blinken.png}
+	\end{figure}
+
+	Der Vorwiderstand der LED sollte etwa 330 Ohm haben, der Widerstand am Taster sollte im besten Fall 10 kOhm haben.
+	
+	Programm als Bild von Nepo (muss noch in ein Struktogramm übersetzt werden):
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.4\textwidth]{./lsg/prog-konfigurierbares-blinken.png}
+	\end{figure}
+\end{loesung}
+
+\begin{loesung}{\ref{aufg:hoerbare-helligkeit}}
+	Je dunkler es ist, desto größer wird der Widerstand des LDR.
+	
+	Programm als Bild von Nepo (muss noch in ein Struktogramm übersetzt werden):
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.6\textwidth]{./lsg/prog-hoerbare-helligkeit.png}
+	\end{figure}
+\end{loesung}
+
+\begin{loesung}{\ref{aufg:jukebox-2}}
+	Bei der Formulierung der Bedingungen ist auf den NICHT-Teil zu achten, um die Bedingungen trennscharf zu halten:
+	
+	Fall 1: wenn \texttt{Taste T1 gedrückt?} UND \texttt{Taste T2 gedrückt?}
+	
+	Fall 2: wenn \texttt{Taste T1 gedrückt?} UND NICHT \texttt{Taste T2 gedrückt?}
+	
+	Fall 3: wenn NICHT \texttt{Taste T1 gedrückt?} UND \texttt{Taste T2 gedrückt?}
+	
+	Fall 4: wenn NICHT \texttt{Taste T1 gedrückt?} UND NICHT \texttt{Taste T2 gedrückt?}
+\end{loesung}
+
+\begin{loesung}{\ref{aufg:de-morgan}}
+	Zu (1):\smallskip
+	
+	\begin{minipage}{0.4\textwidth}
+		\scriptsize
+		links\smallskip
+		
+		\begin{tabular}{c|c|c|c}
+			A & B & A \texttt{ODER} B & \texttt{NICHT(} A \texttt{ODER} B \texttt{)} \\ \hline
+			1 & 1 & 1 		 & 0 \\ \hline
+			1 & 0 & 1 		 & 0 \\ \hline
+			0 & 1 & 1 		 & 0 \\ \hline
+			0 & 0 & 0 		 & 1 \\
+		\end{tabular}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.58\textwidth}
+		\scriptsize
+		rechts\smallskip
+		
+		\begin{tabular}{c|c|c|c|c}
+			A & B & \texttt{NICHT(} A \texttt{)} & \texttt{NICHT(} B \texttt{)} & \texttt{NICHT(} A \texttt{) UND NICHT(} B \texttt{)} \\ \hline
+			1 & 1 & 0 		   & 0          & 0 \\ \hline
+			1 & 0 & 0 		   & 1          & 0 \\ \hline
+			0 & 1 & 1 		   & 0          & 0 \\ \hline
+			0 & 0 & 1 		   & 1          & 1 \\ 
+		\end{tabular}			
+	\end{minipage}
+
+	In allen möglichen Kombinationen von Wahrheitswerten für A und B stimmen die Ergebnisse überein, also stimmt auch die Aussage (1).
+	
+	\bigskip
+	Zu (2):\smallskip
+	
+	\begin{minipage}{0.4\textwidth}
+		\scriptsize
+		links\smallskip
+		
+		\begin{tabular}{c|c|c|c}
+			A & B & A \texttt{UND} B & \texttt{NICHT(} A \texttt{UND} B \texttt{)} \\ \hline
+			1 & 1 & 1 		 & 0 \\ \hline
+			1 & 0 & 0 		 & 1 \\ \hline
+			0 & 1 & 0 		 & 1 \\ \hline
+			0 & 0 & 0 		 & 1 \\
+		\end{tabular}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.58\textwidth}
+		\scriptsize
+		rechts\smallskip
+		
+		\begin{tabular}{c|c|c|c|c}
+			A & B & \texttt{NICHT(} A \texttt{)} & \texttt{NICHT(} B \texttt{)} & \texttt{NICHT(} A \texttt{) ODER NICHT(} B \texttt{)} \\ \hline
+			1 & 1 & 0 		   & 0          & 0 \\ \hline
+			1 & 0 & 0 		   & 1          & 1 \\ \hline
+			0 & 1 & 1 		   & 0          & 1 \\ \hline
+			0 & 0 & 1 		   & 1          & 1 \\ 
+		\end{tabular}			
+	\end{minipage}
+	
+	In allen möglichen Kombinationen von Wahrheitswerten für A und B stimmen die Ergebnisse überein, also stimmt auch die Aussage (2).
+\end{loesung}
+
+\begin{loesung}{\ref{aufg:variablen-datentypen}}
+	Vorteile von Variablen:
+	
+	\begin{itemize}
+		\item Der Code wird lesbarer und nachvollziehbarer.
+		\item Man kann den Code leichter anpassen, weil im Optimalfall nur eine Stelle angepasst werden muss, um den Inhalt der Variablen zu ändern.
+		\item Bei Verwendung von Programmierstrukturen wird der Code kürzer und effizienter.
+	\end{itemize}
+	
+	Datentypen:
+	
+	Zahl, Zeichenkette, Wahrheitswert
+\end{loesung}
+
+\begin{loesung}{\ref{aufg:programme-verstehen}}
+	Struktogramm: entsprechend der Vorgaben aus Abschnitt \ref{sec:struktogramme} zeichnen
+	
+	\medskip
+	Wirkung: Es wird abwechselnd die LED blinken und der Summer piepsen. 
+	
+	Erster Schritt: 0 < 1 ist wahr, also LED blinkt und x wird auf 2 gesetzt. 
+	
+	Zweiter Schritt: 2 < 1 ist falsch, also wird Summer piepsen und y wird auf 3 gesetzt.
+	
+	Dritter Schritt: 2 < 3 ist wahr, also wird LED blinken und x wird auf 4 gesetzt.
+	
+	usw.
+	
+	\medskip
+	Änderung für zweimaliges Blinken vor einem Piepsen:
+	
+	Im einfachsten Fall ergänzt die Blöcke für das Anschalten, warten und Ausschalten noch mal bzw. ergänzt dort ein \texttt{wiederhole 2 Mal}.
+	
+	Mit den Variablen kann man so verfahren, dass x nur noch um 1 erhöht wird und y am Anfang auf 2 gesetzt wird.
+\end{loesung}
+
+\begin{loesung}{\ref{aufg:zaehlschleife-analysieren}}
+	Trace-Tabelle:
+	
+	Programm wird bei Start mit 1 beginnend Zeile für Zeile durchnummeriert.
+	
+	\begin{tabular}{c|c}
+		Zeile & i \\ \hline
+		1 & - \\
+		2 & - \\
+		3 & 2 \\
+		4 & 2 \\
+		5 & 2 \\
+		6 & 2 \\
+		3 & 4 \\
+		4 - 6 & 4 \\
+		3 & 6 \\
+		4 - 6 & 6 \\
+		3 & 8 \\
+		4 - 6 & 8 \\
+		3 & 10 \\
+	\end{tabular}
+
+	Danach wird die Zählschleife abgebrochen, weil 10 < 10 falsch ist. Damit beginnt der nächste Durchlauf der \texttt{wiederhole unendlich oft} Schleife und i wird wieder auf 2 gesetzt.
+	
+	Im Verlauf des Programms leuchten die LEDs an den Pins 2, 4, 6, 8.
+	
+	Struktogramm: entsprechend der Vorgaben aus Abschnitt \ref{sec:struktogramme} zeichnen
+\end{loesung}
+
+
 \section{Ein kurzer Überblick - die Funktionseinheiten des Arduino Uno}
 \label{sec:ueberblick}
 Im Folgenden wird ein vertiefter Überblick über die wichtigsten Komponenten des Arduino Uno, den sogenannten Funktionseinheiten, gegeben (vgl. Abb. \ref{abb:uno_r3}).
